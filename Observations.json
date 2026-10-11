@@ -1,7 +1,7 @@
 [
   {
     "time": "0:00",
-    "position": "Cycle 1, m. 1",
+    "position": "Chorus 1, m. 1",
     "event": "Shorter presents the melody without Davis.",
     "relation": "Initial single-horn presentation.",
     "source": "Goldford; Meehan p. 162 n. 512",
@@ -9,7 +9,7 @@
   },
   {
     "time": "0:28",
-    "position": "Cycle 1, m. 13",
+    "position": "Chorus 1, m. 13",
     "event": "Ride-cymbal interjections against the final sustained A3.",
     "relation": "Closing four bars become an interaction site; preparation of later textures is an interpretation.",
     "source": "Goldford",
@@ -17,7 +17,7 @@
   },
   {
     "time": "0:54",
-    "position": "Cycle 2, m. 9; measure discrepancy pending",
+    "position": "Chorus 2, m. 9",
     "event": "Davis joins Shorter; ride-bell attacks accompany the entrance.",
     "relation": "Brighter drum timbre coincides with thickened horn texture. Visual anticipation by Williams is unverified.",
     "source": "Goldford; Meehan p. 162 n. 512",
@@ -25,31 +25,31 @@
   },
   {
     "time": "1:03",
-    "position": "Cycle 2, m. 13 onward",
+    "position": "Chorus 2, m. 13 onward",
     "event": "Piano chords at dotted-quarter intervals; drum punctuation in the final bar.",
-    "relation": "Cross-beat grouping across the closing passage; possible coordination of punctuation.",
+    "relation": "Brief polymetric layer: regular dotted-quarter durations overlay the prevailing grid across the closing passage; possible coordination of punctuation.",
     "source": "Goldford",
     "status": "Listening observation"
   },
   {
     "time": "1:12",
-    "position": "Cycle 3, start",
-    "event": "Cycle boundary.",
+    "position": "Chorus 3, start",
+    "event": "Chorus boundary.",
     "relation": "Anchor for the following events.",
     "source": "Goldford",
     "status": "Listening observation"
   },
   {
     "time": "1:25",
-    "position": "Cycle 3, m. 7",
+    "position": "Chorus 3, m. 7",
     "event": "Piano durations span two eighth-note-triplet units; accented repeated E-flats.",
-    "relation": "A rhythmic layer against the prevailing pulse.",
+    "relation": "Brief polymetric layer: regular durations of two eighth-note-triplet units overlay the prevailing pulse.",
     "source": "Goldford",
     "status": "Listening observation"
   },
   {
     "time": "Pending",
-    "position": "Cycle 3, approaching mm. 9–16",
+    "position": "Chorus 3, approaching mm. 9–16",
     "event": "Hancock animates the accompaniment; Williams subsequently takes up its dancing quality.",
     "relation": "Meehan explicitly interprets this as uptake. Do not equate it automatically with the 1:25 event.",
     "source": "Meehan p. 162",
@@ -57,23 +57,23 @@
   },
   {
     "time": "1:37",
-    "position": "Cycle 3 closing passage; exact measure pending",
-    "event": "Long–short accented, ringing ride-cymbal scrape; similar paired piano chords follow into cycle 4.",
-    "relation": "Proposed drum-to-piano imitation crosses the cycle boundary.",
+    "position": "Chorus 3, m. 12",
+    "event": "Long–short accented, ringing ride-cymbal scrape; similar paired piano chords follow into chorus 4.",
+    "relation": "Proposed drum-to-piano imitation crosses the chorus boundary.",
     "source": "Goldford",
     "status": "Listening observation"
   },
   {
     "time": "1:48",
-    "position": "Cycle 4, start",
-    "event": "Cycle boundary.",
-    "relation": "Anchor; cymbal gesture from preceding cycle continues.",
+    "position": "Chorus 4, start",
+    "event": "Chorus boundary.",
+    "relation": "Anchor; cymbal gesture from preceding chorus continues.",
     "source": "Goldford",
     "status": "Listening observation"
   },
   {
     "time": "2:10",
-    "position": "Cycle 4, m. 11",
+    "position": "Chorus 4, m. 11",
     "event": "Two piano chords in the melodic rest; blues-like flat-13 voicing over the identified D7-sharp9/B-flat.",
     "relation": "Piano introduces a blues-associated color in the melodic gap; voicing needs transcription.",
     "source": "Goldford",
@@ -81,23 +81,23 @@
   },
   {
     "time": "2:17",
-    "position": "Cycle 4, m. 14 and following",
+    "position": "Chorus 4, m. 14 and following",
     "event": "Davis gives the last note a downward growling glissando; piano follows with C–C-sharp, then F–E dyads. Drums mix swung and straight eighths.",
-    "relation": "Proposed transfer from vocal trumpet inflection to piano semitone dissonance; final A7 alteration unresolved.",
+    "relation": "Proposed transfer from vocal trumpet inflection to piano semitone dissonance; final chord is A7-flat9-13.",
     "source": "Goldford",
     "status": "Listening observation"
   },
   {
     "time": "2:24",
-    "position": "Cycle 5, start",
-    "event": "Cycle boundary.",
+    "position": "Chorus 5, start",
+    "event": "Chorus boundary.",
     "relation": "Anchor for triplet exchange and literature events.",
     "source": "Goldford",
     "status": "Listening observation"
   },
   {
     "time": "2:28",
-    "position": "Cycle 5, m. 3",
+    "position": "Chorus 5, m. 3",
     "event": "Ascending quarter-note triplets in piano.",
     "relation": "Hancock introduces the rhythmic material taken up below.",
     "source": "Goldford",
@@ -105,7 +105,7 @@
   },
   {
     "time": "2:33",
-    "position": "Cycle 5, m. 5",
+    "position": "Chorus 5, m. 5",
     "event": "Quarter-note triplets on toms.",
     "relation": "Williams appears to take up the piano rhythm in a different timbre.",
     "source": "Goldford",
@@ -113,7 +113,7 @@
   },
   {
     "time": "2:36",
-    "position": "Cycle 5, m. 7 onward",
+    "position": "Chorus 5, m. 7 onward",
     "event": "Five-note spang-a-lang-like tom figure on an eighth-note-triplet grid; subsequent diminution.",
     "relation": "Rhythmic uptake is transformed in grouping, duration and drum placement.",
     "source": "Goldford",
@@ -121,7 +121,7 @@
   },
   {
     "time": "Pending",
-    "position": "Cycle 5, m. 9",
+    "position": "Chorus 5, m. 9",
     "event": "Horns extend A-flat after legato delivery; Hancock lays out; Williams lowers his dynamic.",
     "relation": "Meehan links horn extension to accompaniment withdrawal and a dynamic valley.",
     "source": "Meehan p. 162",
@@ -129,7 +129,7 @@
   },
   {
     "time": "2:45",
-    "position": "Cycle 5, m. 11",
+    "position": "Chorus 5, m. 11",
     "event": "Loud rimshot in the melodic gap; clearer swing returns; horns deliver B-flat strongly.",
     "relation": "Proposed drum-to-horn response. Reassurance and confidence describe an interpretation, not a verified mental state.",
     "source": "Goldford",
@@ -137,15 +137,15 @@
   },
   {
     "time": "Pending",
-    "position": "Cycle 5, midway through m. 12",
+    "position": "Chorus 5, midway through m. 12",
     "event": "Williams plays a strong fill into a new chord; ensemble attacks with renewed intensity.",
-    "relation": "Meehan reports a coordinated intensification after the valley. Keep distinct from the 2:45 rimshot.",
+    "relation": "Meehan reports a coordinated intensification after the valley. Possibly the same event as the 2:45 rimshot at m. 11.",
     "source": "Meehan p. 162",
     "status": "Literature event; time pending"
   },
   {
     "time": "2:59",
-    "position": "Cycle 6, start",
+    "position": "Chorus 6, start",
     "event": "Heavier, more pointed horn attacks, without shorter durations or staccato.",
     "relation": "Attack profile changes independently of note length; no specific literature corroboration located.",
     "source": "Goldford",
@@ -153,7 +153,7 @@
   },
   {
     "time": "3:34",
-    "position": "Cycle 7, start",
+    "position": "Chorus 7, start",
     "event": "Drums take greater liberties.",
     "relation": "Specify rhythmic departures through further listening.",
     "source": "Goldford",
@@ -161,15 +161,15 @@
   },
   {
     "time": "4:04",
-    "position": "Cycle 7, approximately mm. 15–16",
-    "event": "Ascending chromatic piano figuration over the identified A7-flat9-flat13 turnaround.",
-    "relation": "Boundary-directed piano gesture; chord and pitches await transcription.",
+    "position": "Chorus 7, approximately mm. 15–16",
+    "event": "Ascending chromatic piano figuration over the identified A7-flat9-13 turnaround.",
+    "relation": "Boundary-directed piano gesture; pitches await transcription.",
     "source": "Goldford",
     "status": "Listening observation"
   },
   {
     "time": "4:09",
-    "position": "Cycle 8, start; span pending",
+    "position": "Chorus 8, start; span pending",
     "event": "Quieter horns, longer sustained notes and fewer intervening rests.",
     "relation": "Changes in dynamics and spacing; exact span still open.",
     "source": "Goldford",
@@ -177,23 +177,23 @@
   },
   {
     "time": "Pending",
-    "position": "Cycle 8, second half",
+    "position": "Chorus 8, second half",
     "event": "Ensemble diminuendo before the more active subsequent drum passages.",
-    "relation": "Meehan groups cycles 9–11 as intensified drum activity.",
+    "relation": "Meehan groups choruses 9–11 as intensified drum activity.",
     "source": "Meehan p. 163",
     "status": "Literature event; time pending"
   },
   {
     "time": "4:44",
-    "position": "Cycle 9, start",
+    "position": "Chorus 9, start",
     "event": "New piano figuration, louder horns and changed drum interaction.",
-    "relation": "Multiple parameters change near the cycle boundary.",
+    "relation": "Multiple parameters change near the chorus boundary.",
     "source": "Goldford",
     "status": "Listening observation"
   },
   {
     "time": "5:01",
-    "position": "Cycle 9, m. 9",
+    "position": "Chorus 9, m. 9",
     "event": "Repeated intrusive snare hits interject into melodic phrases.",
     "relation": "Drums gain foreground prominence.",
     "source": "Goldford",
@@ -201,7 +201,7 @@
   },
   {
     "time": "5:13",
-    "position": "Cycle 9, m. 14",
+    "position": "Chorus 9, m. 14",
     "event": "Repeated-snare activity effectively becomes a three-bar drum solo.",
     "relation": "Perceived drum foregrounding; not a claim that all other instruments stop.",
     "source": "Goldford",
@@ -209,15 +209,15 @@
   },
   {
     "time": "5:18",
-    "position": "Cycle 10, start",
-    "event": "Drum roll into the cycle; Davis leads, Shorter follows roughly 1–1.5 quarter-note beats later.",
+    "position": "Chorus 10, start",
+    "event": "Drum roll into the chorus; Davis leads, Shorter follows roughly 1–1.5 quarter-note beats later.",
     "relation": "Canon-like melodic displacement; strict canon and response to the roll are unverified.",
     "source": "Goldford",
     "status": "Listening observation"
   },
   {
     "time": "5:54",
-    "position": "Cycle 11, start",
+    "position": "Chorus 11, start",
     "event": "Piano eighth-note trill figuration and glissandos; cymbal intrusions.",
     "relation": "Interventions overlap or interrupt the horn melody.",
     "source": "Goldford; Meehan p. 163 (broader drum activity)",
@@ -225,7 +225,7 @@
   },
   {
     "time": "6:21",
-    "position": "Cycle 11, mm. 13–16",
+    "position": "Chorus 11, mm. 13–16",
     "event": "Ensemble diminuendo with softer piano trilling.",
     "relation": "Hancock as initiator is a response hypothesis.",
     "source": "Goldford",
@@ -233,7 +233,7 @@
   },
   {
     "time": "6:30",
-    "position": "Cycle 12, start",
+    "position": "Chorus 12, start",
     "event": "Both horns absent; simple whole-note piano chords, prominent drums and later drum roll.",
     "relation": "Melodic withdrawal redistributes foreground activity.",
     "source": "Goldford; Meehan p. 162 n. 512; Pasceri title-track paragraph",
@@ -241,7 +241,7 @@
   },
   {
     "time": "7:05",
-    "position": "Cycle 13, start",
+    "position": "Chorus 13, start",
     "event": "Both horns return together, stately and authoritative; rhythms heard as adhering to notation.",
     "relation": "Restoration of coordinated melodic delivery; comparison with a specified score remains pending.",
     "source": "Goldford; Meehan p. 162 n. 512 (return)",
@@ -249,9 +249,9 @@
   },
   {
     "time": "7:40",
-    "position": "Following boundary / possible partial cycle 14",
-    "event": "No new horn statement; drums and bass continue briefly into a fade.",
-    "relation": "Released-recording ending, without an invented collective stop cue.",
+    "position": "After chorus 13; vamp out",
+    "event": "Vamp out: no new horn statement; time continues in drums and bass briefly into a fade.",
+    "relation": "Released-recording ending, without an invented collective stop cue. Time continues, but nothing in any part suggests that a new chorus has begun.",
     "source": "Goldford",
     "status": "Listening observation"
   }

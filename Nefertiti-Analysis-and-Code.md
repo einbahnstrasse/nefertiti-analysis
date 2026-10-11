@@ -6,17 +6,43 @@ Assigned recording: https://youtu.be/F2zUua79c6U
 
 ## Three scales of attention
 
-Keep three zoom levels, without assuming a Schenkerian hierarchy. Performance examines changes in participation and melodic delivery; passage follows developments across cycle boundaries; local exchange examines a gesture, its proposed uptake and its transformation.
+What changes when the melody returns, but the musicians change how they play together? In the Miles Davis Quintet’s “Nefertiti,” recurring statements of Wayne Shorter’s sixteen-bar composition coexist with changes in articulation, rhythmic grouping, instrumental participation, and foreground activity. An account of the composition’s melody and harmony helps explain its continuity. Understanding the particular performance also requires examining how the musicians introduce, answer, transform, and leave space for one another’s ideas.
 
-Ingrid Monson’s Saying Something places ensemble interaction and rhythm-section creativity at the center of improvisation analysis. That orientation motivates this study; it is not evidence that Monson analyzed this recording. The present summary is grounded in the publisher’s account and table of contents, including “Grooving and Feeling” and “Interaction, Feeling, and Musical Analysis,” rather than an unverified quotation from those chapters. [Monson]
+Ingrid Monson makes this analytical need explicit in *Saying Something: Jazz Improvisation and Interaction*. She proposes a communicative perspective for exploring the “relatively neglected—yet aesthetically central—interactive aspects of jazz improvisation.”[^1] Her starting point is that instrumental roles are interdependent and flexible: musicians make choices “in relationship to what everyone else is doing.”[^2] Interaction therefore belongs within musical analysis itself. It can shape a phrase, redistribute instrumental roles, and contribute to the direction and intensity of an entire performance.
 
-Here, recursion means that an action changes the ensemble context, which becomes an input to subsequent musical choices. Repeating sixteen bars is formal recurrence ; it does not by itself prove interpersonal feedback. A response may preserve, intensify, transform or withdraw material.
+Monson demonstrates this approach at different scales. Her analysis of Geri Allen and Ralph Peterson on “Princess” traces rhythmic interventions, interruptions, and subsequent responses between piano and drums.[^3] Her extended analysis of “Bass-ment Blues” examines how exchanges, recovery, and stylistic references contribute to intensification across successive choruses.[^4] These examples suggest an approach to “Nefertiti” that connects individual gestures with developments across choruses and with changes in the performance as a whole.
+
+David Borgo supplies a complementary account of **recursive interaction**. In *Sync or Swarm*, his discussion developed with Joseph Goguen describes music making and listening as coupled processes: “the current state of each acts as the control of the other.”[^5] Musicians hear the ensemble sound, act in relation to it, and thereby change the sound available for subsequent listening and action. A response can also change how an earlier gesture is understood.[^6] In our analysis, a feedback connection identifies a proposed relationship of this kind. The mere return of the sixteen-bar form establishes recurrence; identifying interpersonal recursion requires evidence of uptake, transformation, or adjustment.
+
+Two further perspectives clarify what this approach attends to. Paul Berliner describes the solo as one strand within a texture whose accompanying parts are themselves commonly improvised.[^7] George E. Lewis emphasizes how personal sound communicates meanings beyond pitches and intervals.[^8] Together, these perspectives encourage attention to the rhythmic and timbral specificity of the quintet’s exchanges: a piano rhythm transferred to toms, a trumpet growl followed by semitone piano dissonances, or a change in horn participation that redistributes foreground activity.
+
+The graphs offer three connected scales of attention:
+
+- **Performance:** How do melodic participation, horn alignment, and instrumental prominence change across the recording? This view connects Shorter’s opening alone, Davis’s entrance, later changes in melodic delivery, the hornless twelfth chorus, and the final melodic return.
+- **Passage:** How do exchanges develop across phrases and chorus boundaries? This view examines recurring opportunities for intervention, especially the melody’s closing measures, and follows changes that persist into subsequent choruses.
+- **Local exchange:** What does one musician introduce, what follows from another, and how is the material transformed? This view examines specific instances such as Hancock’s quarter-note triplets at 2:28, Williams’s apparent uptake on toms at 2:33, and his subsequent transformation of the figure.
+
+These are complementary zoom levels rather than a fixed hierarchy of musical importance. A local exchange may remain local or contribute to a wider change; the graphs allow those relationships to be investigated. All timestamps refer to the assigned YouTube recording.[^9] Listening observations and literature accounts are attributed separately, and proposed response relationships remain distinguishable from the reported sequence of events.
 
 Solid arrow · reported sequence / structural relation Dashed arrow · proposed response / feedback Red return · formal recurrence Diamond · specific performance choice inferred from action
 
 Untaken alternatives inside diamonds are analytical contrasts, not additional recorded events. A dashed backward connection means a renewed input to subsequent actions, not a return to an earlier timestamp.
 
+[^1]: Ingrid Monson, *Saying Something: Jazz Improvisation and Interaction* (Chicago: University of Chicago Press, 1996), 136.
+[^2]: Monson, *Saying Something*, 27.
+[^3]: Monson, *Saying Something*, 77–81.
+[^4]: Monson, *Saying Something*, 137–91.
+[^5]: David Borgo, *Sync or Swarm: Improvising Music in a Complex Age* (New York: Continuum, 2005), 67.
+[^6]: Borgo, *Sync or Swarm*, 67–68.
+[^7]: Paul F. Berliner, *Thinking in Jazz: The Infinite Art of Improvisation* (Chicago: University of Chicago Press, 1994), 285.
+[^8]: George E. Lewis, “Improvised Music after 1950: Afrological and Eurological Perspectives,” *Black Music Research Journal* 22, suppl. (2002): 241, reprinted from *Black Music Research Journal* 16, no. 1 (1996).
+[^9]: All timestamps follow Goldford’s timings of the assigned YouTube upload, which may differ from the markers of the 1968 Columbia album release. Meehan places the hornless twelfth chorus and the horns’ return in the thirteenth at 6:32 and 7:08; in this upload the same moments fall at 6:30 and 7:05, an offset of about two to three seconds. Norman Lawrence Meehan, “Creativity in Jazz” (PhD diss., Victoria University of Wellington, 2014), 162n512.
+[^10]: Students can use the Mermaid Live Editor to create their own interaction-analysis graphs like these and then include them in their papers. See *Mermaid Live Editor*, accessed October 11, 2026, <https://mermaid.live/>; and “Flowcharts – Basic Syntax,” Mermaid, accessed October 11, 2026, <https://mermaid.js.org/syntax/flowchart.html>.
+[^11]: Meehan’s “strong fill” midway through m. 12 of chorus 5, followed by renewed ensemble intensity, may be the same event as the loud rimshot heard at 2:45 (chorus 5, m. 11); the two accounts place it a measure apart. Meehan, “Creativity in Jazz,” 162.
+
 ## Graphs
+
+Each diagram below is written in Mermaid.[^10]
 
 ### Participation and changing melodic delivery
 
@@ -37,7 +63,7 @@ flowchart TD
  F --> G["6:30 Both horns absent; piano and drums foregrounded"]
  G --> H["7:05 Horns return together"]
  H --> I["7:40 No new horn statement; rhythm-section fade"]
- R["Sixteen-bar form: m. 1 through m. 16"] --> S["Return to m. 1 at each complete cycle"]
+ R["Sixteen-bar form: m. 1 through m. 16"] --> S["Return to m. 1 at each complete chorus"]
  S --> R
  R --- C
  P["Piano and drum interventions change the ensemble context"] -. "Proposed influence on subsequent delivery" .-> C
@@ -50,16 +76,16 @@ flowchart TD
 
 Scale: passage
 
-The chronological path compares closing passages, while the choice node identifies the recurring opportunity: the ending of the melody can coexist with a new accompaniment gesture. Only the cycle-3-to-4 passage currently supplies a proposed cross-boundary imitation; successive closing gestures are not automatically responses to one another.
+The chronological path compares closing passages, while the choice node identifies the recurring opportunity: the ending of the melody can coexist with a new accompaniment gesture. Only the chorus-3-to-4 passage currently supplies a proposed cross-boundary imitation; successive closing gestures are not automatically responses to one another.
 
 Sources: Goldford observations at 0:28, 1:03, 1:37 and 2:17.
 
 ```mermaid
 flowchart TD
- A["0:28 Cycle 1: ride comments on sustained ending"] --> B["1:03 Cycle 2: dotted-quarter piano chords"]
- B --> C["1:37 Cycle 3: long-short cymbal gesture"]
- C --> D["Into cycle 4: similarly paired piano chords"]
- D --> E["2:17 Cycle 4: trumpet growl and piano semitone dyads"]
+ A["0:28 Chorus 1: ride comments on sustained ending"] --> B["1:03 Chorus 2: dotted-quarter piano chords"]
+ B --> C["1:37 Chorus 3: long-short cymbal gesture"]
+ C --> D["Into chorus 4: similarly paired piano chords"]
+ D --> E["2:17 Chorus 4: trumpet growl and piano semitone dyads"]
  C -. "Proposed rhythmic uptake" .-> D
  Q{"In the closing space: sustain, punctuate or introduce a figure?"} --> A
  Q --> B
@@ -72,20 +98,20 @@ flowchart TD
 
 Scale: passage
 
-This passage preserves the sequence without turning temporal proximity into proven causation. Two specific variables are visible: alignment of the horn parts and presence of the melodic layer. Meehan supports intensified drumming in cycles 9–11 and the absence/return in cycles 12–13, but not every fine-grained gesture or proposed response here.
+This passage preserves the sequence without turning temporal proximity into proven causation. Two specific variables are visible: alignment of the horn parts and presence of the melodic layer. Meehan supports intensified drumming in choruses 9–11 and the absence/return in choruses 12–13, but not every fine-grained gesture or proposed response here.
 
 Sources: Goldford observations; Meehan pp. 162–163; Pasceri title-track paragraph.
 
 ```mermaid
 flowchart TD
- A["4:44 Cycle 9: louder horns and new piano figure"] --> B["5:01 Snare interjects into melody"]
+ A["4:44 Chorus 9: louder horns and new piano figure"] --> B["5:01 Snare interjects into melody"]
  B --> C["5:13 Repeated snare takes foreground"]
- C --> D["5:18 Drum roll enters cycle 10"]
+ C --> D["5:18 Drum roll enters chorus 10"]
  D --> E{"Horns: align or offset melodic entrances?"}
  E --> F["Davis leads; Shorter follows about 1–1.5 beats later"]
- F --> G["5:54 Cycle 11: trills, glissandos and cymbal intrusions"]
+ F --> G["5:54 Chorus 11: trills, glissandos and cymbal intrusions"]
  G --> H["6:21 Softer trilling and ensemble diminuendo"]
- H --> I{"Cycle 12: restate or withhold melody?"}
+ H --> I{"Chorus 12: restate or withhold melody?"}
  I --> J["6:30 Horns withhold; rhythm section continues"]
  J --> K["7:05 Horns return together"]
  D -. "Influence on horn alignment unverified" .-> F
@@ -96,7 +122,7 @@ flowchart TD
 
 Scale: local
 
-This is the strongest current example of a proposed recursive exchange: piano introduces material, drums adopt and transform it, and drum punctuation is followed by changed horn delivery. The dashed return represents a renewed input to subsequent drum choices, not a claim that time runs backward or that a further response has already been identified. Hearing the rimshot as reassurance is Goldford’s interpretation.
+This is the strongest current example of a proposed recursive exchange: piano introduces material, drums adopt and transform it, and drum punctuation is followed by changed horn delivery. The quarter-note triplets form a brief polymetric layer: continual, regular durations set against the prevailing grid for no more than a few bars. Fleeting as such layers are, they show how other metrical groupings within the existing grid can be expressive and offer ideas that others take up in turn. The dashed return represents a renewed input to subsequent drum choices, not a claim that time runs backward or that a further response has already been identified. Hearing the rimshot as reassurance is Goldford’s interpretation.
 
 Sources: Goldford observations at 2:28, 2:33, 2:36 and 2:45.
 
@@ -130,15 +156,15 @@ flowchart TD
  B -. "Proposed timbral-to-harmonic response" .-> D
  T["Williams mixes straight and swung eighths"] --- B
  T --- D
- D --> E["Changed ensemble context at the next cycle"]
+ D --> E["Changed ensemble context at the next chorus"]
  E -. "Input to subsequent horn and piano choices" .-> C
 ```
 
-### Cycle 5, mm. 9–12 • Extension, withdrawal and renewed intensity
+### Chorus 5, mm. 9–12 • Extension, withdrawal and renewed intensity
 
 Scale: local
 
-Meehan explicitly links the sustained horn note with piano withdrawal and reduced drum dynamics. The local graph preserves concurrent piano and drum actions rather than making them mutually exclusive. Exact YouTube times remain pending. This m. 12 fill must not be merged with Goldford’s 2:45 rimshot at m. 11.
+Meehan explicitly links the sustained horn note with piano withdrawal and reduced drum dynamics. The local graph preserves concurrent piano and drum actions rather than making them mutually exclusive. Exact YouTube times remain pending. This m. 12 fill may be the same event as Goldford’s 2:45 rimshot at m. 11.
 
 Sources: Meehan p. 162. YouTube timestamps pending for m. 9 and mid-m. 12.
 
@@ -162,77 +188,61 @@ flowchart TD
 
 | Time | Position | Event | Relationship | Attribution |
 |---|---|---|---|---|
-| 0:00 | Cycle 1, m. 1 | Shorter presents the melody without Davis. | Initial single-horn presentation. | Goldford; Meehan p. 162 n. 512 |
-| 0:28 | Cycle 1, m. 13 | Ride-cymbal interjections against the final sustained A3. | Closing four bars become an interaction site; preparation of later textures is an interpretation. | Goldford |
-| 0:54 | Cycle 2, m. 9; measure discrepancy pending | Davis joins Shorter; ride-bell attacks accompany the entrance. | Brighter drum timbre coincides with thickened horn texture. Visual anticipation by Williams is unverified. | Goldford; Meehan p. 162 n. 512 |
-| 1:03 | Cycle 2, m. 13 onward | Piano chords at dotted-quarter intervals; drum punctuation in the final bar. | Cross-beat grouping across the closing passage; possible coordination of punctuation. | Goldford |
-| 1:12 | Cycle 3, start | Cycle boundary. | Anchor for the following events. | Goldford |
-| 1:25 | Cycle 3, m. 7 | Piano durations span two eighth-note-triplet units; accented repeated E-flats. | A rhythmic layer against the prevailing pulse. | Goldford |
-| Pending | Cycle 3, approaching mm. 9–16 | Hancock animates the accompaniment; Williams subsequently takes up its dancing quality. | Meehan explicitly interprets this as uptake. Do not equate it automatically with the 1:25 event. | Meehan p. 162 |
-| 1:37 | Cycle 3 closing passage; exact measure pending | Long–short accented, ringing ride-cymbal scrape; similar paired piano chords follow into cycle 4. | Proposed drum-to-piano imitation crosses the cycle boundary. | Goldford |
-| 1:48 | Cycle 4, start | Cycle boundary. | Anchor; cymbal gesture from preceding cycle continues. | Goldford |
-| 2:10 | Cycle 4, m. 11 | Two piano chords in the melodic rest; blues-like flat-13 voicing over the identified D7-sharp9/B-flat. | Piano introduces a blues-associated color in the melodic gap; voicing needs transcription. | Goldford |
-| 2:17 | Cycle 4, m. 14 and following | Davis gives the last note a downward growling glissando; piano follows with C–C-sharp, then F–E dyads. Drums mix swung and straight eighths. | Proposed transfer from vocal trumpet inflection to piano semitone dissonance; final A7 alteration unresolved. | Goldford |
-| 2:24 | Cycle 5, start | Cycle boundary. | Anchor for triplet exchange and literature events. | Goldford |
-| 2:28 | Cycle 5, m. 3 | Ascending quarter-note triplets in piano. | Hancock introduces the rhythmic material taken up below. | Goldford |
-| 2:33 | Cycle 5, m. 5 | Quarter-note triplets on toms. | Williams appears to take up the piano rhythm in a different timbre. | Goldford |
-| 2:36 | Cycle 5, m. 7 onward | Five-note spang-a-lang-like tom figure on an eighth-note-triplet grid; subsequent diminution. | Rhythmic uptake is transformed in grouping, duration and drum placement. | Goldford |
-| Pending | Cycle 5, m. 9 | Horns extend A-flat after legato delivery; Hancock lays out; Williams lowers his dynamic. | Meehan links horn extension to accompaniment withdrawal and a dynamic valley. | Meehan p. 162 |
-| 2:45 | Cycle 5, m. 11 | Loud rimshot in the melodic gap; clearer swing returns; horns deliver B-flat strongly. | Proposed drum-to-horn response. Reassurance and confidence describe an interpretation, not a verified mental state. | Goldford |
-| Pending | Cycle 5, midway through m. 12 | Williams plays a strong fill into a new chord; ensemble attacks with renewed intensity. | Meehan reports a coordinated intensification after the valley. Keep distinct from the 2:45 rimshot. | Meehan p. 162 |
-| 2:59 | Cycle 6, start | Heavier, more pointed horn attacks, without shorter durations or staccato. | Attack profile changes independently of note length; no specific literature corroboration located. | Goldford |
-| 3:34 | Cycle 7, start | Drums take greater liberties. | Specify rhythmic departures through further listening. | Goldford |
-| 4:04 | Cycle 7, approximately mm. 15–16 | Ascending chromatic piano figuration over the identified A7-flat9-flat13 turnaround. | Boundary-directed piano gesture; chord and pitches await transcription. | Goldford |
-| 4:09 | Cycle 8, start; span pending | Quieter horns, longer sustained notes and fewer intervening rests. | Changes in dynamics and spacing; exact span still open. | Goldford |
-| Pending | Cycle 8, second half | Ensemble diminuendo before the more active subsequent drum passages. | Meehan groups cycles 9–11 as intensified drum activity. | Meehan p. 163 |
-| 4:44 | Cycle 9, start | New piano figuration, louder horns and changed drum interaction. | Multiple parameters change near the cycle boundary. | Goldford |
-| 5:01 | Cycle 9, m. 9 | Repeated intrusive snare hits interject into melodic phrases. | Drums gain foreground prominence. | Goldford |
-| 5:13 | Cycle 9, m. 14 | Repeated-snare activity effectively becomes a three-bar drum solo. | Perceived drum foregrounding; not a claim that all other instruments stop. | Goldford |
-| 5:18 | Cycle 10, start | Drum roll into the cycle; Davis leads, Shorter follows roughly 1–1.5 quarter-note beats later. | Canon-like melodic displacement; strict canon and response to the roll are unverified. | Goldford |
-| 5:54 | Cycle 11, start | Piano eighth-note trill figuration and glissandos; cymbal intrusions. | Interventions overlap or interrupt the horn melody. | Goldford; Meehan p. 163 (broader drum activity) |
-| 6:21 | Cycle 11, mm. 13–16 | Ensemble diminuendo with softer piano trilling. | Hancock as initiator is a response hypothesis. | Goldford |
-| 6:30 | Cycle 12, start | Both horns absent; simple whole-note piano chords, prominent drums and later drum roll. | Melodic withdrawal redistributes foreground activity. | Goldford; Meehan p. 162 n. 512; Pasceri title-track paragraph |
-| 7:05 | Cycle 13, start | Both horns return together, stately and authoritative; rhythms heard as adhering to notation. | Restoration of coordinated melodic delivery; comparison with a specified score remains pending. | Goldford; Meehan p. 162 n. 512 (return) |
-| 7:40 | Following boundary / possible partial cycle 14 | No new horn statement; drums and bass continue briefly into a fade. | Released-recording ending, without an invented collective stop cue. | Goldford |
+| 0:00 | Chorus 1, m. 1 | Shorter presents the melody without Davis. | Initial single-horn presentation. | Goldford; Meehan p. 162 n. 512 |
+| 0:28 | Chorus 1, m. 13 | Ride-cymbal interjections against the final sustained A3. | Closing four bars become an interaction site; preparation of later textures is an interpretation. | Goldford |
+| 0:54 | Chorus 2, m. 9 | Davis joins Shorter; ride-bell attacks accompany the entrance. | Brighter drum timbre coincides with thickened horn texture. Visual anticipation by Williams is unverified. | Goldford; Meehan p. 162 n. 512 |
+| 1:03 | Chorus 2, m. 13 onward | Piano chords at dotted-quarter intervals; drum punctuation in the final bar. | Brief polymetric layer: regular dotted-quarter durations overlay the prevailing grid across the closing passage; possible coordination of punctuation. | Goldford |
+| 1:12 | Chorus 3, start | Chorus boundary. | Anchor for the following events. | Goldford |
+| 1:25 | Chorus 3, m. 7 | Piano durations span two eighth-note-triplet units; accented repeated E-flats. | Brief polymetric layer: regular durations of two eighth-note-triplet units overlay the prevailing pulse. | Goldford |
+| Pending | Chorus 3, approaching mm. 9–16 | Hancock animates the accompaniment; Williams subsequently takes up its dancing quality. | Meehan explicitly interprets this as uptake. Do not equate it automatically with the 1:25 event. | Meehan p. 162 |
+| 1:37 | Chorus 3, m. 12 | Long–short accented, ringing ride-cymbal scrape; similar paired piano chords follow into chorus 4. | Proposed drum-to-piano imitation crosses the chorus boundary. | Goldford |
+| 1:48 | Chorus 4, start | Chorus boundary. | Anchor; cymbal gesture from preceding chorus continues. | Goldford |
+| 2:10 | Chorus 4, m. 11 | Two piano chords in the melodic rest; blues-like flat-13 voicing over the identified D7-sharp9/B-flat. | Piano introduces a blues-associated color in the melodic gap; voicing needs transcription. | Goldford |
+| 2:17 | Chorus 4, m. 14 and following | Davis gives the last note a downward growling glissando; piano follows with C–C-sharp, then F–E dyads. Drums mix swung and straight eighths. | Proposed transfer from vocal trumpet inflection to piano semitone dissonance; final chord is A7-flat9-13. | Goldford |
+| 2:24 | Chorus 5, start | Chorus boundary. | Anchor for triplet exchange and literature events. | Goldford |
+| 2:28 | Chorus 5, m. 3 | Ascending quarter-note triplets in piano. | Hancock introduces the rhythmic material taken up below. | Goldford |
+| 2:33 | Chorus 5, m. 5 | Quarter-note triplets on toms. | Williams appears to take up the piano rhythm in a different timbre. | Goldford |
+| 2:36 | Chorus 5, m. 7 onward | Five-note spang-a-lang-like tom figure on an eighth-note-triplet grid; subsequent diminution. | Rhythmic uptake is transformed in grouping, duration and drum placement. | Goldford |
+| Pending | Chorus 5, m. 9 | Horns extend A-flat after legato delivery; Hancock lays out; Williams lowers his dynamic. | Meehan links horn extension to accompaniment withdrawal and a dynamic valley. | Meehan p. 162 |
+| 2:45 | Chorus 5, m. 11 | Loud rimshot in the melodic gap; clearer swing returns; horns deliver B-flat strongly. | Proposed drum-to-horn response. Reassurance and confidence describe an interpretation, not a verified mental state. | Goldford |
+| Pending | Chorus 5, midway through m. 12 | Williams plays a strong fill into a new chord; ensemble attacks with renewed intensity. | Meehan reports a coordinated intensification after the valley. Possibly the same event as the 2:45 rimshot at m. 11.[^11] | Meehan p. 162 |
+| 2:59 | Chorus 6, start | Heavier, more pointed horn attacks, without shorter durations or staccato. | Attack profile changes independently of note length; no specific literature corroboration located. | Goldford |
+| 3:34 | Chorus 7, start | Drums take greater liberties. | Specify rhythmic departures through further listening. | Goldford |
+| 4:04 | Chorus 7, approximately mm. 15–16 | Ascending chromatic piano figuration over the identified A7-flat9-13 turnaround. | Boundary-directed piano gesture; pitches await transcription. | Goldford |
+| 4:09 | Chorus 8, start; span pending | Quieter horns, longer sustained notes and fewer intervening rests. | Changes in dynamics and spacing; exact span still open. | Goldford |
+| Pending | Chorus 8, second half | Ensemble diminuendo before the more active subsequent drum passages. | Meehan groups choruses 9–11 as intensified drum activity. | Meehan p. 163 |
+| 4:44 | Chorus 9, start | New piano figuration, louder horns and changed drum interaction. | Multiple parameters change near the chorus boundary. | Goldford |
+| 5:01 | Chorus 9, m. 9 | Repeated intrusive snare hits interject into melodic phrases. | Drums gain foreground prominence. | Goldford |
+| 5:13 | Chorus 9, m. 14 | Repeated-snare activity effectively becomes a three-bar drum solo. | Perceived drum foregrounding; not a claim that all other instruments stop. | Goldford |
+| 5:18 | Chorus 10, start | Drum roll into the chorus; Davis leads, Shorter follows roughly 1–1.5 quarter-note beats later. | Canon-like melodic displacement; strict canon and response to the roll are unverified. | Goldford |
+| 5:54 | Chorus 11, start | Piano eighth-note trill figuration and glissandos; cymbal intrusions. | Interventions overlap or interrupt the horn melody. | Goldford; Meehan p. 163 (broader drum activity) |
+| 6:21 | Chorus 11, mm. 13–16 | Ensemble diminuendo with softer piano trilling. | Hancock as initiator is a response hypothesis. | Goldford |
+| 6:30 | Chorus 12, start | Both horns absent; simple whole-note piano chords, prominent drums and later drum roll. | Melodic withdrawal redistributes foreground activity. | Goldford; Meehan p. 162 n. 512; Pasceri title-track paragraph |
+| 7:05 | Chorus 13, start | Both horns return together, stately and authoritative; rhythms heard as adhering to notation. | Restoration of coordinated melodic delivery; comparison with a specified score remains pending. | Goldford; Meehan p. 162 n. 512 (return) |
+| 7:40 | After chorus 13; vamp out | Vamp out: no new horn statement; time continues in drums and bass briefly into a fade. | Released-recording ending, without an invented collective stop cue. Time continues, but nothing in any part suggests that a new chorus has begun. | Goldford |
 
-## Open questions
+## Bibliography
 
-- Davis’s entrance: earlier notes give cycle 2, m. 9; a later description mentions preparation at m. 13. The 0:54 timestamp is retained.
+Berliner, Paul F. *Thinking in Jazz: The Infinite Art of Improvisation*. Chicago: University of Chicago Press, 1994.
 
-- The exact starting measure of the 1:37 cymbal gesture remains open.
+Borgo, David. *Sync or Swarm: Improvising Music in a Complex Age*. New York: Continuum, 2005.
 
-- Goldford’s descriptions alternate between flat-13 and sharp-13 on the final A7 chord; retain the ambiguity until checked.
+Goldford, Louis. Listening observations on the Miles Davis Quintet’s “Nefertiti.” Unpublished notes, October 11, 2026.
 
-- Dotted-quarter grouping and triplet-based rhythm do not automatically establish a sustained polymeter.
+Lewis, George E. “Improvised Music after 1950: Afrological and Eurological Perspectives.” *Black Music Research Journal* 22, suppl. (2002): 215–46. Originally published in *Black Music Research Journal* 16, no. 1 (1996): 91–122.
 
-- The cycle-5 rimshot at 2:45, m. 11, and Meehan’s strong fill midway through m. 12 are separate events.
+Meehan, Norman Lawrence. “Creativity in Jazz.” PhD diss., Victoria University of Wellington, 2014.
 
-- Meehan’s 6:32–7:08 timing is not used for navigation: this upload’s cycle-12 and cycle-13 anchors are 6:30 and 7:05.
+Mermaid. “Flowcharts – Basic Syntax.” Accessed October 11, 2026. <https://mermaid.js.org/syntax/flowchart.html>.
 
-- The 7:40 boundary may begin a partial fourteenth traversal; it is not a fourteenth horn statement.
+———. *Mermaid Live Editor*. Accessed October 11, 2026. <https://mermaid.live/>.
 
-## What each source contributes
+Monson, Ingrid. *Saying Something: Jazz Improvisation and Interaction*. Chicago: University of Chicago Press, 1996.
 
-Interaction analysis supplements pitch, harmony and phrase analysis. The latter explain why returning to the beginning can sound continuous; the event ledger explains how each traversal changes.
+Pasceri, Carlo. “Nefertiti, l’ultimo capolavoro del Davis acustico.” *Carlo Pasceri* (blog), n.d. <https://www.carlopasceri.it/blog/nefertiti-lultimo-capolavoro-del-davis-acustico>.
 
-- Louis Goldford. Listening observations, October 11, 2026. Source of the YouTube timestamp grid and detailed descriptions of articulation, rhythmic uptake, horn displacement, timbre and piano gestures. Proposed hearing, anticipation, leadership and reassurance are interpretations to test.
+Smither, William. “Guide-Tone Space: Navigating Voice-Leading Syntax in Tonal Jazz.” *Music Theory Online* 25, no. 2 (2019). <https://mtosmt.org/issues/mto.19.25.2/mto.19.25.2.smither.php>.
 
-- Norman Lawrence Meehan. Creativity in Jazz (2014), pp. 162–163; n. 512. Cycle 3: animated piano accompaniment and proposed drum uptake. Cycle 5: extended A-flat, piano withdrawal, softer drums, and mid-m. 12 fill with renewed ensemble intensity. Cycle 8: second-half diminuendo. Cycles 9–11: active drumming. Cycle 12: horn absence; cycle 13: return. References here use the printed pagination of the supplied thesis, not PDF page numbers.
+Waters, Keith. *The Studio Recordings of the Miles Davis Quintet, 1965–68*. New York: Oxford University Press, 2011.
 
-- Keith Waters. The Studio Recordings of the Miles Davis Quintet, 1965–68 (Oxford University Press, 2011), title-track discussion, pp. 217–219; supplied reflowed chapter, PDF pp. 8–10. Sixteen-bar form, flexible horn delivery and melodic circularity. Phrase openings at m. 9, m. 11 and the next m. 1 trace A-flat–B-flat–C. This explains continuity across the boundary; it does not supply the cycle-6 heavier-attack observation.
-
-- Keith Waters, Henry Martin, Steve Larson and Steven Strunk. “Circular Thinking,” Journal of Jazz Studies 11/1 (2016), 105–120. Waters’s discussion, pp. 113–115, explains phrase overlap and circularity. Strunk’s discussion, pp. 115–117, offers a Schenkerian account involving voice exchange and interruption. These concern compositional structure, rather than documenting instrumental responses at timestamps. Published lead-sheet ending variants are not treated as transcriptions of this performance. Journal search ↗
-
-- William Smither. “Guide-Tone Space: Navigating Voice-Leading Syntax in Tonal Jazz,” Music Theory Online 25/2 (2019), §§2.12–2.14, Examples 14–15; n. 29. Guide-tone continuity provides a harmonic account of circularity. The analysis assumes major sevenths on certain inverted triads; it is not a cycle-by-cycle transcription of Hancock’s voicings. Read article ↗
-
-- Carlo Pasceri. “Nefertiti, l’ultimo capolavoro del Davis acustico,” title-track paragraph; supplied PDF pp. 1–2. Notes the tenor-first presentation, trumpet entry, developing drum activity and a hornless cycle at approximately 6:30 followed by the final melodic return. Timestamps in his discussion of other album tracks are excluded. Read essay ↗
-
-- Ingrid Monson. Saying Something: Jazz Improvisation and Interaction (University of Chicago Press). Methodological context: ensemble interaction, including rhythm-section creativity. The publisher’s description supports this framing, but no chapter-level direct quotation or claim about a Monson analysis of “Nefertiti” is made here. Publisher overview and contents ↗
-
-[Journal search ↗](https://jjs.libraries.rutgers.edu/index.php/jjs/search/search?query=Circular%20Thinking)
-
-[Read article ↗](https://mtosmt.org/issues/mto.19.25.2/mto.19.25.2.smither.php)
-
-[Read essay ↗](https://www.carlopasceri.it/blog/nefertiti-lultimo-capolavoro-del-davis-acustico)
-
-[Publisher overview and contents ↗](https://press.uchicago.edu/ucp/books/book/chicago/S/bo3621755.html)
+Waters, Keith, Henry Martin, Steve Larson, and Steven Strunk. “Circular Thinking.” *Journal of Jazz Studies* 11, no. 1 (2016): 105–20.

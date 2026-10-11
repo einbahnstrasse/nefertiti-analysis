@@ -1,27 +1,992 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Nefertiti · Interaction at three scales</title><style>
-:root{--paper:#f7f4ed;--ink:#202a2d;--muted:#626d6e;--teal:#17695e;--rust:#b34c38;--line:#d8ded8}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.65 system-ui,sans-serif}a{color:var(--teal)}button,input,select{font:inherit}button{cursor:pointer}header{padding:60px max(24px,calc((100vw - 1180px)/2));background:#183b3a;color:#fff}header .eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#b8d7cb}h1{font:clamp(48px,7vw,88px)/1.05 Georgia,serif;margin:18px 0}header p{max-width:760px;color:#d4e1db}header a{color:#cce8a9}nav{position:sticky;top:0;z-index:5;background:#f7f4edf2;border-bottom:1px solid var(--line);padding:14px 24px;display:flex;justify-content:center;gap:26px;flex-wrap:wrap;backdrop-filter:blur(12px)}nav a{text-decoration:none;font-size:14px}main{max-width:1180px;margin:auto;padding:36px 24px}section{margin:35px 0 65px;scroll-margin-top:90px}h2{font:36px/1.2 Georgia,serif}h3{font:26px/1.3 Georgia,serif}.intro{max-width:830px}.note{border-left:3px solid var(--teal);padding:12px 20px;background:#edf1e9}.legend{display:flex;gap:24px;flex-wrap:wrap;font-size:14px;color:var(--muted)}.legend b{color:var(--ink)}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:24px 0}.tabs button,.copy,.download{background:transparent;border:1px solid #9aaba2;border-radius:5px;padding:8px 16px;color:var(--ink)}.tabs button[aria-pressed=true]{background:var(--teal);color:white;border-color:var(--teal)}article{background:#fffdf8;border:1px solid var(--line);border-radius:9px;margin:22px 0;padding:25px}.kicker{font-size:12px;text-transform:uppercase;letter-spacing:.13em;color:var(--teal)}.diagram{overflow:auto;padding:20px 0;background:#fffdf8;min-height:100px}.video-node{cursor:pointer}.video-node:hover .node rect,.video-node:focus .node rect{stroke:#b34c38;stroke-width:3px}.video-node:focus{outline:none}.diagram svg{display:block;margin:auto;max-width:100%;height:auto;max-height:1100px}.prose{max-width:890px}.source{font-size:14px;color:var(--muted)}details{border-top:1px solid var(--line);padding-top:13px}summary{cursor:pointer;font-size:14px;font-weight:600}pre{white-space:pre;overflow:auto;background:#182e30;color:#e2eee7;padding:20px;border-radius:5px;font-size:13px;line-height:1.6}.copy{float:right;margin:12px 0;font-size:13px}.filters{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0}input,select{padding:10px;border:1px solid var(--line);background:white;border-radius:4px}input{flex:1;min-width:230px}.tablewrap{overflow:auto}table{border-collapse:collapse;width:100%;font-size:14px}th{text-align:left;background:#e6ece4;position:sticky;top:0}th,td{padding:13px;border-bottom:1px solid var(--line);vertical-align:top}td:first-child{white-space:nowrap}td:nth-child(3){min-width:260px}td:nth-child(4){min-width:260px}.badge{display:inline-block;font-size:11px;border:1px solid #a5b4a8;padding:1px 6px;border-radius:3px}.refs li{margin:18px 0}.refs{max-width:930px}footer{border-top:1px solid var(--line);padding:25px;color:var(--muted);font-size:13px}.error{color:#9b332b}button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #b34c38;outline-offset:4px}@media(max-width:650px){header{padding:36px 24px}article{padding:16px}nav{gap:15px}h2{font-size:29px}}
-</style></head><body>
-<header><div class="eyebrow">A listening study · Miles Davis Quintet</div><h1>Nefertiti</h1><p>Interaction at three scales: how rhythmic ideas, timbres and melodic participation change through a recurring sixteen-bar form.</p><p><a href="https://youtu.be/F2zUua79c6U" target="_blank" rel="noopener">Open the assigned recording ↗</a> · All timed links use this YouTube upload.</p></header>
-<nav aria-label="Page sections"><a href="#approach">Approach</a><a href="#graphs">Graphs & code</a><a href="#observations">Observation ledger</a><a href="#sources">Sources</a></nav>
-<main><section id="approach"><h2>Three scales of attention</h2><div class="intro"><p>Keep three zoom levels, without assuming a Schenkerian hierarchy. <strong>Performance</strong> examines changes in participation and melodic delivery; <strong>passage</strong> follows developments across cycle boundaries; <strong>local exchange</strong> examines a gesture, its proposed uptake and its transformation.</p><p>Ingrid Monson’s <em>Saying Something</em> places ensemble interaction and rhythm-section creativity at the center of improvisation analysis. That orientation motivates this study; it is not evidence that Monson analyzed this recording. The present summary is grounded in the publisher’s account and table of contents, including “Grooving and Feeling” and “Interaction, Feeling, and Musical Analysis,” rather than an unverified quotation from those chapters. <a href="#ref-monson">[Monson]</a></p><p>Here, <strong>recursion</strong> means that an action changes the ensemble context, which becomes an input to subsequent musical choices. Repeating sixteen bars is <strong>formal recurrence</strong>; it does not by itself prove interpersonal feedback. A response may preserve, intensify, transform or withdraw material.</p></div><div class="note"><strong>Recording scope.</strong> The released studio title track, recorded in 1967 and issued on the 1968 Columbia album. The graphs contain performance events only. Times and detailed listening descriptions are Louis Goldford’s; literature observations are separately attributed. This draft does not claim an independent audio transcription.</div><p class="legend"><span><b>Solid arrow</b> · reported sequence / structural relation</span><span><b>Dashed arrow</b> · proposed response / feedback</span><span><b style="color:var(--rust)">Red return</b> · formal recurrence</span><span><b>Diamond</b> · specific performance choice inferred from action</span></p><p class="source">Untaken alternatives inside diamonds are analytical contrasts, not additional recorded events. A dashed backward connection means a renewed input to subsequent actions, not a return to an earlier timestamp.</p></section>
-<section id="graphs"><h2>Explore the graphs</h2><p>Choose a scale. Click a timestamped node to open the recording in a new tab at that point. Every diagram includes its Mermaid source for inspection, copying and revision. Nodes with pending times remain unlinked.</p><div class="tabs" role="group" aria-label="Analytical scale"><button data-scale="all" aria-pressed="true">All scales</button><button data-scale="performance" aria-pressed="false">01 · Performance</button><button data-scale="passage" aria-pressed="false">02 · Passage</button><button data-scale="local" aria-pressed="false">03 · Local exchange</button></div><div id="graphlist"></div><a class="download" href="nefertiti-graphs.mmd" download>Download all Mermaid code</a></section>
-<section id="observations"><h2>Observation ledger</h2><p>One timeline, multiple sources. Timestamp links open the assigned video at that point. Literature-only events retain their cycle and measure while their exact YouTube times remain pending.</p><div class="filters"><input id="search" type="search" aria-label="Search observations" placeholder="Search gesture, musician, cycle or source…"><select id="sourcefilter" aria-label="Filter source"><option value="all">All sources</option><option value="Goldford">Goldford observations</option><option value="Meehan">Meehan-linked events</option><option value="pending">Times pending</option></select></div><p id="count" class="source" aria-live="polite"></p><div class="tablewrap"><table><thead><tr><th>Time</th><th>Position</th><th>Event</th><th>Relationship to investigate</th><th>Attribution</th></tr></thead><tbody id="ledger"></tbody></table></div><p><a href="observations.json" download>Download observation data</a></p><details><summary>Open questions before transcription</summary><ul><li>Davis’s entrance: earlier notes give cycle 2, m. 9; a later description mentions preparation at m. 13. The 0:54 timestamp is retained.</li><li>The exact starting measure of the 1:37 cymbal gesture remains open.</li><li>Goldford’s descriptions alternate between flat-13 and sharp-13 on the final A7 chord; retain the ambiguity until checked.</li><li>Dotted-quarter grouping and triplet-based rhythm do not automatically establish a sustained polymeter.</li><li>The cycle-5 rimshot at 2:45, m. 11, and Meehan’s strong fill midway through m. 12 are separate events.</li><li>Meehan’s 6:32–7:08 timing is not used for navigation: this upload’s cycle-12 and cycle-13 anchors are 6:30 and 7:05.</li><li>The 7:40 boundary may begin a partial fourteenth traversal; it is not a fourteenth horn statement.</li></ul></details></section>
-<section id="sources"><h2>What each source contributes</h2><p class="intro">Interaction analysis supplements pitch, harmony and phrase analysis. The latter explain why returning to the beginning can sound continuous; the event ledger explains how each traversal changes.</p><ol class="refs">
-<li id="ref-goldford"><strong>Louis Goldford. Listening observations, October 11, 2026.</strong> Source of the YouTube timestamp grid and detailed descriptions of articulation, rhythmic uptake, horn displacement, timbre and piano gestures. Proposed hearing, anticipation, leadership and reassurance are interpretations to test.</li>
-<li id="ref-meehan"><strong>Norman Lawrence Meehan. <em>Creativity in Jazz</em> (2014), pp. 162–163; n. 512.</strong> Cycle 3: animated piano accompaniment and proposed drum uptake. Cycle 5: extended A-flat, piano withdrawal, softer drums, and mid-m. 12 fill with renewed ensemble intensity. Cycle 8: second-half diminuendo. Cycles 9–11: active drumming. Cycle 12: horn absence; cycle 13: return. References here use the printed pagination of the supplied thesis, not PDF page numbers.</li>
-<li id="ref-waters"><strong>Keith Waters. <em>The Studio Recordings of the Miles Davis Quintet, 1965–68</em> (Oxford University Press, 2011), title-track discussion, pp. 217–219; supplied reflowed chapter, PDF pp. 8–10.</strong> Sixteen-bar form, flexible horn delivery and melodic circularity. Phrase openings at m. 9, m. 11 and the next m. 1 trace A-flat–B-flat–C. This explains continuity across the boundary; it does not supply the cycle-6 heavier-attack observation.</li>
-<li id="ref-circular"><strong>Keith Waters, Henry Martin, Steve Larson and Steven Strunk. “Circular Thinking,” <em>Journal of Jazz Studies</em> 11/1 (2016), 105–120.</strong> Waters’s discussion, pp. 113–115, explains phrase overlap and circularity. Strunk’s discussion, pp. 115–117, offers a Schenkerian account involving voice exchange and interruption. These concern compositional structure, rather than documenting instrumental responses at timestamps. Published lead-sheet ending variants are not treated as transcriptions of this performance. <a href="https://jjs.libraries.rutgers.edu/index.php/jjs/search/search?query=Circular%20Thinking" target="_blank" rel="noopener">Journal search ↗</a></li>
-<li id="ref-smither"><strong>William Smither. “Guide-Tone Space: Navigating Voice-Leading Syntax in Tonal Jazz,” <em>Music Theory Online</em> 25/2 (2019), §§2.12–2.14, Examples 14–15; n. 29.</strong> Guide-tone continuity provides a harmonic account of circularity. The analysis assumes major sevenths on certain inverted triads; it is not a cycle-by-cycle transcription of Hancock’s voicings. <a href="https://mtosmt.org/issues/mto.19.25.2/mto.19.25.2.smither.php" target="_blank" rel="noopener">Read article ↗</a></li>
-<li id="ref-pasceri"><strong>Carlo Pasceri. “Nefertiti, l’ultimo capolavoro del Davis acustico,” title-track paragraph; supplied PDF pp. 1–2.</strong> Notes the tenor-first presentation, trumpet entry, developing drum activity and a hornless cycle at approximately 6:30 followed by the final melodic return. Timestamps in his discussion of other album tracks are excluded. <a href="https://www.carlopasceri.it/blog/nefertiti-lultimo-capolavoro-del-davis-acustico" target="_blank" rel="noopener">Read essay ↗</a></li>
-<li id="ref-monson"><strong>Ingrid Monson. <em>Saying Something: Jazz Improvisation and Interaction</em> (University of Chicago Press).</strong> Methodological context: ensemble interaction, including rhythm-section creativity. The publisher’s description supports this framing, but no chapter-level direct quotation or claim about a Monson analysis of “Nefertiti” is made here. <a href="https://press.uchicago.edu/ucp/books/book/chicago/S/bo3621755.html" target="_blank" rel="noopener">Publisher overview and contents ↗</a></li>
-</ol></section></main><footer>Working analytical draft · Designed for close listening, source comparison and revision. Record-specific claims and hypotheses remain distinguishable.</footer><script src="mermaid.min.js"></script><script>
-const graphs=[{"id": "overview", "scale": "performance", "title": "Participation and changing melodic delivery", "code": "flowchart TD\n A[\"0:00 Shorter alone\"] --> B[\"0:54 Davis joins; ride bell brightens texture\"]\n B --> C{\"Horns: preserve or change delivery?\"}\n C --> D[\"2:59 Heavier horn attacks\"]\n D --> D2[\"4:09 Sustained quiet horn delivery\"]\n D2 --> E[\"5:18 Davis leads; Shorter delays the same melody\"]\n E --> F{\"Next melodic traversal: play or leave space?\"}\n F --> G[\"6:30 Both horns absent; piano and drums foregrounded\"]\n G --> H[\"7:05 Horns return together\"]\n H --> I[\"7:40 No new horn statement; rhythm-section fade\"]\n R[\"Sixteen-bar form: m. 1 through m. 16\"] --> S[\"Return to m. 1 at each complete cycle\"]\n S --> R\n R --- C\n P[\"Piano and drum interventions change the ensemble context\"] -. \"Proposed influence on subsequent delivery\" .-> C\n D -. \"Changed horn sound informs accompaniment?\" .-> P\n E -. \"Displaced melody informs accompaniment?\" .-> P\n linkStyle 10 stroke:#b34c38,stroke-width:3px\n", "prose": "This overview separates formal repetition from interpersonal recursion. The red return closes the sixteen-bar loop. Dashed connections propose that a changed horn delivery affects accompaniment and that the resulting context informs later delivery. They summarize an analytical possibility; the local graphs locate specific supporting events. Diamonds name performance variables, not documented internal deliberations.", "sources": "Goldford observations; Meehan pp. 162–163, especially n. 512.", "links": {"A": {"time": "0:00", "seconds": 0, "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=0s", "label": "0:00 Shorter alone"}, "B": {"time": "0:54", "seconds": 54, "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=54s", "label": "0:54 Davis joins; ride bell brightens texture"}, "D": {"time": "2:59", "seconds": 179, "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=179s", "label": "2:59 Heavier horn attacks"}, "D2": {"time": "4:09", "seconds": 249, "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=249s", "label": "4:09 Sustained quiet horn delivery"}, "E": {"time": "5:18", "seconds": 318, "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=318s", "label": "5:18 Davis leads; Shorter delays the same melody"}, "G": {"time": "6:30", "seconds": 390, "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=390s", "label": "6:30 Both horns absent; piano and drums foregrounded"}, "H": {"time": "7:05", "seconds": 425, "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=425s", "label": "7:05 Horns return together"}, "I": {"time": "7:40", "seconds": 460, "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=460s", "label": "7:40 No new horn statement; rhythm-section fade"}}}, {"id": "boundaries", "scale": "passage", "title": "Closing passages become places to redirect the ensemble", "code": "flowchart TD\n A[\"0:28 Cycle 1: ride comments on sustained ending\"] --> B[\"1:03 Cycle 2: dotted-quarter piano chords\"]\n B --> C[\"1:37 Cycle 3: long-short cymbal gesture\"]\n C --> D[\"Into cycle 4: similarly paired piano chords\"]\n D --> E[\"2:17 Cycle 4: trumpet growl and piano semitone dyads\"]\n C -. \"Proposed rhythmic uptake\" .-> D\n Q{\"In the closing space: sustain, punctuate or introduce a figure?\"} --> A\n Q --> B\n Q --> C\n Q --> E\n E -. \"Different material available at the next boundary\" .-> Q\n", "prose": "The chronological path compares closing passages, while the choice node identifies the recurring opportunity: the ending of the melody can coexist with a new accompaniment gesture. Only the cycle-3-to-4 passage currently supplies a proposed cross-boundary imitation; successive closing gestures are not automatically responses to one another.", "sources": "Goldford observations at 0:28, 1:03, 1:37 and 2:17.", "links": {"A": {"time": "0:28", "seconds": 28, "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=28s", "label": "0:28 Cycle 1: ride comments on sustained ending"}, "B": {"time": "1:03", "seconds": 63, "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=63s", "label": "1:03 Cycle 2: dotted-quarter piano chords"}, "C": {"time": "1:37", "seconds": 97, "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=97s", "label": "1:37 Cycle 3: long-short cymbal gesture"}, "E": {"time": "2:17", "seconds": 137, "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=137s", "label": "2:17 Cycle 4: trumpet growl and piano semitone dyads"}}}, {"id": "late", "scale": "passage", "title": "From drum interjection to melodic displacement and withdrawal", "code": "flowchart TD\n A[\"4:44 Cycle 9: louder horns and new piano figure\"] --> B[\"5:01 Snare interjects into melody\"]\n B --> C[\"5:13 Repeated snare takes foreground\"]\n C --> D[\"5:18 Drum roll enters cycle 10\"]\n D --> E{\"Horns: align or offset melodic entrances?\"}\n E --> F[\"Davis leads; Shorter follows about 1–1.5 beats later\"]\n F --> G[\"5:54 Cycle 11: trills, glissandos and cymbal intrusions\"]\n G --> H[\"6:21 Softer trilling and ensemble diminuendo\"]\n H --> I{\"Cycle 12: restate or withhold melody?\"}\n I --> J[\"6:30 Horns withhold; rhythm section continues\"]\n J --> K[\"7:05 Horns return together\"]\n D -. \"Influence on horn alignment unverified\" .-> F\n H -. \"Influence on withdrawal unverified\" .-> J\n", "prose": "This passage preserves the sequence without turning temporal proximity into proven causation. Two specific variables are visible: alignment of the horn parts and presence of the melodic layer. Meehan supports intensified drumming in cycles 9–11 and the absence/return in cycles 12–13, but not every fine-grained gesture or proposed response here.", "sources": "Goldford observations; Meehan pp. 162–163; Pasceri title-track paragraph.", "links": {"A": {"time": "4:44", "seconds": 284, "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=284s", "label": "4:44 Cycle 9: louder horns and new piano figure"}, "B": {"time": "5:01", "seconds": 301, "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=301s", "label": "5:01 Snare interjects into melody"}, "C": {"time": "5:13", "seconds": 313, "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=313s", "label": "5:13 Repeated snare takes foreground"}, "D": {"time": "5:18", "seconds": 318, "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=318s", "label": "5:18 Drum roll enters cycle 10"}, "G": {"time": "5:54", "seconds": 354, "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=354s", "label": "5:54 Cycle 11: trills, glissandos and cymbal intrusions"}, "H": {"time": "6:21", "seconds": 381, "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=381s", "label": "6:21 Softer trilling and ensemble diminuendo"}, "J": {"time": "6:30", "seconds": 390, "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=390s", "label": "6:30 Horns withhold; rhythm section continues"}, "K": {"time": "7:05", "seconds": 425, "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=425s", "label": "7:05 Horns return together"}}}, {"id": "triplets", "scale": "local", "title": "2:28–2:45 • A piano rhythm is taken up and transformed", "code": "flowchart TD\n A[\"2:28 Hancock: ascending quarter-note triplets\"] --> B{\"Williams: retain time pattern or adopt triplets?\"}\n B --> C[\"2:33 Quarter-note triplets on toms\"]\n C --> D{\"Repeat the adopted figure or transform it?\"}\n D --> E[\"2:36 Five-note figure on eighth-note-triplet grid\"]\n E --> F[\"Toms phrase undergoes diminution\"]\n F --> G[\"2:45 Rimshot in melodic gap; clearer swing returns\"]\n G --> H[\"Horns give B-flat a stronger attack\"]\n A -. \"Proposed uptake\" .-> C\n G -. \"Proposed response\" .-> H\n H -. \"Changed horn energy becomes new input for Williams\" .-> B\n", "prose": "This is the strongest current example of a proposed recursive exchange: piano introduces material, drums adopt and transform it, and drum punctuation is followed by changed horn delivery. The dashed return represents a renewed input to subsequent drum choices, not a claim that time runs backward or that a further response has already been identified. Hearing the rimshot as reassurance is Goldford’s interpretation.", "sources": "Goldford observations at 2:28, 2:33, 2:36 and 2:45.", "links": {"A": {"time": "2:28", "seconds": 148, "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=148s", "label": "2:28 Hancock: ascending quarter-note triplets"}, "C": {"time": "2:33", "seconds": 153, "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=153s", "label": "2:33 Quarter-note triplets on toms"}, "E": {"time": "2:36", "seconds": 156, "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=156s", "label": "2:36 Five-note figure on eighth-note-triplet grid"}, "G": {"time": "2:45", "seconds": 165, "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=165s", "label": "2:45 Rimshot in melodic gap; clearer swing returns"}}}, {"id": "blues", "scale": "local", "title": "2:10–2:17 onward • Vocal inflection and semitone dissonance", "code": "flowchart TD\n A[\"2:10 Hancock: blues-like voicing in melodic rest\"] --> B[\"2:17 Davis: downward growling tail to sustained note\"]\n B --> C{\"Hancock: retain voicing or answer with sharper dissonance?\"}\n C --> D[\"C–C-sharp dyad, then F–E dyad\"]\n B -. \"Proposed timbral-to-harmonic response\" .-> D\n T[\"Williams mixes straight and swung eighths\"] --- B\n T --- D\n D --> E[\"Changed ensemble context at the next cycle\"]\n E -. \"Input to subsequent horn and piano choices\" .-> C\n", "prose": "Goldford hears a correspondence between trumpet’s vocal, blues-associated inflection and piano’s semitone dissonances. This is not literal melodic imitation: a quality is proposed to migrate between timbre and harmony. The return arrow is a model of ongoing responsiveness; the subsequent piano answer still needs identification. Chord alterations and pitches await transcription.", "sources": "Goldford observations at 2:10 and 2:17; harmony labels provisional.", "links": {"A": {"time": "2:10", "seconds": 130, "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=130s", "label": "2:10 Hancock: blues-like voicing in melodic rest"}, "B": {"time": "2:17", "seconds": 137, "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=137s", "label": "2:17 Davis: downward growling tail to sustained note"}}}, {"id": "valley", "scale": "local", "title": "Cycle 5, mm. 9–12 • Extension, withdrawal and renewed intensity", "code": "flowchart TD\n A[\"m. 9 Horns extend A-flat after legato phrasing\"] --> B{\"Hancock: continue comping or leave space?\"}\n B --> C[\"Piano lays out\"]\n A --> D{\"Williams: sustain intensity or lower dynamic?\"}\n D --> E[\"Drums become softer\"]\n C --> F[\"Reduced texture: a dynamic valley\"]\n E --> F\n F --> G{\"Williams: maintain the valley or interrupt it?\"}\n G --> H[\"Mid-m. 12: strong fill into new chord\"]\n H --> I[\"Ensemble attacks with renewed intensity\"]\n A -. \"Meehan's response interpretation\" .-> C\n A -. \"Meehan's response interpretation\" .-> E\n I -. \"New intensity informs subsequent delivery\" .-> B\n", "prose": "Meehan explicitly links the sustained horn note with piano withdrawal and reduced drum dynamics. The local graph preserves concurrent piano and drum actions rather than making them mutually exclusive. Exact YouTube times remain pending. This m. 12 fill must not be merged with Goldford’s 2:45 rimshot at m. 11.", "sources": "Meehan p. 162. YouTube timestamps pending for m. 9 and mid-m. 12.", "links": {}}],rows=[{"time": "0:00", "position": "Cycle 1, m. 1", "event": "Shorter presents the melody without Davis.", "relation": "Initial single-horn presentation.", "source": "Goldford; Meehan p. 162 n. 512", "status": "Listening observation"}, {"time": "0:28", "position": "Cycle 1, m. 13", "event": "Ride-cymbal interjections against the final sustained A3.", "relation": "Closing four bars become an interaction site; preparation of later textures is an interpretation.", "source": "Goldford", "status": "Listening observation"}, {"time": "0:54", "position": "Cycle 2, m. 9; measure discrepancy pending", "event": "Davis joins Shorter; ride-bell attacks accompany the entrance.", "relation": "Brighter drum timbre coincides with thickened horn texture. Visual anticipation by Williams is unverified.", "source": "Goldford; Meehan p. 162 n. 512", "status": "Listening observation"}, {"time": "1:03", "position": "Cycle 2, m. 13 onward", "event": "Piano chords at dotted-quarter intervals; drum punctuation in the final bar.", "relation": "Cross-beat grouping across the closing passage; possible coordination of punctuation.", "source": "Goldford", "status": "Listening observation"}, {"time": "1:12", "position": "Cycle 3, start", "event": "Cycle boundary.", "relation": "Anchor for the following events.", "source": "Goldford", "status": "Listening observation"}, {"time": "1:25", "position": "Cycle 3, m. 7", "event": "Piano durations span two eighth-note-triplet units; accented repeated E-flats.", "relation": "A rhythmic layer against the prevailing pulse.", "source": "Goldford", "status": "Listening observation"}, {"time": "Pending", "position": "Cycle 3, approaching mm. 9–16", "event": "Hancock animates the accompaniment; Williams subsequently takes up its dancing quality.", "relation": "Meehan explicitly interprets this as uptake. Do not equate it automatically with the 1:25 event.", "source": "Meehan p. 162", "status": "Literature event; time pending"}, {"time": "1:37", "position": "Cycle 3 closing passage; exact measure pending", "event": "Long–short accented, ringing ride-cymbal scrape; similar paired piano chords follow into cycle 4.", "relation": "Proposed drum-to-piano imitation crosses the cycle boundary.", "source": "Goldford", "status": "Listening observation"}, {"time": "1:48", "position": "Cycle 4, start", "event": "Cycle boundary.", "relation": "Anchor; cymbal gesture from preceding cycle continues.", "source": "Goldford", "status": "Listening observation"}, {"time": "2:10", "position": "Cycle 4, m. 11", "event": "Two piano chords in the melodic rest; blues-like flat-13 voicing over the identified D7-sharp9/B-flat.", "relation": "Piano introduces a blues-associated color in the melodic gap; voicing needs transcription.", "source": "Goldford", "status": "Listening observation"}, {"time": "2:17", "position": "Cycle 4, m. 14 and following", "event": "Davis gives the last note a downward growling glissando; piano follows with C–C-sharp, then F–E dyads. Drums mix swung and straight eighths.", "relation": "Proposed transfer from vocal trumpet inflection to piano semitone dissonance; final A7 alteration unresolved.", "source": "Goldford", "status": "Listening observation"}, {"time": "2:24", "position": "Cycle 5, start", "event": "Cycle boundary.", "relation": "Anchor for triplet exchange and literature events.", "source": "Goldford", "status": "Listening observation"}, {"time": "2:28", "position": "Cycle 5, m. 3", "event": "Ascending quarter-note triplets in piano.", "relation": "Hancock introduces the rhythmic material taken up below.", "source": "Goldford", "status": "Listening observation"}, {"time": "2:33", "position": "Cycle 5, m. 5", "event": "Quarter-note triplets on toms.", "relation": "Williams appears to take up the piano rhythm in a different timbre.", "source": "Goldford", "status": "Listening observation"}, {"time": "2:36", "position": "Cycle 5, m. 7 onward", "event": "Five-note spang-a-lang-like tom figure on an eighth-note-triplet grid; subsequent diminution.", "relation": "Rhythmic uptake is transformed in grouping, duration and drum placement.", "source": "Goldford", "status": "Listening observation"}, {"time": "Pending", "position": "Cycle 5, m. 9", "event": "Horns extend A-flat after legato delivery; Hancock lays out; Williams lowers his dynamic.", "relation": "Meehan links horn extension to accompaniment withdrawal and a dynamic valley.", "source": "Meehan p. 162", "status": "Literature event; time pending"}, {"time": "2:45", "position": "Cycle 5, m. 11", "event": "Loud rimshot in the melodic gap; clearer swing returns; horns deliver B-flat strongly.", "relation": "Proposed drum-to-horn response. Reassurance and confidence describe an interpretation, not a verified mental state.", "source": "Goldford", "status": "Listening observation"}, {"time": "Pending", "position": "Cycle 5, midway through m. 12", "event": "Williams plays a strong fill into a new chord; ensemble attacks with renewed intensity.", "relation": "Meehan reports a coordinated intensification after the valley. Keep distinct from the 2:45 rimshot.", "source": "Meehan p. 162", "status": "Literature event; time pending"}, {"time": "2:59", "position": "Cycle 6, start", "event": "Heavier, more pointed horn attacks, without shorter durations or staccato.", "relation": "Attack profile changes independently of note length; no specific literature corroboration located.", "source": "Goldford", "status": "Listening observation"}, {"time": "3:34", "position": "Cycle 7, start", "event": "Drums take greater liberties.", "relation": "Specify rhythmic departures through further listening.", "source": "Goldford", "status": "Listening observation"}, {"time": "4:04", "position": "Cycle 7, approximately mm. 15–16", "event": "Ascending chromatic piano figuration over the identified A7-flat9-flat13 turnaround.", "relation": "Boundary-directed piano gesture; chord and pitches await transcription.", "source": "Goldford", "status": "Listening observation"}, {"time": "4:09", "position": "Cycle 8, start; span pending", "event": "Quieter horns, longer sustained notes and fewer intervening rests.", "relation": "Changes in dynamics and spacing; exact span still open.", "source": "Goldford", "status": "Listening observation"}, {"time": "Pending", "position": "Cycle 8, second half", "event": "Ensemble diminuendo before the more active subsequent drum passages.", "relation": "Meehan groups cycles 9–11 as intensified drum activity.", "source": "Meehan p. 163", "status": "Literature event; time pending"}, {"time": "4:44", "position": "Cycle 9, start", "event": "New piano figuration, louder horns and changed drum interaction.", "relation": "Multiple parameters change near the cycle boundary.", "source": "Goldford", "status": "Listening observation"}, {"time": "5:01", "position": "Cycle 9, m. 9", "event": "Repeated intrusive snare hits interject into melodic phrases.", "relation": "Drums gain foreground prominence.", "source": "Goldford", "status": "Listening observation"}, {"time": "5:13", "position": "Cycle 9, m. 14", "event": "Repeated-snare activity effectively becomes a three-bar drum solo.", "relation": "Perceived drum foregrounding; not a claim that all other instruments stop.", "source": "Goldford", "status": "Listening observation"}, {"time": "5:18", "position": "Cycle 10, start", "event": "Drum roll into the cycle; Davis leads, Shorter follows roughly 1–1.5 quarter-note beats later.", "relation": "Canon-like melodic displacement; strict canon and response to the roll are unverified.", "source": "Goldford", "status": "Listening observation"}, {"time": "5:54", "position": "Cycle 11, start", "event": "Piano eighth-note trill figuration and glissandos; cymbal intrusions.", "relation": "Interventions overlap or interrupt the horn melody.", "source": "Goldford; Meehan p. 163 (broader drum activity)", "status": "Listening observation"}, {"time": "6:21", "position": "Cycle 11, mm. 13–16", "event": "Ensemble diminuendo with softer piano trilling.", "relation": "Hancock as initiator is a response hypothesis.", "source": "Goldford", "status": "Listening observation"}, {"time": "6:30", "position": "Cycle 12, start", "event": "Both horns absent; simple whole-note piano chords, prominent drums and later drum roll.", "relation": "Melodic withdrawal redistributes foreground activity.", "source": "Goldford; Meehan p. 162 n. 512; Pasceri title-track paragraph", "status": "Listening observation"}, {"time": "7:05", "position": "Cycle 13, start", "event": "Both horns return together, stately and authoritative; rhythms heard as adhering to notation.", "relation": "Restoration of coordinated melodic delivery; comparison with a specified score remains pending.", "source": "Goldford; Meehan p. 162 n. 512 (return)", "status": "Listening observation"}, {"time": "7:40", "position": "Following boundary / possible partial cycle 14", "event": "No new horn statement; drums and bass continue briefly into a fade.", "relation": "Released-recording ending, without an invented collective stop cue.", "source": "Goldford", "status": "Listening observation"}];
-const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const list=document.getElementById('graphlist');
-graphs.forEach(g=>{const a=document.createElement('article');a.dataset.scale=g.scale;a.id=g.id;a.innerHTML=`<div class="kicker">${esc(g.scale)} scale</div><h3>${esc(g.title)}</h3><div class="diagram" role="img" aria-label="${esc(g.title)}"></div><p class="prose">${esc(g.prose)}</p><p class="source">Sources: ${esc(g.sources)}</p><details><summary>Mermaid source code</summary><button class="copy" type="button">Copy code</button><pre><code>${esc(g.code)}</code></pre></details>`;list.append(a);a.querySelector('.copy').onclick=async e=>{try{await navigator.clipboard.writeText(g.code);e.target.textContent='Copied';}catch{e.target.textContent='Select and copy code below';}};});
-document.querySelectorAll('[data-scale]').forEach(b=>{if(b.tagName!=='BUTTON')return;b.onclick=()=>{document.querySelectorAll('.tabs button').forEach(x=>x.setAttribute('aria-pressed',x===b?'true':'false'));document.querySelectorAll('article').forEach(a=>a.hidden=b.dataset.scale!=='all'&&a.dataset.scale!==b.dataset.scale);};});
-function renderLedger(){const q=document.getElementById('search').value.toLowerCase(),f=document.getElementById('sourcefilter').value;const shown=rows.filter(r=>JSON.stringify(r).toLowerCase().includes(q)&&(f==='all'||f==='pending'&&r.time==='Pending'||r.source.includes(f)));document.getElementById('ledger').innerHTML=shown.map(r=>{const time=r.time==='Pending'?'<span class="badge">Time pending</span>':`<a href="https://youtu.be/F2zUua79c6U?t=${r.time.split(':').reduce((a,v)=>a*60+Number(v),0)}" target="_blank" rel="noopener">${esc(r.time)} ↗</a>`;return `<tr><td>${time}</td><td>${esc(r.position)}</td><td>${esc(r.event)}</td><td>${esc(r.relation)}</td><td>${esc(r.source)}</td></tr>`;}).join('');document.getElementById('count').textContent=`${shown.length} of ${rows.length} observations`;}
-document.getElementById('search').oninput=renderLedger;document.getElementById('sourcefilter').onchange=renderLedger;renderLedger();
-function attachVideoLinks(container,g){const ns='http://www.w3.org/2000/svg';for(const node of [...container.querySelectorAll('g.node')]){const entry=Object.entries(g.links||{}).find(([id])=>node.id.startsWith('flowchart-'+id+'-'));if(!entry)continue;const [,link]=entry;const anchor=document.createElementNS(ns,'a');anchor.setAttribute('href',link.url);anchor.setAttributeNS('http://www.w3.org/1999/xlink','xlink:href',link.url);anchor.setAttribute('target','_blank');anchor.setAttribute('rel','noopener noreferrer');anchor.setAttribute('tabindex','0');anchor.setAttribute('aria-label','Open recording at '+link.time+': '+link.label);anchor.setAttribute('class','video-node');const title=document.createElementNS(ns,'title');title.textContent='Open recording at '+link.time+' in a new tab';node.parentNode.replaceChild(anchor,node);anchor.append(title,node);}}
-async function renderGraphs(){if(!window.mermaid){document.querySelectorAll('.diagram').forEach(d=>{d.innerHTML='<p class="error">Diagram renderer unavailable. Mermaid code remains available below.</p>';});return;}mermaid.initialize({startOnLoad:false,securityLevel:'strict',theme:'base',themeVariables:{primaryColor:'#e6efe8',primaryTextColor:'#203333',primaryBorderColor:'#709c8c',lineColor:'#47665d',fontFamily:'system-ui, sans-serif',fontSize:'15px'},flowchart:{htmlLabels:false,useMaxWidth:true}});for(const [i,g]of graphs.entries()){try{const {svg}=await mermaid.render('graphsvg'+i,g.code);const container=document.querySelector('#'+g.id+' .diagram');container.innerHTML=svg;attachVideoLinks(container,g);}catch(err){document.querySelector('#'+g.id+' .diagram').innerHTML='<p class="error">Could not render this diagram; inspect its code below.</p>';console.error(g.id,err);}}}renderGraphs();
-</script></body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Nefertiti · Interaction at three scales</title>
+    <link rel="stylesheet" href="website.css" />
+  </head>
+  <body>
+    <header>
+      <div class="eyebrow">A listening study · Miles Davis Quintet</div>
+      <h1>Nefertiti</h1>
+      <p>
+        Interaction at three scales: how rhythmic ideas, timbres and melodic participation change
+        through a recurring sixteen-bar form.
+      </p>
+      <p>
+        <a href="https://youtu.be/F2zUua79c6U" target="_blank" rel="noopener">Open the assigned recording <span class="ext" aria-hidden="true">↗</span></a>
+        · All timed links use this YouTube upload.
+      </p>
+    </header>
+    <nav aria-label="Page sections">
+      <a href="#approach">Approach</a>
+      <a href="#graphs">Graphs & code</a>
+      <a href="#observations">Observation ledger</a>
+      <a href="#sources">Bibliography</a>
+    </nav>
+    <main>
+      <section id="approach">
+        <h2>Three scales of attention</h2>
+        <div class="intro">
+          <p>
+            What changes when the melody returns, but the musicians change how they play together?
+            In the Miles Davis Quintet’s “Nefertiti,” recurring statements of Wayne Shorter’s
+            sixteen-bar composition coexist with changes in articulation, rhythmic grouping,
+            instrumental participation, and foreground activity. An account of the composition’s
+            melody and harmony helps explain its continuity. Understanding the particular
+            performance also requires examining how the musicians introduce, answer, transform, and
+            leave space for one another’s ideas.
+          </p>
+          <p>
+            Ingrid Monson makes this analytical need explicit in <em>Saying Something: Jazz
+            Improvisation and Interaction</em>. She proposes a communicative perspective for
+            exploring the “relatively neglected—yet aesthetically central—interactive aspects of
+            jazz
+            improvisation.”<sup class="fnref" id="fnref-1"><a href="#fn-1" aria-label="Note 1">1</a></sup>
+            Her starting point is that instrumental roles are interdependent and flexible: musicians
+            make choices “in relationship to what everyone else is
+            doing.”<sup class="fnref" id="fnref-2"><a href="#fn-2" aria-label="Note 2">2</a></sup>
+            Interaction therefore belongs within musical analysis itself. It can shape a phrase,
+            redistribute instrumental roles, and contribute to the direction and intensity of an
+            entire performance.
+          </p>
+          <p>
+            Monson demonstrates this approach at different scales. Her analysis of Geri Allen and
+            Ralph Peterson on “Princess” traces rhythmic interventions, interruptions, and
+            subsequent responses between piano and
+            drums.<sup class="fnref" id="fnref-3"><a href="#fn-3" aria-label="Note 3">3</a></sup>
+            Her extended analysis of “Bass-ment Blues” examines how exchanges, recovery, and
+            stylistic references contribute to intensification across successive
+            choruses.<sup class="fnref" id="fnref-4"><a href="#fn-4" aria-label="Note 4">4</a></sup>
+            These examples suggest an approach to “Nefertiti” that connects individual gestures with
+            developments across choruses and with changes in the performance as a whole.
+          </p>
+          <p>
+            David Borgo supplies a complementary account of <strong>recursive interaction</strong>.
+            In <em>Sync or Swarm</em>, his discussion developed with Joseph Goguen describes music
+            making and listening as coupled processes: “the current state of each acts as the
+            control of the
+            other.”<sup class="fnref" id="fnref-5"><a href="#fn-5" aria-label="Note 5">5</a></sup>
+            Musicians hear the ensemble sound, act in relation to it, and thereby change the sound
+            available for subsequent listening and action. A response can also change how an earlier
+            gesture is
+            understood.<sup class="fnref" id="fnref-6"><a href="#fn-6" aria-label="Note 6">6</a></sup>
+            In our analysis, a feedback connection identifies a proposed relationship of this kind.
+            The mere return of the sixteen-bar form establishes recurrence; identifying
+            interpersonal recursion requires evidence of uptake, transformation, or adjustment.
+          </p>
+          <p>
+            Two further perspectives clarify what this approach attends to. Paul Berliner describes
+            the solo as one strand within a texture whose accompanying parts are themselves commonly
+            improvised.<sup class="fnref" id="fnref-7"><a href="#fn-7" aria-label="Note 7">7</a></sup>
+            George E. Lewis emphasizes how personal sound communicates meanings beyond pitches and
+            intervals.<sup class="fnref" id="fnref-8"><a href="#fn-8" aria-label="Note 8">8</a></sup>
+            Together, these perspectives encourage attention to the rhythmic and timbral specificity
+            of the quintet’s exchanges: a piano rhythm transferred to toms, a trumpet growl followed
+            by semitone piano dissonances, or a change in horn participation that redistributes
+            foreground activity.
+          </p>
+          <p>
+            The graphs offer three connected scales of attention:
+          </p>
+          <ul class="scales">
+            <li>
+              <strong>Performance:</strong> How do melodic participation, horn alignment, and
+              instrumental prominence change across the recording? This view connects Shorter’s
+              opening alone, Davis’s entrance, later changes in melodic delivery, the hornless
+              twelfth chorus, and the final melodic return.
+            </li>
+            <li>
+              <strong>Passage:</strong> How do exchanges develop across phrases and chorus
+              boundaries? This view examines recurring opportunities for intervention, especially
+              the melody’s closing measures, and follows changes that persist into subsequent
+              choruses.
+            </li>
+            <li>
+              <strong>Local exchange:</strong> What does one musician introduce, what follows from
+              another, and how is the material transformed? This view examines specific instances
+              such as Hancock’s quarter-note triplets at 2:28, Williams’s apparent uptake on toms at
+              2:33, and his subsequent transformation of the figure.
+            </li>
+          </ul>
+          <p>
+            These are complementary zoom levels rather than a fixed hierarchy of musical importance.
+            A local exchange may remain local or contribute to a wider change; the graphs allow
+            those relationships to be investigated. All timestamps refer to the assigned YouTube
+            recording.<sup class="fnref" id="fnref-9"><a href="#fn-9" aria-label="Note 9">9</a></sup> Listening observations and literature accounts are attributed separately, and
+            proposed response relationships remain distinguishable from the reported sequence of
+            events.
+          </p>
+        </div>
+        <div class="note">
+          <strong>Recording scope.</strong> The released studio title track, recorded in 1967 and
+          issued on the 1968 Columbia album. The graphs contain performance events only. Times and
+          detailed listening descriptions are Louis Goldford’s; literature observations are
+          separately attributed. This draft does not claim an independent audio transcription.
+        </div>
+        <p class="legend">
+          <span><b>Solid arrow</b> · reported sequence / structural relation</span>
+          <span><b>Dashed arrow</b> · proposed response / feedback</span>
+          <span><b class="recurrence">Red return</b> · formal recurrence</span>
+          <span><b>Diamond</b> · specific performance choice inferred from action</span>
+        </p>
+        <p class="source">
+          Untaken alternatives inside diamonds are analytical contrasts, not additional recorded
+          events. A dashed backward connection means a renewed input to subsequent actions, not a
+          return to an earlier timestamp.
+        </p>
+        <aside class="footnotes" aria-labelledby="approach-notes">
+          <h3 id="approach-notes">Notes</h3>
+          <ol>
+            <li id="fn-1">
+              <a class="fn-back" href="#fnref-1" aria-label="Back to text for note 1">1.</a> Ingrid
+              Monson, <em>Saying Something: Jazz Improvisation and Interaction</em> (Chicago:
+              University of Chicago Press, 1996), 136.
+            </li>
+            <li id="fn-2">
+              <a class="fn-back" href="#fnref-2" aria-label="Back to text for note 2">2.</a> Monson,
+              <em>Saying Something</em>, 27.
+            </li>
+            <li id="fn-3">
+              <a class="fn-back" href="#fnref-3" aria-label="Back to text for note 3">3.</a> Monson,
+              <em>Saying Something</em>, 77–81.
+            </li>
+            <li id="fn-4">
+              <a class="fn-back" href="#fnref-4" aria-label="Back to text for note 4">4.</a> Monson,
+              <em>Saying Something</em>, 137–91.
+            </li>
+            <li id="fn-5">
+              <a class="fn-back" href="#fnref-5" aria-label="Back to text for note 5">5.</a> David
+              Borgo, <em>Sync or Swarm: Improvising Music in a Complex Age</em> (New York:
+              Continuum, 2005), 67.
+            </li>
+            <li id="fn-6">
+              <a class="fn-back" href="#fnref-6" aria-label="Back to text for note 6">6.</a> Borgo,
+              <em>Sync or Swarm</em>, 67–68.
+            </li>
+            <li id="fn-7">
+              <a class="fn-back" href="#fnref-7" aria-label="Back to text for note 7">7.</a> Paul F.
+              Berliner, <em>Thinking in Jazz: The Infinite Art of Improvisation</em> (Chicago:
+              University of Chicago Press, 1994), 285.
+            </li>
+            <li id="fn-8">
+              <a class="fn-back" href="#fnref-8" aria-label="Back to text for note 8">8.</a> George
+              E. Lewis, “Improvised Music after 1950: Afrological and Eurological Perspectives,”
+              <em>Black Music Research Journal</em> 22, suppl. (2002): 241, reprinted from <em>Black
+              Music Research Journal</em> 16, no. 1 (1996).
+            </li>
+            <li id="fn-9">
+              <a class="fn-back" href="#fnref-9" aria-label="Back to text for note 9">9.</a> All
+              timestamps follow Goldford’s timings of the assigned YouTube upload, which may differ
+              from the markers of the 1968 Columbia album release. Meehan places the hornless
+              twelfth chorus and the horns’ return in the thirteenth at 6:32 and 7:08; in this upload
+              the same moments fall at 6:30 and 7:05, an offset of about two to three seconds.
+              Norman Lawrence Meehan, “Creativity in Jazz” (PhD diss., Victoria University of
+              Wellington, 2014), 162n512.
+            </li>
+            <li id="fn-10">
+              <a class="fn-back" href="#fnref-10" aria-label="Back to text for note 10">10.</a>
+              Students can use the Mermaid Live Editor to create their own interaction-analysis
+              graphs like these and then include them in their papers. See <em>Mermaid Live
+              Editor</em>, accessed October 11, 2026,
+              <a href="https://mermaid.live/" target="_blank" rel="noopener">https://mermaid.live/</a>;
+              and “Flowcharts – Basic Syntax,” Mermaid, accessed October 11, 2026,
+              <a href="https://mermaid.js.org/syntax/flowchart.html" target="_blank" rel="noopener">https://mermaid.js.org/syntax/flowchart.html</a>.
+            </li>
+            <li id="fn-11">
+              <a class="fn-back" href="#fnref-11" aria-label="Back to text for note 11">11.</a>
+              Meehan’s “strong fill” midway through m. 12 of chorus 5, followed by renewed ensemble
+              intensity, may be the same event as the loud rimshot heard at 2:45 (chorus 5, m. 11);
+              the two accounts place it a measure apart. Meehan, “Creativity in Jazz,” 162.
+            </li>
+          </ol>
+        </aside>
+      </section>
+      <section id="graphs">
+        <h2>Explore the graphs</h2>
+        <p>
+          Choose a scale. Click a timestamped node to open the recording in a new tab at that point.
+          Every diagram includes its Mermaid source for inspection, copying and revision.<sup class="fnref" id="fnref-10"><a href="#fn-10" aria-label="Note 10">10</a></sup> Nodes with
+          pending times remain unlinked.
+        </p>
+        <div class="tabs" role="group" aria-label="Analytical scale">
+          <button data-scale="all" aria-pressed="true">All scales</button>
+          <button data-scale="performance" aria-pressed="false">01 · Performance</button>
+          <button data-scale="passage" aria-pressed="false">02 · Passage</button>
+          <button data-scale="local" aria-pressed="false">03 · Local exchange</button>
+        </div>
+        <div id="graphlist"></div>
+        <a class="download" href="nefertiti-graphs.mmd" download>Download all Mermaid code</a>
+      </section>
+      <section id="observations">
+        <h2>Observation ledger</h2>
+        <p>
+          One timeline, multiple sources. Timestamp links open the assigned video at that point.
+          Literature-only events retain their chorus and measure while their exact YouTube times
+          remain pending.<sup class="fnref" id="fnref-11"><a href="#fn-11" aria-label="Note 11">11</a></sup>
+        </p>
+        <div class="filters">
+          <input
+            id="search"
+            type="search"
+            aria-label="Search observations"
+            placeholder="Search gesture, musician, chorus or source…"
+          />
+          <select id="sourcefilter" aria-label="Filter source">
+            <option value="all">All sources</option>
+            <option value="Goldford">Goldford observations</option>
+            <option value="Meehan">Meehan-linked events</option>
+            <option value="pending">Times pending</option>
+          </select>
+        </div>
+        <p id="count" class="source" aria-live="polite"></p>
+        <div class="tablewrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Position</th>
+                <th>Event</th>
+                <th>Relationship to investigate</th>
+                <th>Attribution</th>
+              </tr>
+            </thead>
+            <tbody id="ledger"></tbody>
+          </table>
+        </div>
+        <p><a class="download" href="observations.json" download>Download observation data</a></p>
+      </section>
+      <section id="sources">
+        <h2>Bibliography</h2>
+        <ul class="bibliography">
+          <li id="ref-berliner">
+            Berliner, Paul F. <em>Thinking in Jazz: The Infinite Art of Improvisation</em>. Chicago:
+            University of Chicago Press, 1994.
+          </li>
+          <li id="ref-borgo">
+            Borgo, David. <em>Sync or Swarm: Improvising Music in a Complex Age</em>. New York:
+            Continuum, 2005.
+          </li>
+          <li id="ref-goldford">
+            Goldford, Louis. Listening observations on the Miles Davis Quintet’s “Nefertiti.”
+            Unpublished notes, October 11, 2026.
+          </li>
+          <li id="ref-lewis">
+            Lewis, George E. “Improvised Music after 1950: Afrological and Eurological
+            Perspectives.” <em>Black Music Research Journal</em> 22, suppl. (2002): 215–46.
+            Originally published in <em>Black Music Research Journal</em> 16, no. 1 (1996): 91–122.
+          </li>
+          <li id="ref-meehan">
+            Meehan, Norman Lawrence. “Creativity in Jazz.” PhD diss., Victoria University of
+            Wellington, 2014.
+          </li>
+          <li id="ref-mermaid-flowchart">
+            Mermaid. “Flowcharts – Basic Syntax.” Accessed October 11, 2026.
+            <a href="https://mermaid.js.org/syntax/flowchart.html" target="_blank" rel="noopener">https://mermaid.js.org/syntax/flowchart.html</a>.
+          </li>
+          <li id="ref-mermaid-live">
+            ———. <em>Mermaid Live Editor</em>. Accessed October 11, 2026.
+            <a href="https://mermaid.live/" target="_blank" rel="noopener">https://mermaid.live/</a>.
+          </li>
+          <li id="ref-monson">
+            Monson, Ingrid. <em>Saying Something: Jazz Improvisation and Interaction</em>. Chicago:
+            University of Chicago Press, 1996.
+          </li>
+          <li id="ref-pasceri">
+            Pasceri, Carlo. “Nefertiti, l’ultimo capolavoro del Davis acustico.” <em>Carlo
+            Pasceri</em> (blog), n.d.
+            <a href="https://www.carlopasceri.it/blog/nefertiti-lultimo-capolavoro-del-davis-acustico" target="_blank" rel="noopener">https://www.carlopasceri.it/blog/nefertiti-lultimo-capolavoro-del-davis-acustico</a>.
+          </li>
+          <li id="ref-smither">
+            Smither, William. “Guide-Tone Space: Navigating Voice-Leading Syntax in Tonal Jazz.”
+            <em>Music Theory Online</em> 25, no. 2 (2019).
+            <a href="https://mtosmt.org/issues/mto.19.25.2/mto.19.25.2.smither.php" target="_blank" rel="noopener">https://mtosmt.org/issues/mto.19.25.2/mto.19.25.2.smither.php</a>.
+          </li>
+          <li id="ref-waters">
+            Waters, Keith. <em>The Studio Recordings of the Miles Davis Quintet, 1965–68</em>. New
+            York: Oxford University Press, 2011.
+          </li>
+          <li id="ref-circular">
+            Waters, Keith, Henry Martin, Steve Larson, and Steven Strunk. “Circular Thinking.”
+            <em>Journal of Jazz Studies</em> 11, no. 1 (2016): 105–20.
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Working analytical draft · Designed for close listening, source comparison and revision.
+        Record-specific claims and hypotheses remain distinguishable.
+      </p>
+      <p class="copyright">
+        © 2026 Louis Goldford. Text, analysis, graphs and data: all rights reserved. Students and
+        educators may reproduce the graphs for coursework and teaching with citation. Code and website:
+        <a href="https://github.com/einbahnstrasse/nefertiti-analysis/blob/master/LICENSE" target="_blank" rel="noopener">MIT License</a>. Mermaid renderer © Knut
+        Sveidqvist, <a href="https://github.com/einbahnstrasse/nefertiti-analysis/blob/master/MERMAID-LICENSE.txt" target="_blank" rel="noopener">MIT License</a>.
+      </p>
+    </footer>
+    <script src="mermaid.min.js"></script>
+    <script>
+      const graphs = [
+        {
+          id: "overview",
+          scale: "performance",
+          title: "Participation and changing melodic delivery",
+          code: 'flowchart TD\n A["0:00 Shorter alone"] --> B["0:54 Davis joins; ride bell brightens texture"]\n B --> C{"Horns: preserve or change delivery?"}\n C --> D["2:59 Heavier horn attacks"]\n D --> D2["4:09 Sustained quiet horn delivery"]\n D2 --> E["5:18 Davis leads; Shorter delays the same melody"]\n E --> F{"Next melodic traversal: play or leave space?"}\n F --> G["6:30 Both horns absent; piano and drums foregrounded"]\n G --> H["7:05 Horns return together"]\n H --> I["7:40 No new horn statement; rhythm-section fade"]\n R["Sixteen-bar form: m. 1 through m. 16"] --> S["Return to m. 1 at each complete chorus"]\n S --> R\n R --- C\n P["Piano and drum interventions change the ensemble context"] -. "Proposed influence on subsequent delivery" .-> C\n D -. "Changed horn sound informs accompaniment?" .-> P\n E -. "Displaced melody informs accompaniment?" .-> P\n linkStyle 10 stroke:#b34c38,stroke-width:3px\n',
+          prose:
+            "This overview separates formal repetition from interpersonal recursion. The red return closes the sixteen-bar loop. Dashed connections propose that a changed horn delivery affects accompaniment and that the resulting context informs later delivery. They summarize an analytical possibility; the local graphs locate specific supporting events. Diamonds name performance variables, not documented internal deliberations.",
+          sources: "Goldford observations; Meehan pp. 162–163, especially n. 512.",
+          links: {
+            A: {
+              time: "0:00",
+              seconds: 0,
+              url: "https://www.youtube.com/watch?v=F2zUua79c6U&t=0s",
+              label: "0:00 Shorter alone",
+            },
+            B: {
+              time: "0:54",
+              seconds: 54,
+              url: "https://www.youtube.com/watch?v=F2zUua79c6U&t=54s",
+              label: "0:54 Davis joins; ride bell brightens texture",
+            },
+            D: {
+              time: "2:59",
+              seconds: 179,
+              url: "https://www.youtube.com/watch?v=F2zUua79c6U&t=179s",
+              label: "2:59 Heavier horn attacks",
+            },
+            D2: {
+              time: "4:09",
+              seconds: 249,
+              url: "https://www.youtube.com/watch?v=F2zUua79c6U&t=249s",
+              label: "4:09 Sustained quiet horn delivery",
+            },
+            E: {
+              time: "5:18",
+              seconds: 318,
+              url: "https://www.youtube.com/watch?v=F2zUua79c6U&t=318s",
+              label: "5:18 Davis leads; Shorter delays the same melody",
+            },
+            G: {
+              time: "6:30",
+              seconds: 390,
+              url: "https://www.youtube.com/watch?v=F2zUua79c6U&t=390s",
+              label: "6:30 Both horns absent; piano and drums foregrounded",
+            },
+            H: {
+              time: "7:05",
+              seconds: 425,
+              url: "https://www.youtube.com/watch?v=F2zUua79c6U&t=425s",
+              label: "7:05 Horns return together",
+            },
+            I: {
+              time: "7:40",
+              seconds: 460,
+              url: "https://www.youtube.com/watch?v=F2zUua79c6U&t=460s",
+              label: "7:40 No new horn statement; rhythm-section fade",
+            },
+          },
+        },
+        {
+          id: "boundaries",
+          scale: "passage",
+          title: "Closing passages become places to redirect the ensemble",
+          code: 'flowchart TD\n A["0:28 Chorus 1: ride comments on sustained ending"] --> B["1:03 Chorus 2: dotted-quarter piano chords"]\n B --> C["1:37 Chorus 3: long-short cymbal gesture"]\n C --> D["Into chorus 4: similarly paired piano chords"]\n D --> E["2:17 Chorus 4: trumpet growl and piano semitone dyads"]\n C -. "Proposed rhythmic uptake" .-> D\n Q{"In the closing space: sustain, punctuate or introduce a figure?"} --> A\n Q --> B\n Q --> C\n Q --> E\n E -. "Different material available at the next boundary" .-> Q\n',
+          prose:
+            "The chronological path compares closing passages, while the choice node identifies the recurring opportunity: the ending of the melody can coexist with a new accompaniment gesture. Only the chorus-3-to-4 passage currently supplies a proposed cross-boundary imitation; successive closing gestures are not automatically responses to one another.",
+          sources: "Goldford observations at 0:28, 1:03, 1:37 and 2:17.",
+          links: {
+            A: {
+              time: "0:28",
+              seconds: 28,
+              url: "https://www.youtube.com/watch?v=F2zUua79c6U&t=28s",
+              label: "0:28 Chorus 1: ride comments on sustained ending",
+            },
+            B: {
+              time: "1:03",
+              seconds: 63,
+              url: "https://www.youtube.com/watch?v=F2zUua79c6U&t=63s",
+              label: "1:03 Chorus 2: dotted-quarter piano chords",
+            },
+            C: {
+              time: "1:37",
+              seconds: 97,
+              url: "https://www.youtube.com/watch?v=F2zUua79c6U&t=97s",
+              label: "1:37 Chorus 3: long-short cymbal gesture",
+            },
+            E: {
+              time: "2:17",
+              seconds: 137,
+              url: "https://www.youtube.com/watch?v=F2zUua79c6U&t=137s",
+              label: "2:17 Chorus 4: trumpet growl and piano semitone dyads",
+            },
+          },
+        },
+        {
+          id: "late",
+          scale: "passage",
+          title: "From drum interjection to melodic displacement and withdrawal",
+          code: 'flowchart TD\n A["4:44 Chorus 9: louder horns and new piano figure"] --> B["5:01 Snare interjects into melody"]\n B --> C["5:13 Repeated snare takes foreground"]\n C --> D["5:18 Drum roll enters chorus 10"]\n D --> E{"Horns: align or offset melodic entrances?"}\n E --> F["Davis leads; Shorter follows about 1–1.5 beats later"]\n F --> G["5:54 Chorus 11: trills, glissandos and cymbal intrusions"]\n G --> H["6:21 Softer trilling and ensemble diminuendo"]\n H --> I{"Chorus 12: restate or withhold melody?"}\n I --> J["6:30 Horns withhold; rhythm section continues"]\n J --> K["7:05 Horns return together"]\n D -. "Influence on horn alignment unverified" .-> F\n H -. "Influence on withdrawal unverified" .-> J\n',
+          prose:
+            "This passage preserves the sequence without turning temporal proximity into proven causation. Two specific variables are visible: alignment of the horn parts and presence of the melodic layer. Meehan supports intensified drumming in choruses 9–11 and the absence/return in choruses 12–13, but not every fine-grained gesture or proposed response here.",
+          sources: "Goldford observations; Meehan pp. 162–163; Pasceri title-track paragraph.",
+          links: {
+            A: {
+              time: "4:44",
+              seconds: 284,
+              url: "https://www.youtube.com/watch?v=F2zUua79c6U&t=284s",
+              label: "4:44 Chorus 9: louder horns and new piano figure",
+            },
+            B: {
+              time: "5:01",
+              seconds: 301,
+              url: "https://www.youtube.com/watch?v=F2zUua79c6U&t=301s",
+              label: "5:01 Snare interjects into melody",
+            },
+            C: {
+              time: "5:13",
+              seconds: 313,
+              url: "https://www.youtube.com/watch?v=F2zUua79c6U&t=313s",
+              label: "5:13 Repeated snare takes foreground",
+            },
+            D: {
+              time: "5:18",
+              seconds: 318,
+              url: "https://www.youtube.com/watch?v=F2zUua79c6U&t=318s",
+              label: "5:18 Drum roll enters chorus 10",
+            },
+            G: {
+              time: "5:54",
+              seconds: 354,
+              url: "https://www.youtube.com/watch?v=F2zUua79c6U&t=354s",
+              label: "5:54 Chorus 11: trills, glissandos and cymbal intrusions",
+            },
+            H: {
+              time: "6:21",
+              seconds: 381,
+              url: "https://www.youtube.com/watch?v=F2zUua79c6U&t=381s",
+              label: "6:21 Softer trilling and ensemble diminuendo",
+            },
+            J: {
+              time: "6:30",
+              seconds: 390,
+              url: "https://www.youtube.com/watch?v=F2zUua79c6U&t=390s",
+              label: "6:30 Horns withhold; rhythm section continues",
+            },
+            K: {
+              time: "7:05",
+              seconds: 425,
+              url: "https://www.youtube.com/watch?v=F2zUua79c6U&t=425s",
+              label: "7:05 Horns return together",
+            },
+          },
+        },
+        {
+          id: "triplets",
+          scale: "local",
+          title: "2:28–2:45 • A piano rhythm is taken up and transformed",
+          code: 'flowchart TD\n A["2:28 Hancock: ascending quarter-note triplets"] --> B{"Williams: retain time pattern or adopt triplets?"}\n B --> C["2:33 Quarter-note triplets on toms"]\n C --> D{"Repeat the adopted figure or transform it?"}\n D --> E["2:36 Five-note figure on eighth-note-triplet grid"]\n E --> F["Toms phrase undergoes diminution"]\n F --> G["2:45 Rimshot in melodic gap; clearer swing returns"]\n G --> H["Horns give B-flat a stronger attack"]\n A -. "Proposed uptake" .-> C\n G -. "Proposed response" .-> H\n H -. "Changed horn energy becomes new input for Williams" .-> B\n',
+          prose:
+            "This is the strongest current example of a proposed recursive exchange: piano introduces material, drums adopt and transform it, and drum punctuation is followed by changed horn delivery. The quarter-note triplets form a brief polymetric layer: continual, regular durations set against the prevailing grid for no more than a few bars. Fleeting as such layers are, they show how other metrical groupings within the existing grid can be expressive and offer ideas that others take up in turn. The dashed return represents a renewed input to subsequent drum choices, not a claim that time runs backward or that a further response has already been identified. Hearing the rimshot as reassurance is Goldford’s interpretation.",
+          sources: "Goldford observations at 2:28, 2:33, 2:36 and 2:45.",
+          links: {
+            A: {
+              time: "2:28",
+              seconds: 148,
+              url: "https://www.youtube.com/watch?v=F2zUua79c6U&t=148s",
+              label: "2:28 Hancock: ascending quarter-note triplets",
+            },
+            C: {
+              time: "2:33",
+              seconds: 153,
+              url: "https://www.youtube.com/watch?v=F2zUua79c6U&t=153s",
+              label: "2:33 Quarter-note triplets on toms",
+            },
+            E: {
+              time: "2:36",
+              seconds: 156,
+              url: "https://www.youtube.com/watch?v=F2zUua79c6U&t=156s",
+              label: "2:36 Five-note figure on eighth-note-triplet grid",
+            },
+            G: {
+              time: "2:45",
+              seconds: 165,
+              url: "https://www.youtube.com/watch?v=F2zUua79c6U&t=165s",
+              label: "2:45 Rimshot in melodic gap; clearer swing returns",
+            },
+          },
+        },
+        {
+          id: "blues",
+          scale: "local",
+          title: "2:10–2:17 onward • Vocal inflection and semitone dissonance",
+          code: 'flowchart TD\n A["2:10 Hancock: blues-like voicing in melodic rest"] --> B["2:17 Davis: downward growling tail to sustained note"]\n B --> C{"Hancock: retain voicing or answer with sharper dissonance?"}\n C --> D["C–C-sharp dyad, then F–E dyad"]\n B -. "Proposed timbral-to-harmonic response" .-> D\n T["Williams mixes straight and swung eighths"] --- B\n T --- D\n D --> E["Changed ensemble context at the next chorus"]\n E -. "Input to subsequent horn and piano choices" .-> C\n',
+          prose:
+            "Goldford hears a correspondence between trumpet’s vocal, blues-associated inflection and piano’s semitone dissonances. This is not literal melodic imitation: a quality is proposed to migrate between timbre and harmony. The return arrow is a model of ongoing responsiveness; the subsequent piano answer still needs identification. Chord alterations and pitches await transcription.",
+          sources: "Goldford observations at 2:10 and 2:17; harmony labels provisional.",
+          links: {
+            A: {
+              time: "2:10",
+              seconds: 130,
+              url: "https://www.youtube.com/watch?v=F2zUua79c6U&t=130s",
+              label: "2:10 Hancock: blues-like voicing in melodic rest",
+            },
+            B: {
+              time: "2:17",
+              seconds: 137,
+              url: "https://www.youtube.com/watch?v=F2zUua79c6U&t=137s",
+              label: "2:17 Davis: downward growling tail to sustained note",
+            },
+          },
+        },
+        {
+          id: "valley",
+          scale: "local",
+          title: "Chorus 5, mm. 9–12 • Extension, withdrawal and renewed intensity",
+          code: 'flowchart TD\n A["m. 9 Horns extend A-flat after legato phrasing"] --> B{"Hancock: continue comping or leave space?"}\n B --> C["Piano lays out"]\n A --> D{"Williams: sustain intensity or lower dynamic?"}\n D --> E["Drums become softer"]\n C --> F["Reduced texture: a dynamic valley"]\n E --> F\n F --> G{"Williams: maintain the valley or interrupt it?"}\n G --> H["Mid-m. 12: strong fill into new chord"]\n H --> I["Ensemble attacks with renewed intensity"]\n A -. "Meehan\'s response interpretation" .-> C\n A -. "Meehan\'s response interpretation" .-> E\n I -. "New intensity informs subsequent delivery" .-> B\n',
+          prose:
+            "Meehan explicitly links the sustained horn note with piano withdrawal and reduced drum dynamics. The local graph preserves concurrent piano and drum actions rather than making them mutually exclusive. Exact YouTube times remain pending. This m. 12 fill may be the same event as Goldford’s 2:45 rimshot at m. 11.",
+          sources: "Meehan p. 162. YouTube timestamps pending for m. 9 and mid-m. 12.",
+          links: {},
+        },
+      ];
+      const rows = [
+        {
+          time: "0:00",
+          position: "Chorus 1, m. 1",
+          event: "Shorter presents the melody without Davis.",
+          relation: "Initial single-horn presentation.",
+          source: "Goldford; Meehan p. 162 n. 512",
+          status: "Listening observation",
+        },
+        {
+          time: "0:28",
+          position: "Chorus 1, m. 13",
+          event: "Ride-cymbal interjections against the final sustained A3.",
+          relation:
+            "Closing four bars become an interaction site; preparation of later textures is an interpretation.",
+          source: "Goldford",
+          status: "Listening observation",
+        },
+        {
+          time: "0:54",
+          position: "Chorus 2, m. 9",
+          event: "Davis joins Shorter; ride-bell attacks accompany the entrance.",
+          relation:
+            "Brighter drum timbre coincides with thickened horn texture. Visual anticipation by Williams is unverified.",
+          source: "Goldford; Meehan p. 162 n. 512",
+          status: "Listening observation",
+        },
+        {
+          time: "1:03",
+          position: "Chorus 2, m. 13 onward",
+          event: "Piano chords at dotted-quarter intervals; drum punctuation in the final bar.",
+          relation:
+            "Brief polymetric layer: regular dotted-quarter durations overlay the prevailing grid across the closing passage; possible coordination of punctuation.",
+          source: "Goldford",
+          status: "Listening observation",
+        },
+        {
+          time: "1:12",
+          position: "Chorus 3, start",
+          event: "Chorus boundary.",
+          relation: "Anchor for the following events.",
+          source: "Goldford",
+          status: "Listening observation",
+        },
+        {
+          time: "1:25",
+          position: "Chorus 3, m. 7",
+          event: "Piano durations span two eighth-note-triplet units; accented repeated E-flats.",
+          relation: "Brief polymetric layer: regular durations of two eighth-note-triplet units overlay the prevailing pulse.",
+          source: "Goldford",
+          status: "Listening observation",
+        },
+        {
+          time: "Pending",
+          position: "Chorus 3, approaching mm. 9–16",
+          event:
+            "Hancock animates the accompaniment; Williams subsequently takes up its dancing quality.",
+          relation:
+            "Meehan explicitly interprets this as uptake. Do not equate it automatically with the 1:25 event.",
+          source: "Meehan p. 162",
+          status: "Literature event; time pending",
+        },
+        {
+          time: "1:37",
+          position: "Chorus 3, m. 12",
+          event:
+            "Long–short accented, ringing ride-cymbal scrape; similar paired piano chords follow into chorus 4.",
+          relation: "Proposed drum-to-piano imitation crosses the chorus boundary.",
+          source: "Goldford",
+          status: "Listening observation",
+        },
+        {
+          time: "1:48",
+          position: "Chorus 4, start",
+          event: "Chorus boundary.",
+          relation: "Anchor; cymbal gesture from preceding chorus continues.",
+          source: "Goldford",
+          status: "Listening observation",
+        },
+        {
+          time: "2:10",
+          position: "Chorus 4, m. 11",
+          event:
+            "Two piano chords in the melodic rest; blues-like flat-13 voicing over the identified D7-sharp9/B-flat.",
+          relation:
+            "Piano introduces a blues-associated color in the melodic gap; voicing needs transcription.",
+          source: "Goldford",
+          status: "Listening observation",
+        },
+        {
+          time: "2:17",
+          position: "Chorus 4, m. 14 and following",
+          event:
+            "Davis gives the last note a downward growling glissando; piano follows with C–C-sharp, then F–E dyads. Drums mix swung and straight eighths.",
+          relation:
+            "Proposed transfer from vocal trumpet inflection to piano semitone dissonance; final chord is A7-flat9-13.",
+          source: "Goldford",
+          status: "Listening observation",
+        },
+        {
+          time: "2:24",
+          position: "Chorus 5, start",
+          event: "Chorus boundary.",
+          relation: "Anchor for triplet exchange and literature events.",
+          source: "Goldford",
+          status: "Listening observation",
+        },
+        {
+          time: "2:28",
+          position: "Chorus 5, m. 3",
+          event: "Ascending quarter-note triplets in piano.",
+          relation: "Hancock introduces the rhythmic material taken up below.",
+          source: "Goldford",
+          status: "Listening observation",
+        },
+        {
+          time: "2:33",
+          position: "Chorus 5, m. 5",
+          event: "Quarter-note triplets on toms.",
+          relation: "Williams appears to take up the piano rhythm in a different timbre.",
+          source: "Goldford",
+          status: "Listening observation",
+        },
+        {
+          time: "2:36",
+          position: "Chorus 5, m. 7 onward",
+          event:
+            "Five-note spang-a-lang-like tom figure on an eighth-note-triplet grid; subsequent diminution.",
+          relation: "Rhythmic uptake is transformed in grouping, duration and drum placement.",
+          source: "Goldford",
+          status: "Listening observation",
+        },
+        {
+          time: "Pending",
+          position: "Chorus 5, m. 9",
+          event:
+            "Horns extend A-flat after legato delivery; Hancock lays out; Williams lowers his dynamic.",
+          relation: "Meehan links horn extension to accompaniment withdrawal and a dynamic valley.",
+          source: "Meehan p. 162",
+          status: "Literature event; time pending",
+        },
+        {
+          time: "2:45",
+          position: "Chorus 5, m. 11",
+          event:
+            "Loud rimshot in the melodic gap; clearer swing returns; horns deliver B-flat strongly.",
+          relation:
+            "Proposed drum-to-horn response. Reassurance and confidence describe an interpretation, not a verified mental state.",
+          source: "Goldford",
+          status: "Listening observation",
+        },
+        {
+          time: "Pending",
+          position: "Chorus 5, midway through m. 12",
+          event:
+            "Williams plays a strong fill into a new chord; ensemble attacks with renewed intensity.",
+          relation:
+            "Meehan reports a coordinated intensification after the valley. Possibly the same event as the 2:45 rimshot at m. 11.",
+          source: "Meehan p. 162",
+          status: "Literature event; time pending",
+        },
+        {
+          time: "2:59",
+          position: "Chorus 6, start",
+          event: "Heavier, more pointed horn attacks, without shorter durations or staccato.",
+          relation:
+            "Attack profile changes independently of note length; no specific literature corroboration located.",
+          source: "Goldford",
+          status: "Listening observation",
+        },
+        {
+          time: "3:34",
+          position: "Chorus 7, start",
+          event: "Drums take greater liberties.",
+          relation: "Specify rhythmic departures through further listening.",
+          source: "Goldford",
+          status: "Listening observation",
+        },
+        {
+          time: "4:04",
+          position: "Chorus 7, approximately mm. 15–16",
+          event:
+            "Ascending chromatic piano figuration over the identified A7-flat9-13 turnaround.",
+          relation: "Boundary-directed piano gesture; pitches await transcription.",
+          source: "Goldford",
+          status: "Listening observation",
+        },
+        {
+          time: "4:09",
+          position: "Chorus 8, start; span pending",
+          event: "Quieter horns, longer sustained notes and fewer intervening rests.",
+          relation: "Changes in dynamics and spacing; exact span still open.",
+          source: "Goldford",
+          status: "Listening observation",
+        },
+        {
+          time: "Pending",
+          position: "Chorus 8, second half",
+          event: "Ensemble diminuendo before the more active subsequent drum passages.",
+          relation: "Meehan groups choruses 9–11 as intensified drum activity.",
+          source: "Meehan p. 163",
+          status: "Literature event; time pending",
+        },
+        {
+          time: "4:44",
+          position: "Chorus 9, start",
+          event: "New piano figuration, louder horns and changed drum interaction.",
+          relation: "Multiple parameters change near the chorus boundary.",
+          source: "Goldford",
+          status: "Listening observation",
+        },
+        {
+          time: "5:01",
+          position: "Chorus 9, m. 9",
+          event: "Repeated intrusive snare hits interject into melodic phrases.",
+          relation: "Drums gain foreground prominence.",
+          source: "Goldford",
+          status: "Listening observation",
+        },
+        {
+          time: "5:13",
+          position: "Chorus 9, m. 14",
+          event: "Repeated-snare activity effectively becomes a three-bar drum solo.",
+          relation: "Perceived drum foregrounding; not a claim that all other instruments stop.",
+          source: "Goldford",
+          status: "Listening observation",
+        },
+        {
+          time: "5:18",
+          position: "Chorus 10, start",
+          event:
+            "Drum roll into the chorus; Davis leads, Shorter follows roughly 1–1.5 quarter-note beats later.",
+          relation:
+            "Canon-like melodic displacement; strict canon and response to the roll are unverified.",
+          source: "Goldford",
+          status: "Listening observation",
+        },
+        {
+          time: "5:54",
+          position: "Chorus 11, start",
+          event: "Piano eighth-note trill figuration and glissandos; cymbal intrusions.",
+          relation: "Interventions overlap or interrupt the horn melody.",
+          source: "Goldford; Meehan p. 163 (broader drum activity)",
+          status: "Listening observation",
+        },
+        {
+          time: "6:21",
+          position: "Chorus 11, mm. 13–16",
+          event: "Ensemble diminuendo with softer piano trilling.",
+          relation: "Hancock as initiator is a response hypothesis.",
+          source: "Goldford",
+          status: "Listening observation",
+        },
+        {
+          time: "6:30",
+          position: "Chorus 12, start",
+          event:
+            "Both horns absent; simple whole-note piano chords, prominent drums and later drum roll.",
+          relation: "Melodic withdrawal redistributes foreground activity.",
+          source: "Goldford; Meehan p. 162 n. 512; Pasceri title-track paragraph",
+          status: "Listening observation",
+        },
+        {
+          time: "7:05",
+          position: "Chorus 13, start",
+          event:
+            "Both horns return together, stately and authoritative; rhythms heard as adhering to notation.",
+          relation:
+            "Restoration of coordinated melodic delivery; comparison with a specified score remains pending.",
+          source: "Goldford; Meehan p. 162 n. 512 (return)",
+          status: "Listening observation",
+        },
+        {
+          time: "7:40",
+          position: "After chorus 13; vamp out",
+          event: "Vamp out: no new horn statement; time continues in drums and bass briefly into a fade.",
+          relation: "Released-recording ending, without an invented collective stop cue. Time continues, but nothing in any part suggests that a new chorus has begun.",
+          source: "Goldford",
+          status: "Listening observation",
+        },
+      ];
+
+      const esc = (s) =>
+        String(s).replace(
+          /[&<>"']/g,
+          (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c],
+        );
+      const list = document.getElementById("graphlist");
+      graphs.forEach((g) => {
+        const a = document.createElement("article");
+        a.dataset.scale = g.scale;
+        a.id = g.id;
+        a.innerHTML = `<div class="kicker">${esc(g.scale)} scale</div><h3>${esc(g.title)}</h3><div class="diagram" role="img" aria-label="${esc(g.title)}"></div><p class="prose">${esc(g.prose)}</p><p class="source">Sources: ${esc(g.sources)}</p><details><summary>Mermaid source code</summary><button class="copy" type="button">Copy code</button><pre><code>${esc(g.code)}</code></pre></details>`;
+        list.append(a);
+        a.querySelector(".copy").onclick = async (e) => {
+          try {
+            await navigator.clipboard.writeText(g.code);
+            e.target.textContent = "Copied";
+          } catch {
+            e.target.textContent = "Select and copy code below";
+          }
+        };
+      });
+
+      document.querySelectorAll("[data-scale]").forEach((b) => {
+        if (b.tagName !== "BUTTON") return;
+        b.onclick = () => {
+          document
+            .querySelectorAll(".tabs button")
+            .forEach((x) => x.setAttribute("aria-pressed", x === b ? "true" : "false"));
+          document
+            .querySelectorAll("article")
+            .forEach(
+              (a) => (a.hidden = b.dataset.scale !== "all" && a.dataset.scale !== b.dataset.scale),
+            );
+        };
+      });
+
+      function renderLedger() {
+        const q = document.getElementById("search").value.toLowerCase(),
+          f = document.getElementById("sourcefilter").value;
+        const shown = rows.filter(
+          (r) =>
+            JSON.stringify(r).toLowerCase().includes(q) &&
+            (f === "all" || (f === "pending" && r.time === "Pending") || r.source.includes(f)),
+        );
+        document.getElementById("ledger").innerHTML = shown
+          .map((r) => {
+            const time =
+              r.time === "Pending"
+                ? '<span class="badge">Time pending</span>'
+                : `<a href="https://youtu.be/F2zUua79c6U?t=${r.time.split(":").reduce((a, v) => a * 60 + Number(v), 0)}" target="_blank" rel="noopener">${esc(r.time)} <span class="ext" aria-hidden="true">↗</span></a>`;
+            return `<tr><td>${time}</td><td>${esc(r.position)}</td><td>${esc(r.event)}</td><td>${esc(r.relation)}</td><td>${esc(r.source)}</td></tr>`;
+          })
+          .join("");
+        document.getElementById("count").textContent =
+          `${shown.length} of ${rows.length} observations`;
+      }
+
+      document.getElementById("search").oninput = renderLedger;
+      document.getElementById("sourcefilter").onchange = renderLedger;
+      renderLedger();
+
+      const tip = document.createElement("div");
+      tip.className = "graph-tip";
+      tip.setAttribute("role", "tooltip");
+      document.body.append(tip);
+
+      function moveTip(x, y) {
+        const pad = 14;
+        const w = tip.offsetWidth;
+        const h = tip.offsetHeight;
+        const left = x + pad + w > window.innerWidth - 8 ? x - pad - w : x + pad;
+        const top = y + pad + h > window.innerHeight - 8 ? y - pad - h : y + pad;
+        tip.style.transform = `translate(${Math.max(8, left)}px, ${Math.max(8, top)}px)`;
+      }
+
+      function bindTip(anchor, link) {
+        const show = (x, y) => {
+          tip.innerHTML =
+            `<span class="graph-tip-time">${esc(link.time)}</span>` +
+            `<span class="graph-tip-label">${esc(link.label.replace(/^\d+:\d+\s+/, ""))}</span>` +
+            `<span class="graph-tip-hint">Open the recording here <span class="ext" aria-hidden="true">↗</span></span>`;
+          tip.classList.add("visible");
+          moveTip(x, y);
+        };
+        const hide = () => tip.classList.remove("visible");
+        anchor.addEventListener("mouseenter", (e) => show(e.clientX, e.clientY));
+        anchor.addEventListener("mousemove", (e) => moveTip(e.clientX, e.clientY));
+        anchor.addEventListener("mouseleave", hide);
+        anchor.addEventListener("focus", () => {
+          const r = anchor.getBoundingClientRect();
+          show(r.right, r.top);
+        });
+        anchor.addEventListener("blur", hide);
+      }
+
+      function attachVideoLinks(container, g) {
+        const ns = "http://www.w3.org/2000/svg";
+        for (const node of [...container.querySelectorAll("g.node")]) {
+          const entry = Object.entries(g.links || {}).find(([id]) =>
+            node.id.startsWith("flowchart-" + id + "-"),
+          );
+          if (!entry) continue;
+          const [, link] = entry;
+          const anchor = document.createElementNS(ns, "a");
+          anchor.setAttribute("href", link.url);
+          anchor.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", link.url);
+          anchor.setAttribute("target", "_blank");
+          anchor.setAttribute("rel", "noopener noreferrer");
+          anchor.setAttribute("tabindex", "0");
+          anchor.setAttribute("aria-label", "Open recording at " + link.time + ": " + link.label);
+          anchor.setAttribute("class", "video-node");
+          node.parentNode.replaceChild(anchor, node);
+          anchor.append(node);
+          bindTip(anchor, link);
+        }
+      }
+
+      async function renderGraphs() {
+        if (document.fonts) await document.fonts.ready;
+        if (!window.mermaid) {
+          document.querySelectorAll(".diagram").forEach((d) => {
+            d.innerHTML =
+              '<p class="error">Diagram renderer unavailable. Mermaid code remains available below.</p>';
+          });
+          return;
+        }
+        mermaid.initialize({
+          startOnLoad: false,
+          securityLevel: "strict",
+          theme: "base",
+          themeVariables: {
+            primaryColor: "#e6efe8",
+            primaryTextColor: "#203333",
+            primaryBorderColor: "#709c8c",
+            lineColor: "#47665d",
+            fontFamily: '"Crimson Pro", Georgia, serif',
+            fontSize: "15px",
+          },
+          flowchart: { htmlLabels: false, useMaxWidth: true },
+        });
+        for (const [i, g] of graphs.entries()) {
+          try {
+            const { svg } = await mermaid.render("graphsvg" + i, g.code);
+            const container = document.querySelector("#" + g.id + " .diagram");
+            container.innerHTML = svg;
+            attachVideoLinks(container, g);
+          } catch (err) {
+            document.querySelector("#" + g.id + " .diagram").innerHTML =
+              '<p class="error">Could not render this diagram; inspect its code below.</p>';
+            console.error(g.id, err);
+          }
+        }
+      }
+      renderGraphs();
+    </script>
+  </body>
+</html>
