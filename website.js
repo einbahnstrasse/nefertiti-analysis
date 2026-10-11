@@ -543,6 +543,36 @@ document.querySelectorAll("[data-scale]").forEach((b) => {
   };
 });
 
+const LINK_ICON =
+  '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor"' +
+  ' stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">' +
+  '<path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5" />' +
+  '<path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5" /></svg>';
+
+function addHeadingAnchor(heading, id) {
+  const a = document.createElement("a");
+  a.className = "heading-anchor";
+  a.href = "#" + id;
+  a.setAttribute("aria-label", "Link to “" + heading.textContent.trim() + "”");
+  a.innerHTML = LINK_ICON;
+  a.addEventListener("click", async () => {
+    const url = location.href.split("#")[0] + "#" + id;
+    try {
+      await navigator.clipboard.writeText(url);
+      a.dataset.flash = "Link copied";
+    } catch {
+      a.dataset.flash = "Link in address bar";
+    }
+    a.classList.add("flashed");
+    setTimeout(() => a.classList.remove("flashed"), 1400);
+  });
+  heading.append(a);
+}
+
+document.querySelectorAll("main section[id] > h2").forEach((h) => addHeadingAnchor(h, h.parentElement.id));
+document.querySelectorAll("article[id] > h3").forEach((h) => addHeadingAnchor(h, h.parentElement.id));
+document.querySelectorAll(".cite[id] > h3").forEach((h) => addHeadingAnchor(h, h.parentElement.id));
+
 function renderLedger() {
   const q = document.getElementById("search").value.toLowerCase(),
     f = document.getElementById("sourcefilter").value;
