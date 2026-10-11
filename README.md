@@ -62,4 +62,4 @@ The three zoom levels are performance, passage and local exchange. All timed lin
 - Code and website (HTML structure, website.css, website.js): MIT License; see LICENSE.
 - Third-party components: the Mermaid renderer (mermaid.min.js, also embedded in Nefertiti-Complete-Offline.html) is © Knut Sveidqvist under the MIT License; see MERMAID-LICENSE.txt. The Crimson Pro fonts in fonts/ are © The Crimson Pro Project Authors under the SIL Open Font License 1.1; see fonts/OFL.txt.
 
-Suggested citation: Goldford, Louis. “Nefertiti: Interaction at Three Scales.” 2026. https://einbahnstrasse.github.io/nefertiti-analysis/.
+Suggested citation: Goldford, Louis. “Nefertiti: Interaction at Three Scales.” Last modified October 11, 2026. https://einbahnstrasse.github.io/nefertiti-analysis/. Use the “Last modified” date shown on the page.

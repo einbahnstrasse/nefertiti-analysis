@@ -143,17 +143,38 @@
         padding: 12px 20px;
         background: #edf1e9;
       }
-      .legend {
-        display: flex;
-        gap: 24px;
-        flex-wrap: wrap;
+      .key {
+        width: auto;
+        max-width: 830px;
+        margin-top: 28px;
+        font-size: 17px;
+      }
+      .key caption {
+        padding-bottom: 8px;
+        color: var(--teal);
+        font-size: 12px;
+        letter-spacing: 0.13em;
+        text-align: left;
+        text-transform: uppercase;
+      }
+      .key th,
+      .key td {
+        padding: 10px 14px;
+        vertical-align: middle;
+      }
+      .key thead th {
+        position: static;
         font-size: 14px;
-        color: var(--muted);
       }
-      .legend b {
-        color: var(--ink);
+      .key tbody th {
+        position: static;
+        background: none;
+        white-space: nowrap;
       }
-      .legend .recurrence {
+      .key svg {
+        display: block;
+      }
+      .key .recurrence {
         color: var(--rust);
       }
       .scales li {
@@ -245,7 +266,6 @@
         margin: auto;
         max-width: 100%;
         height: auto;
-        max-height: 1100px;
       }
       .prose {
         max-width: 890px;
@@ -320,17 +340,17 @@
         border-bottom: 1px solid var(--line);
         vertical-align: top;
       }
-      td:first-child {
+      .tablewrap td:first-child {
         white-space: nowrap;
         font-variant-numeric: oldstyle-nums tabular-nums;
       }
-      td:nth-child(2) {
+      .tablewrap td:nth-child(2) {
         white-space: nowrap;
       }
-      td:nth-child(3) {
+      .tablewrap td:nth-child(3) {
         min-width: 260px;
       }
-      td:nth-child(4) {
+      .tablewrap td:nth-child(4) {
         min-width: 260px;
       }
       .badge {
@@ -388,6 +408,52 @@
         letter-spacing: 0.12em;
         text-transform: uppercase;
       }
+      .graph-tip.is-note {
+        max-width: 420px;
+      }
+      .graph-tip-head {
+        display: block;
+        margin-bottom: 4px;
+        color: #cce8a9;
+        font-size: 12px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+      .graph-tip a {
+        color: #cce8a9;
+      }
+      header .modified {
+        margin-top: 6px;
+        color: #b8d7cb;
+        font-size: 13px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+      .cite {
+        max-width: 930px;
+        margin-top: 40px;
+        padding: 18px 22px;
+        border-left: 3px solid var(--teal);
+        background: #edf1e9;
+      }
+      .cite h3 {
+        margin: 0 0 8px;
+      }
+      .cite-label {
+        margin: 14px 0 2px;
+        color: var(--teal);
+        font-size: 12px;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+      }
+      .cite-entry {
+        margin: 0;
+        padding-left: 2em;
+        text-indent: -2em;
+      }
+      .cite-entry a {
+        overflow-wrap: anywhere;
+      }
       footer {
         border-top: 1px solid var(--line);
         padding: 25px;
@@ -437,6 +503,7 @@
         <a href="https://youtu.be/F2zUua79c6U" target="_blank" rel="noopener">Open the assigned recording <span class="ext" aria-hidden="true">↗</span></a>
         · All timed links use this YouTube upload.
       </p>
+      <p class="modified">Last modified <time datetime="2026-10-11">October 11, 2026</time></p>
     </header>
     <nav aria-label="Page sections">
       <a href="#approach">Approach</a>
@@ -492,7 +559,7 @@
             available for subsequent listening and action. A response can also change how an earlier
             gesture is
             understood.<sup class="fnref" id="fnref-6"><a href="#fn-6" aria-label="Note 6">6</a></sup>
-            In our analysis, a feedback connection identifies a proposed relationship of this kind.
+            In our analysis, a feedback connection identifies a relationship of this kind.
             The mere return of the sixteen-bar form establishes recurrence; identifying
             interpersonal recursion requires evidence of uptake, transformation, or adjustment.
           </p>
@@ -535,7 +602,7 @@
             A local exchange may remain local or contribute to a wider change; the graphs allow
             those relationships to be investigated. All timestamps refer to the assigned YouTube
             recording.<sup class="fnref" id="fnref-9"><a href="#fn-9" aria-label="Note 9">9</a></sup> Listening observations and literature accounts are attributed separately, and
-            proposed response relationships remain distinguishable from the reported sequence of
+            response relationships remain distinguishable from the reported sequence of
             events.
           </p>
         </div>
@@ -545,17 +612,48 @@
           detailed listening descriptions are Louis Goldford’s; literature observations are
           separately attributed. This draft does not claim an independent audio transcription.
         </div>
-        <p class="legend">
-          <span><b>Solid arrow</b> · reported sequence / structural relation</span>
-          <span><b>Dashed arrow</b> · proposed response / feedback</span>
-          <span><b class="recurrence">Red return</b> · formal recurrence</span>
-          <span><b>Diamond</b> · specific performance choice inferred from action</span>
-        </p>
-        <p class="source">
-          Untaken alternatives inside diamonds are analytical contrasts, not additional recorded
-          events. A dashed backward connection means a renewed input to subsequent actions, not a
-          return to an earlier timestamp.
-        </p>
+        <table class="key">
+          <caption>Graph key</caption>
+          <thead>
+            <tr>
+              <th scope="col">Symbol</th>
+              <th scope="col">Name</th>
+              <th scope="col">Meaning</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><svg width="48" height="20" viewBox="0 0 48 20" aria-hidden="true"><line x1="2" y1="10" x2="39" y2="10" stroke="#47665d" stroke-width="2" /><path d="M38 5 L46 10 L38 15 Z" fill="#47665d" /></svg></td>
+              <th scope="row">Solid arrow</th>
+              <td>
+                Reported sequence or structural relation.
+              </td>
+            </tr>
+            <tr>
+              <td><svg width="48" height="20" viewBox="0 0 48 20" aria-hidden="true"><line x1="2" y1="10" x2="39" y2="10" stroke="#47665d" stroke-width="2" stroke-dasharray="4 3" /><path d="M38 5 L46 10 L38 15 Z" fill="#47665d" /></svg></td>
+              <th scope="row">Dashed arrow</th>
+              <td>
+                Response or feedback. A dashed backward connection means a renewed input to
+                subsequent actions, not a return to an earlier timestamp.
+              </td>
+            </tr>
+            <tr>
+              <td><svg width="48" height="20" viewBox="0 0 48 20" aria-hidden="true"><line x1="2" y1="10" x2="39" y2="10" stroke="#b34c38" stroke-width="3" /><path d="M38 5 L46 10 L38 15 Z" fill="#b34c38" /></svg></td>
+              <th scope="row"><span class="recurrence">Red return</span></th>
+              <td>
+                Formal recurrence.
+              </td>
+            </tr>
+            <tr>
+              <td><svg width="48" height="20" viewBox="0 0 48 20" aria-hidden="true"><path d="M24 2 L35 10 L24 18 L13 10 Z" fill="#e6efe8" stroke="#709c8c" stroke-width="1.5" /></svg></td>
+              <th scope="row">Diamond</th>
+              <td>
+                Specific performance choice inferred from action. Untaken alternatives inside
+                diamonds are analytical contrasts, not additional recorded events.
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </section>
       <section id="graphs">
         <h2>Explore the graphs</h2>
@@ -571,7 +669,7 @@
           <button data-scale="local" aria-pressed="false">03 · Local exchange</button>
         </div>
         <div id="graphlist"></div>
-        <a class="download" href="data:text/plain;base64,JSUgUGFydGljaXBhdGlvbiBhbmQgY2hhbmdpbmcgbWVsb2RpYyBkZWxpdmVyeQpmbG93Y2hhcnQgVEQKIEFbIjA6MDAgU2hvcnRlciBhbG9uZSJdIC0tPiBCWyIwOjU0IERhdmlzIGpvaW5zOyByaWRlIGJlbGwgYnJpZ2h0ZW5zIHRleHR1cmUiXQogQiAtLT4gQ3siSG9ybnM6IHByZXNlcnZlIG9yIGNoYW5nZSBkZWxpdmVyeT8ifQogQyAtLT4gRFsiMjo1OSBIZWF2aWVyIGhvcm4gYXR0YWNrcyJdCiBEIC0tPiBEMlsiNDowOSBTdXN0YWluZWQgcXVpZXQgaG9ybiBkZWxpdmVyeSJdCiBEMiAtLT4gRVsiNToxOCBEYXZpcyBsZWFkczsgU2hvcnRlciBkZWxheXMgdGhlIHNhbWUgbWVsb2R5Il0KIEUgLS0+IEZ7Ik5leHQgbWVsb2RpYyB0cmF2ZXJzYWw6IHBsYXkgb3IgbGVhdmUgc3BhY2U/In0KIEYgLS0+IEdbIjY6MzAgQm90aCBob3JucyBhYnNlbnQ7IHBpYW5vIGFuZCBkcnVtcyBmb3JlZ3JvdW5kZWQiXQogRyAtLT4gSFsiNzowNSBIb3JucyByZXR1cm4gdG9nZXRoZXIiXQogSCAtLT4gSVsiNzo0MCBObyBuZXcgaG9ybiBzdGF0ZW1lbnQ7IHJoeXRobS1zZWN0aW9uIGZhZGUiXQogUlsiU2l4dGVlbi1iYXIgZm9ybTogbS4gMSB0aHJvdWdoIG0uIDE2Il0gLS0+IFNbIlJldHVybiB0byBtLiAxIGF0IGVhY2ggY29tcGxldGUgY2hvcnVzIl0KIFMgLS0+IFIKIFIgLS0tIEMKIFBbIlBpYW5vIGFuZCBkcnVtIGludGVydmVudGlvbnMgY2hhbmdlIHRoZSBlbnNlbWJsZSBjb250ZXh0Il0gLS4gIlByb3Bvc2VkIGluZmx1ZW5jZSBvbiBzdWJzZXF1ZW50IGRlbGl2ZXJ5IiAuLT4gQwogRCAtLiAiQ2hhbmdlZCBob3JuIHNvdW5kIGluZm9ybXMgYWNjb21wYW5pbWVudD8iIC4tPiBQCiBFIC0uICJEaXNwbGFjZWQgbWVsb2R5IGluZm9ybXMgYWNjb21wYW5pbWVudD8iIC4tPiBQCiBsaW5rU3R5bGUgMTAgc3Ryb2tlOiNiMzRjMzgsc3Ryb2tlLXdpZHRoOjNweAoKCiUlIENsb3NpbmcgcGFzc2FnZXMgYmVjb21lIHBsYWNlcyB0byByZWRpcmVjdCB0aGUgZW5zZW1ibGUKZmxvd2NoYXJ0IFRECiBBWyIwOjI4IENob3J1cyAxOiByaWRlIGNvbW1lbnRzIG9uIHN1c3RhaW5lZCBlbmRpbmciXSAtLT4gQlsiMTowMyBDaG9ydXMgMjogZG90dGVkLXF1YXJ0ZXIgcGlhbm8gY2hvcmRzIl0KIEIgLS0+IENbIjE6MzcgQ2hvcnVzIDM6IGxvbmctc2hvcnQgY3ltYmFsIGdlc3R1cmUiXQogQyAtLT4gRFsiSW50byBjaG9ydXMgNDogc2ltaWxhcmx5IHBhaXJlZCBwaWFubyBjaG9yZHMiXQogRCAtLT4gRVsiMjoxNyBDaG9ydXMgNDogdHJ1bXBldCBncm93bCBhbmQgcGlhbm8gc2VtaXRvbmUgZHlhZHMiXQogQyAtLiAiUHJvcG9zZWQgcmh5dGhtaWMgdXB0YWtlIiAuLT4gRAogUXsiSW4gdGhlIGNsb3Npbmcgc3BhY2U6IHN1c3RhaW4sIHB1bmN0dWF0ZSBvciBpbnRyb2R1Y2UgYSBmaWd1cmU/In0gLS0+IEEKIFEgLS0+IEIKIFEgLS0+IEMKIFEgLS0+IEUKIEUgLS4gIkRpZmZlcmVudCBtYXRlcmlhbCBhdmFpbGFibGUgYXQgdGhlIG5leHQgYm91bmRhcnkiIC4tPiBRCgoKJSUgRnJvbSBkcnVtIGludGVyamVjdGlvbiB0byBtZWxvZGljIGRpc3BsYWNlbWVudCBhbmQgd2l0aGRyYXdhbApmbG93Y2hhcnQgVEQKIEFbIjQ6NDQgQ2hvcnVzIDk6IGxvdWRlciBob3JucyBhbmQgbmV3IHBpYW5vIGZpZ3VyZSJdIC0tPiBCWyI1OjAxIFNuYXJlIGludGVyamVjdHMgaW50byBtZWxvZHkiXQogQiAtLT4gQ1siNToxMyBSZXBlYXRlZCBzbmFyZSB0YWtlcyBmb3JlZ3JvdW5kIl0KIEMgLS0+IERbIjU6MTggRHJ1bSByb2xsIGVudGVycyBjaG9ydXMgMTAiXQogRCAtLT4gRXsiSG9ybnM6IGFsaWduIG9yIG9mZnNldCBtZWxvZGljIGVudHJhbmNlcz8ifQogRSAtLT4gRlsiRGF2aXMgbGVhZHM7IFNob3J0ZXIgZm9sbG93cyBhYm91dCAx4oCTMS41IGJlYXRzIGxhdGVyIl0KIEYgLS0+IEdbIjU6NTQgQ2hvcnVzIDExOiB0cmlsbHMsIGdsaXNzYW5kb3MgYW5kIGN5bWJhbCBpbnRydXNpb25zIl0KIEcgLS0+IEhbIjY6MjEgU29mdGVyIHRyaWxsaW5nIGFuZCBlbnNlbWJsZSBkaW1pbnVlbmRvIl0KIEggLS0+IEl7IkNob3J1cyAxMjogcmVzdGF0ZSBvciB3aXRoaG9sZCBtZWxvZHk/In0KIEkgLS0+IEpbIjY6MzAgSG9ybnMgd2l0aGhvbGQ7IHJoeXRobSBzZWN0aW9uIGNvbnRpbnVlcyJdCiBKIC0tPiBLWyI3OjA1IEhvcm5zIHJldHVybiB0b2dldGhlciJdCiBEIC0uICJJbmZsdWVuY2Ugb24gaG9ybiBhbGlnbm1lbnQgdW52ZXJpZmllZCIgLi0+IEYKIEggLS4gIkluZmx1ZW5jZSBvbiB3aXRoZHJhd2FsIHVudmVyaWZpZWQiIC4tPiBKCgoKJSUgMjoyOOKAkzI6NDUg4oCiIEEgcGlhbm8gcmh5dGhtIGlzIHRha2VuIHVwIGFuZCB0cmFuc2Zvcm1lZApmbG93Y2hhcnQgVEQKIEFbIjI6MjggSGFuY29jazogYXNjZW5kaW5nIHF1YXJ0ZXItbm90ZSB0cmlwbGV0cyJdIC0tPiBCeyJXaWxsaWFtczogcmV0YWluIHRpbWUgcGF0dGVybiBvciBhZG9wdCB0cmlwbGV0cz8ifQogQiAtLT4gQ1siMjozMyBRdWFydGVyLW5vdGUgdHJpcGxldHMgb24gdG9tcyJdCiBDIC0tPiBEeyJSZXBlYXQgdGhlIGFkb3B0ZWQgZmlndXJlIG9yIHRyYW5zZm9ybSBpdD8ifQogRCAtLT4gRVsiMjozNiBGaXZlLW5vdGUgZmlndXJlIG9uIGVpZ2h0aC1ub3RlLXRyaXBsZXQgZ3JpZCJdCiBFIC0tPiBGWyJUb21zIHBocmFzZSB1bmRlcmdvZXMgZGltaW51dGlvbiJdCiBGIC0tPiBHWyIyOjQ1IFJpbXNob3QgaW4gbWVsb2RpYyBnYXA7IGNsZWFyZXIgc3dpbmcgcmV0dXJucyJdCiBHIC0tPiBIWyJIb3JucyBnaXZlIEItZmxhdCBhIHN0cm9uZ2VyIGF0dGFjayJdCiBBIC0uICJQcm9wb3NlZCB1cHRha2UiIC4tPiBDCiBHIC0uICJQcm9wb3NlZCByZXNwb25zZSIgLi0+IEgKIEggLS4gIkNoYW5nZWQgaG9ybiBlbmVyZ3kgYmVjb21lcyBuZXcgaW5wdXQgZm9yIFdpbGxpYW1zIiAuLT4gQgoKCiUlIDI6MTDigJMyOjE3IG9ud2FyZCDigKIgVm9jYWwgaW5mbGVjdGlvbiBhbmQgc2VtaXRvbmUgZGlzc29uYW5jZQpmbG93Y2hhcnQgVEQKIEFbIjI6MTAgSGFuY29jazogYmx1ZXMtbGlrZSB2b2ljaW5nIGluIG1lbG9kaWMgcmVzdCJdIC0tPiBCWyIyOjE3IERhdmlzOiBkb3dud2FyZCBncm93bGluZyB0YWlsIHRvIHN1c3RhaW5lZCBub3RlIl0KIEIgLS0+IEN7IkhhbmNvY2s6IHJldGFpbiB2b2ljaW5nIG9yIGFuc3dlciB3aXRoIHNoYXJwZXIgZGlzc29uYW5jZT8ifQogQyAtLT4gRFsiQ+KAk0Mtc2hhcnAgZHlhZCwgdGhlbiBG4oCTRSBkeWFkIl0KIEIgLS4gIlByb3Bvc2VkIHRpbWJyYWwtdG8taGFybW9uaWMgcmVzcG9uc2UiIC4tPiBECiBUWyJXaWxsaWFtcyBtaXhlcyBzdHJhaWdodCBhbmQgc3d1bmcgZWlnaHRocyJdIC0tLSBCCiBUIC0tLSBECiBEIC0tPiBFWyJDaGFuZ2VkIGVuc2VtYmxlIGNvbnRleHQgYXQgdGhlIG5leHQgY2hvcnVzIl0KIEUgLS4gIklucHV0IHRvIHN1YnNlcXVlbnQgaG9ybiBhbmQgcGlhbm8gY2hvaWNlcyIgLi0+IEMKCgolJSBDaG9ydXMgNSwgbW0uIDnigJMxMiDigKIgRXh0ZW5zaW9uLCB3aXRoZHJhd2FsIGFuZCByZW5ld2VkIGludGVuc2l0eQpmbG93Y2hhcnQgVEQKIEFbIm0uIDkgSG9ybnMgZXh0ZW5kIEEtZmxhdCBhZnRlciBsZWdhdG8gcGhyYXNpbmciXSAtLT4gQnsiSGFuY29jazogY29udGludWUgY29tcGluZyBvciBsZWF2ZSBzcGFjZT8ifQogQiAtLT4gQ1siUGlhbm8gbGF5cyBvdXQiXQogQSAtLT4gRHsiV2lsbGlhbXM6IHN1c3RhaW4gaW50ZW5zaXR5IG9yIGxvd2VyIGR5bmFtaWM/In0KIEQgLS0+IEVbIkRydW1zIGJlY29tZSBzb2Z0ZXIiXQogQyAtLT4gRlsiUmVkdWNlZCB0ZXh0dXJlOiBhIGR5bmFtaWMgdmFsbGV5Il0KIEUgLS0+IEYKIEYgLS0+IEd7IldpbGxpYW1zOiBtYWludGFpbiB0aGUgdmFsbGV5IG9yIGludGVycnVwdCBpdD8ifQogRyAtLT4gSFsiTWlkLW0uIDEyOiBzdHJvbmcgZmlsbCBpbnRvIG5ldyBjaG9yZCJdCiBIIC0tPiBJWyJFbnNlbWJsZSBhdHRhY2tzIHdpdGggcmVuZXdlZCBpbnRlbnNpdHkiXQogQSAtLiAiTWVlaGFuJ3MgcmVzcG9uc2UgaW50ZXJwcmV0YXRpb24iIC4tPiBDCiBBIC0uICJNZWVoYW4ncyByZXNwb25zZSBpbnRlcnByZXRhdGlvbiIgLi0+IEUKIEkgLS4gIk5ldyBpbnRlbnNpdHkgaW5mb3JtcyBzdWJzZXF1ZW50IGRlbGl2ZXJ5IiAuLT4gQgo=" download>Download all Mermaid code</a>
+        <a class="download" href="data:text/plain;base64,JSUgUGFydGljaXBhdGlvbiBhbmQgY2hhbmdpbmcgbWVsb2RpYyBkZWxpdmVyeQpmbG93Y2hhcnQgVEQKIEFbIjA6MDAgU2hvcnRlciBhbG9uZSJdIC0tPiBCWyIwOjU0IERhdmlzIGpvaW5zOyByaWRlIGJlbGwgYnJpZ2h0ZW5zIHRleHR1cmUiXQogQiAtLT4gQ3siSG9ybnM6IHByZXNlcnZlIG9yIGNoYW5nZSBkZWxpdmVyeT8ifQogQyAtLT4gRFsiMjo1OSBIZWF2aWVyIGhvcm4gYXR0YWNrcyJdCiBEIC0tPiBEMlsiNDowOSBTdXN0YWluZWQgcXVpZXQgaG9ybiBkZWxpdmVyeSJdCiBEMiAtLT4gRVsiNToxOCBEYXZpcyBsZWFkczsgU2hvcnRlciBkZWxheXMgdGhlIHNhbWUgbWVsb2R5Il0KIEUgLS0+IEZ7Ik5leHQgbWVsb2RpYyB0cmF2ZXJzYWw6IHBsYXkgb3IgbGVhdmUgc3BhY2U/In0KIEYgLS0+IEdbIjY6MzAgQm90aCBob3JucyBhYnNlbnQ7IHBpYW5vIGFuZCBkcnVtcyBmb3JlZ3JvdW5kZWQiXQogRyAtLT4gSFsiNzowNSBIb3JucyByZXR1cm4gdG9nZXRoZXIiXQogSCAtLT4gSVsiNzo0MCBObyBuZXcgaG9ybiBzdGF0ZW1lbnQ7IHJoeXRobS1zZWN0aW9uIGZhZGUiXQogUlsiU2l4dGVlbi1iYXIgZm9ybTogbS4gMSB0aHJvdWdoIG0uIDE2Il0gLS0+IFNbIlJldHVybiB0byBtLiAxIGF0IGVhY2ggY29tcGxldGUgY2hvcnVzIl0KIFMgLS0+IFIKIFIgLS0tIEMKIFBbIlBpYW5vIGFuZCBkcnVtIGludGVydmVudGlvbnMgY2hhbmdlIHRoZSBlbnNlbWJsZSBjb250ZXh0Il0gLS4gIkluZmx1ZW5jZSBvbiBzdWJzZXF1ZW50IGRlbGl2ZXJ5IiAuLT4gQwogRCAtLiAiQ2hhbmdlZCBob3JuIHNvdW5kIGluZm9ybXMgYWNjb21wYW5pbWVudD8iIC4tPiBQCiBFIC0uICJEaXNwbGFjZWQgbWVsb2R5IGluZm9ybXMgYWNjb21wYW5pbWVudD8iIC4tPiBQCiBsaW5rU3R5bGUgMTAgc3Ryb2tlOiNiMzRjMzgsc3Ryb2tlLXdpZHRoOjNweAoKCiUlIENsb3NpbmcgcGFzc2FnZXMgYmVjb21lIHBsYWNlcyB0byByZWRpcmVjdCB0aGUgZW5zZW1ibGUKZmxvd2NoYXJ0IFRECiBBWyIwOjI4IENob3J1cyAxOiByaWRlIGNvbW1lbnRzIG9uIHN1c3RhaW5lZCBlbmRpbmciXSAtLT4gQlsiMTowMyBDaG9ydXMgMjogZG90dGVkLXF1YXJ0ZXIgcGlhbm8gY2hvcmRzIGZvcm0gYSBicmllZiBwb2x5bWV0cmljIGxheWVyIl0KIEIgLS0+IENbIjE6MzcgQ2hvcnVzIDM6IHNob3J0LWxvbmcgY2xvc2Utb3BlbiBoaS1oYXQgZ2VzdHVyZSJdCiBDIC0tPiBEWyJJbnRvIGNob3J1cyA0OiBzaW1pbGFybHkgcGFpcmVkIHBpYW5vIGNob3JkcyJdCiBEIC0tPiBFWyIyOjE3IENob3J1cyA0OiB0cnVtcGV0IGdyb3dsIGFuZCBwaWFubyBzZW1pdG9uZSBkeWFkcyJdCiBDIC0uICJSaHl0aG1pYyB1cHRha2UiIC4tPiBECiBReyJJbiB0aGUgY2xvc2luZyBzcGFjZTogc3VzdGFpbiwgcHVuY3R1YXRlIG9yIGludHJvZHVjZSBhIGZpZ3VyZT8ifSAtLT4gQQogUSAtLT4gQgogUSAtLT4gQwogUSAtLT4gRQogRSAtLiAiRGlmZmVyZW50IG1hdGVyaWFsIGF2YWlsYWJsZSBhdCB0aGUgbmV4dCBib3VuZGFyeSIgLi0+IFEKCgolJSBGcm9tIGRydW0gaW50ZXJqZWN0aW9uIHRvIG1lbG9kaWMgZGlzcGxhY2VtZW50IGFuZCB3aXRoZHJhd2FsCmZsb3djaGFydCBURAogQVsiNDo0NCBDaG9ydXMgOTogbG91ZGVyIGhvcm5zIGFuZCBuZXcgcGlhbm8gZmlndXJlIl0gLS0+IEJbIjU6MDEgU25hcmUgaW50ZXJqZWN0cyBpbnRvIG1lbG9keSJdCiBCIC0tPiBDWyI1OjEzIFJlcGVhdGVkIHNuYXJlIHRha2VzIGZvcmVncm91bmQiXQogQyAtLT4gRFsiNToxOCBEcnVtIHJvbGwgZW50ZXJzIGNob3J1cyAxMCJdCiBEIC0tPiBFeyJIb3JuczogYWxpZ24gb3Igb2Zmc2V0IG1lbG9kaWMgZW50cmFuY2VzPyJ9CiBFIC0tPiBGWyJEYXZpcyBsZWFkczsgU2hvcnRlciBmb2xsb3dzIGFib3V0IDHigJMxLjUgYmVhdHMgbGF0ZXIiXQogRiAtLT4gR1siNTo1NCBDaG9ydXMgMTE6IHRyaWxscywgZ2xpc3NhbmRvcyBhbmQgY3ltYmFsIGludHJ1c2lvbnMiXQogRyAtLT4gSFsiNjoyMSBTb2Z0ZXIgdHJpbGxpbmcgYW5kIGVuc2VtYmxlIGRpbWludWVuZG8iXQogSCAtLT4gSXsiQ2hvcnVzIDEyOiByZXN0YXRlIG9yIHdpdGhob2xkIG1lbG9keT8ifQogSSAtLT4gSlsiNjozMCBIb3JucyB3aXRoaG9sZDsgcmh5dGhtIHNlY3Rpb24gY29udGludWVzIl0KIEogLS0+IEtbIjc6MDUgSG9ybnMgcmV0dXJuIHRvZ2V0aGVyIl0KIEQgLS4gIkluZmx1ZW5jZSBvbiBob3JuIGFsaWdubWVudCIgLi0+IEYKIEggLS4gIkluZmx1ZW5jZSBvbiB3aXRoZHJhd2FsIiAuLT4gSgoKCiUlIDI6MjjigJMyOjQ1IOKAoiBBIHBpYW5vIHJoeXRobSBpcyB0YWtlbiB1cCBhbmQgdHJhbnNmb3JtZWQKZmxvd2NoYXJ0IFRECiBBWyIyOjI4IEhhbmNvY2s6IGFzY2VuZGluZyBxdWFydGVyLW5vdGUgdHJpcGxldHMiXSAtLT4gQnsiV2lsbGlhbXM6IHJldGFpbiB0aW1lIHBhdHRlcm4gb3IgYWRvcHQgdHJpcGxldHM/In0KIEIgLS0+IENbIjI6MzMgUXVhcnRlci1ub3RlIHRyaXBsZXRzIG9uIHRvbXMiXQogQyAtLT4gRHsiUmVwZWF0IHRoZSBhZG9wdGVkIGZpZ3VyZSBvciB0cmFuc2Zvcm0gaXQ/In0KIEQgLS0+IEVbIjI6MzYgRml2ZS1ub3RlIGZpZ3VyZSBvbiBlaWdodGgtbm90ZS10cmlwbGV0IGdyaWQiXQogRSAtLT4gRlsiVG9tcyBwaHJhc2UgdW5kZXJnb2VzIGRpbWludXRpb24iXQogRiAtLT4gR1siMjo0NSBSaW1zaG90IGluIG1lbG9kaWMgZ2FwOyBjbGVhcmVyIHN3aW5nIHJldHVybnMiXQogRyAtLT4gSFsiSG9ybnMgZ2l2ZSBCLWZsYXQgYSBzdHJvbmdlciBhdHRhY2siXQogQSAtLiAiVXB0YWtlIiAuLT4gQwogRyAtLiAiUmVzcG9uc2UiIC4tPiBICiBIIC0uICJDaGFuZ2VkIGhvcm4gZW5lcmd5IGJlY29tZXMgbmV3IGlucHV0IGZvciBXaWxsaWFtcyIgLi0+IEIKCgolJSAyOjEw4oCTMjoxNyBvbndhcmQg4oCiIFZvY2FsIGluZmxlY3Rpb24gYW5kIHNlbWl0b25lIGRpc3NvbmFuY2UKZmxvd2NoYXJ0IFRECiBBWyIyOjEwIEhhbmNvY2s6IHJpZ2h0LWhhbmQgN+KAkzPigJMxMyB2b2ljaW5nIHN1Z2dlc3RzIGJsdWVzLWxpa2Ugc291bmQiXSAtLT4gQlsiMjoxNyBEYXZpczogZG93bndhcmQgZ2xpc3NhbmRvIGdyb3dsaW5nIHRhaWwgb2YgZmluYWwgQSBtZWxvZHkgbm90ZSJdCiBCIC0tPiBDeyJIYW5jb2NrOiByZXRhaW4gdm9pY2luZyBvciBhbnN3ZXIgd2l0aCBzaGFycGVyIGRpc3NvbmFuY2U/In0KIEMgLS0+IERbIkPigJNDLXNoYXJwIGR5YWQsIHRoZW4gRuKAk0UgZHlhZCJdCiBCIC0uICJUaW1icmFsLXRvLWhhcm1vbmljIHJlc3BvbnNlIiAuLT4gRAogVFsiV2lsbGlhbXMgbWl4ZXMgc3RyYWlnaHQgYW5kIHN3dW5nIGVpZ2h0aHMiXSAtLS0gQgogVCAtLS0gRAogRCAtLT4gRVsiQ2hhbmdlZCBlbnNlbWJsZSBjb250ZXh0IGF0IHRoZSBuZXh0IGNob3J1cyJdCiBFIC0uICJJbnB1dCB0byBzdWJzZXF1ZW50IGhvcm4gYW5kIHBpYW5vIGNob2ljZXMiIC4tPiBDCgoKJSUgQ2hvcnVzIDUsIG1tLiA54oCTMTIg4oCiIEV4dGVuc2lvbiwgd2l0aGRyYXdhbCBhbmQgcmVuZXdlZCBpbnRlbnNpdHkKZmxvd2NoYXJ0IFRECiBBWyJtLiA5IEhvcm5zIGV4dGVuZCBBLWZsYXQgYWZ0ZXIgbGVnYXRvIHBocmFzaW5nIl0gLS0+IEJ7IkhhbmNvY2s6IGNvbnRpbnVlIGNvbXBpbmcgb3IgbGVhdmUgc3BhY2U/In0KIEIgLS0+IENbIlBpYW5vIGxheXMgb3V0Il0KIEEgLS0+IER7IldpbGxpYW1zOiBzdXN0YWluIGludGVuc2l0eSBvciBsb3dlciBkeW5hbWljPyJ9CiBEIC0tPiBFWyJEcnVtcyBiZWNvbWUgc29mdGVyIl0KIEMgLS0+IEZbIlJlZHVjZWQgdGV4dHVyZTogYSBkeW5hbWljIHZhbGxleSJdCiBFIC0tPiBGCiBGIC0tPiBHeyJXaWxsaWFtczogbWFpbnRhaW4gdGhlIHZhbGxleSBvciBpbnRlcnJ1cHQgaXQ/In0KIEcgLS0+IEhbIk1pZC1tLiAxMjogc3Ryb25nIGZpbGwgaW50byBuZXcgY2hvcmQiXQogSCAtLT4gSVsiRW5zZW1ibGUgYXR0YWNrcyB3aXRoIHJlbmV3ZWQgaW50ZW5zaXR5Il0KIEEgLS4gIk1lZWhhbidzIHJlc3BvbnNlIGludGVycHJldGF0aW9uIiAuLT4gQwogQSAtLiAiTWVlaGFuJ3MgcmVzcG9uc2UgaW50ZXJwcmV0YXRpb24iIC4tPiBFCiBJIC0uICJOZXcgaW50ZW5zaXR5IGluZm9ybXMgc3Vic2VxdWVudCBkZWxpdmVyeSIgLi0+IEIK" download>Download all Mermaid code</a>
       </section>
       <section id="observations">
         <h2>Observation ledger</h2>
@@ -610,7 +708,7 @@
           </table>
         </div>
         <p>
-          <a class="download" href="data:application/json;base64,WwogIHsKICAgICJ0aW1lIjogIjA6MDAiLAogICAgInBvc2l0aW9uIjogIkNob3J1cyAxLCBtLiAxIiwKICAgICJldmVudCI6ICJTaG9ydGVyIHByZXNlbnRzIHRoZSBtZWxvZHkgd2l0aG91dCBEYXZpcy4iLAogICAgInJlbGF0aW9uIjogIkluaXRpYWwgc2luZ2xlLWhvcm4gcHJlc2VudGF0aW9uLiIsCiAgICAic291cmNlIjogIkdvbGRmb3JkOyBNZWVoYW4gcC4gMTYyIG4uIDUxMiIsCiAgICAic3RhdHVzIjogIkxpc3RlbmluZyBvYnNlcnZhdGlvbiIKICB9LAogIHsKICAgICJ0aW1lIjogIjA6MjgiLAogICAgInBvc2l0aW9uIjogIkNob3J1cyAxLCBtLiAxMyIsCiAgICAiZXZlbnQiOiAiUmlkZS1jeW1iYWwgaW50ZXJqZWN0aW9ucyBhZ2FpbnN0IHRoZSBmaW5hbCBzdXN0YWluZWQgQTMuIiwKICAgICJyZWxhdGlvbiI6ICJDbG9zaW5nIGZvdXIgYmFycyBiZWNvbWUgYW4gaW50ZXJhY3Rpb24gc2l0ZTsgcHJlcGFyYXRpb24gb2YgbGF0ZXIgdGV4dHVyZXMgaXMgYW4gaW50ZXJwcmV0YXRpb24uIiwKICAgICJzb3VyY2UiOiAiR29sZGZvcmQiLAogICAgInN0YXR1cyI6ICJMaXN0ZW5pbmcgb2JzZXJ2YXRpb24iCiAgfSwKICB7CiAgICAidGltZSI6ICIwOjU0IiwKICAgICJwb3NpdGlvbiI6ICJDaG9ydXMgMiwgbS4gOSIsCiAgICAiZXZlbnQiOiAiRGF2aXMgam9pbnMgU2hvcnRlcjsgcmlkZS1iZWxsIGF0dGFja3MgYWNjb21wYW55IHRoZSBlbnRyYW5jZS4iLAogICAgInJlbGF0aW9uIjogIkJyaWdodGVyIGRydW0gdGltYnJlIGNvaW5jaWRlcyB3aXRoIHRoaWNrZW5lZCBob3JuIHRleHR1cmUuIFZpc3VhbCBhbnRpY2lwYXRpb24gYnkgV2lsbGlhbXMgaXMgdW52ZXJpZmllZC4iLAogICAgInNvdXJjZSI6ICJHb2xkZm9yZDsgTWVlaGFuIHAuIDE2MiBuLiA1MTIiLAogICAgInN0YXR1cyI6ICJMaXN0ZW5pbmcgb2JzZXJ2YXRpb24iCiAgfSwKICB7CiAgICAidGltZSI6ICIxOjAzIiwKICAgICJwb3NpdGlvbiI6ICJDaG9ydXMgMiwgbS4gMTMgb253YXJkIiwKICAgICJldmVudCI6ICJQaWFubyBjaG9yZHMgYXQgZG90dGVkLXF1YXJ0ZXIgaW50ZXJ2YWxzOyBkcnVtIHB1bmN0dWF0aW9uIGluIHRoZSBmaW5hbCBiYXIuIiwKICAgICJyZWxhdGlvbiI6ICJCcmllZiBwb2x5bWV0cmljIGxheWVyOiByZWd1bGFyIGRvdHRlZC1xdWFydGVyIGR1cmF0aW9ucyBvdmVybGF5IHRoZSBwcmV2YWlsaW5nIGdyaWQgYWNyb3NzIHRoZSBjbG9zaW5nIHBhc3NhZ2U7IHBvc3NpYmxlIGNvb3JkaW5hdGlvbiBvZiBwdW5jdHVhdGlvbi4iLAogICAgInNvdXJjZSI6ICJHb2xkZm9yZCIsCiAgICAic3RhdHVzIjogIkxpc3RlbmluZyBvYnNlcnZhdGlvbiIKICB9LAogIHsKICAgICJ0aW1lIjogIjE6MTIiLAogICAgInBvc2l0aW9uIjogIkNob3J1cyAzLCBzdGFydCIsCiAgICAiZXZlbnQiOiAiQ2hvcnVzIGJvdW5kYXJ5LiIsCiAgICAicmVsYXRpb24iOiAiQW5jaG9yIGZvciB0aGUgZm9sbG93aW5nIGV2ZW50cy4iLAogICAgInNvdXJjZSI6ICJHb2xkZm9yZCIsCiAgICAic3RhdHVzIjogIkxpc3RlbmluZyBvYnNlcnZhdGlvbiIKICB9LAogIHsKICAgICJ0aW1lIjogIjE6MjUiLAogICAgInBvc2l0aW9uIjogIkNob3J1cyAzLCBtLiA3IiwKICAgICJldmVudCI6ICJQaWFubyBkdXJhdGlvbnMgc3BhbiB0d28gZWlnaHRoLW5vdGUtdHJpcGxldCB1bml0czsgYWNjZW50ZWQgcmVwZWF0ZWQgRS1mbGF0cy4iLAogICAgInJlbGF0aW9uIjogIkJyaWVmIHBvbHltZXRyaWMgbGF5ZXI6IHJlZ3VsYXIgZHVyYXRpb25zIG9mIHR3byBlaWdodGgtbm90ZS10cmlwbGV0IHVuaXRzIG92ZXJsYXkgdGhlIHByZXZhaWxpbmcgcHVsc2UuIiwKICAgICJzb3VyY2UiOiAiR29sZGZvcmQiLAogICAgInN0YXR1cyI6ICJMaXN0ZW5pbmcgb2JzZXJ2YXRpb24iCiAgfSwKICB7CiAgICAidGltZSI6ICJQZW5kaW5nIiwKICAgICJwb3NpdGlvbiI6ICJDaG9ydXMgMywgYXBwcm9hY2hpbmcgbW0uIDnigJMxNiIsCiAgICAiZXZlbnQiOiAiSGFuY29jayBhbmltYXRlcyB0aGUgYWNjb21wYW5pbWVudDsgV2lsbGlhbXMgc3Vic2VxdWVudGx5IHRha2VzIHVwIGl0cyBkYW5jaW5nIHF1YWxpdHkuIiwKICAgICJyZWxhdGlvbiI6ICJNZWVoYW4gZXhwbGljaXRseSBpbnRlcnByZXRzIHRoaXMgYXMgdXB0YWtlLiBEbyBub3QgZXF1YXRlIGl0IGF1dG9tYXRpY2FsbHkgd2l0aCB0aGUgMToyNSBldmVudC4iLAogICAgInNvdXJjZSI6ICJNZWVoYW4gcC4gMTYyIiwKICAgICJzdGF0dXMiOiAiTGl0ZXJhdHVyZSBldmVudDsgdGltZSBwZW5kaW5nIgogIH0sCiAgewogICAgInRpbWUiOiAiMTozNyIsCiAgICAicG9zaXRpb24iOiAiQ2hvcnVzIDMsIG0uIDEyIiwKICAgICJldmVudCI6ICJMb25n4oCTc2hvcnQgYWNjZW50ZWQsIHJpbmdpbmcgcmlkZS1jeW1iYWwgc2NyYXBlOyBzaW1pbGFyIHBhaXJlZCBwaWFubyBjaG9yZHMgZm9sbG93IGludG8gY2hvcnVzIDQuIiwKICAgICJyZWxhdGlvbiI6ICJQcm9wb3NlZCBkcnVtLXRvLXBpYW5vIGltaXRhdGlvbiBjcm9zc2VzIHRoZSBjaG9ydXMgYm91bmRhcnkuIiwKICAgICJzb3VyY2UiOiAiR29sZGZvcmQiLAogICAgInN0YXR1cyI6ICJMaXN0ZW5pbmcgb2JzZXJ2YXRpb24iCiAgfSwKICB7CiAgICAidGltZSI6ICIxOjQ4IiwKICAgICJwb3NpdGlvbiI6ICJDaG9ydXMgNCwgc3RhcnQiLAogICAgImV2ZW50IjogIkNob3J1cyBib3VuZGFyeS4iLAogICAgInJlbGF0aW9uIjogIkFuY2hvcjsgY3ltYmFsIGdlc3R1cmUgZnJvbSBwcmVjZWRpbmcgY2hvcnVzIGNvbnRpbnVlcy4iLAogICAgInNvdXJjZSI6ICJHb2xkZm9yZCIsCiAgICAic3RhdHVzIjogIkxpc3RlbmluZyBvYnNlcnZhdGlvbiIKICB9LAogIHsKICAgICJ0aW1lIjogIjI6MTAiLAogICAgInBvc2l0aW9uIjogIkNob3J1cyA0LCBtLiAxMSIsCiAgICAiZXZlbnQiOiAiVHdvIHBpYW5vIGNob3JkcyBpbiB0aGUgbWVsb2RpYyByZXN0OyBibHVlcy1saWtlIGZsYXQtMTMgdm9pY2luZyBvdmVyIHRoZSBpZGVudGlmaWVkIEQ3LXNoYXJwOS9CLWZsYXQuIiwKICAgICJyZWxhdGlvbiI6ICJQaWFubyBpbnRyb2R1Y2VzIGEgYmx1ZXMtYXNzb2NpYXRlZCBjb2xvciBpbiB0aGUgbWVsb2RpYyBnYXA7IHZvaWNpbmcgbmVlZHMgdHJhbnNjcmlwdGlvbi4iLAogICAgInNvdXJjZSI6ICJHb2xkZm9yZCIsCiAgICAic3RhdHVzIjogIkxpc3RlbmluZyBvYnNlcnZhdGlvbiIKICB9LAogIHsKICAgICJ0aW1lIjogIjI6MTciLAogICAgInBvc2l0aW9uIjogIkNob3J1cyA0LCBtLiAxNCBhbmQgZm9sbG93aW5nIiwKICAgICJldmVudCI6ICJEYXZpcyBnaXZlcyB0aGUgbGFzdCBub3RlIGEgZG93bndhcmQgZ3Jvd2xpbmcgZ2xpc3NhbmRvOyBwaWFubyBmb2xsb3dzIHdpdGggQ+KAk0Mtc2hhcnAsIHRoZW4gRuKAk0UgZHlhZHMuIERydW1zIG1peCBzd3VuZyBhbmQgc3RyYWlnaHQgZWlnaHRocy4iLAogICAgInJlbGF0aW9uIjogIlByb3Bvc2VkIHRyYW5zZmVyIGZyb20gdm9jYWwgdHJ1bXBldCBpbmZsZWN0aW9uIHRvIHBpYW5vIHNlbWl0b25lIGRpc3NvbmFuY2U7IGZpbmFsIGNob3JkIGlzIEE3LWZsYXQ5LTEzLiIsCiAgICAic291cmNlIjogIkdvbGRmb3JkIiwKICAgICJzdGF0dXMiOiAiTGlzdGVuaW5nIG9ic2VydmF0aW9uIgogIH0sCiAgewogICAgInRpbWUiOiAiMjoyNCIsCiAgICAicG9zaXRpb24iOiAiQ2hvcnVzIDUsIHN0YXJ0IiwKICAgICJldmVudCI6ICJDaG9ydXMgYm91bmRhcnkuIiwKICAgICJyZWxhdGlvbiI6ICJBbmNob3IgZm9yIHRyaXBsZXQgZXhjaGFuZ2UgYW5kIGxpdGVyYXR1cmUgZXZlbnRzLiIsCiAgICAic291cmNlIjogIkdvbGRmb3JkIiwKICAgICJzdGF0dXMiOiAiTGlzdGVuaW5nIG9ic2VydmF0aW9uIgogIH0sCiAgewogICAgInRpbWUiOiAiMjoyOCIsCiAgICAicG9zaXRpb24iOiAiQ2hvcnVzIDUsIG0uIDMiLAogICAgImV2ZW50IjogIkFzY2VuZGluZyBxdWFydGVyLW5vdGUgdHJpcGxldHMgaW4gcGlhbm8uIiwKICAgICJyZWxhdGlvbiI6ICJIYW5jb2NrIGludHJvZHVjZXMgdGhlIHJoeXRobWljIG1hdGVyaWFsIHRha2VuIHVwIGJlbG93LiIsCiAgICAic291cmNlIjogIkdvbGRmb3JkIiwKICAgICJzdGF0dXMiOiAiTGlzdGVuaW5nIG9ic2VydmF0aW9uIgogIH0sCiAgewogICAgInRpbWUiOiAiMjozMyIsCiAgICAicG9zaXRpb24iOiAiQ2hvcnVzIDUsIG0uIDUiLAogICAgImV2ZW50IjogIlF1YXJ0ZXItbm90ZSB0cmlwbGV0cyBvbiB0b21zLiIsCiAgICAicmVsYXRpb24iOiAiV2lsbGlhbXMgYXBwZWFycyB0byB0YWtlIHVwIHRoZSBwaWFubyByaHl0aG0gaW4gYSBkaWZmZXJlbnQgdGltYnJlLiIsCiAgICAic291cmNlIjogIkdvbGRmb3JkIiwKICAgICJzdGF0dXMiOiAiTGlzdGVuaW5nIG9ic2VydmF0aW9uIgogIH0sCiAgewogICAgInRpbWUiOiAiMjozNiIsCiAgICAicG9zaXRpb24iOiAiQ2hvcnVzIDUsIG0uIDcgb253YXJkIiwKICAgICJldmVudCI6ICJGaXZlLW5vdGUgc3BhbmctYS1sYW5nLWxpa2UgdG9tIGZpZ3VyZSBvbiBhbiBlaWdodGgtbm90ZS10cmlwbGV0IGdyaWQ7IHN1YnNlcXVlbnQgZGltaW51dGlvbi4iLAogICAgInJlbGF0aW9uIjogIlJoeXRobWljIHVwdGFrZSBpcyB0cmFuc2Zvcm1lZCBpbiBncm91cGluZywgZHVyYXRpb24gYW5kIGRydW0gcGxhY2VtZW50LiIsCiAgICAic291cmNlIjogIkdvbGRmb3JkIiwKICAgICJzdGF0dXMiOiAiTGlzdGVuaW5nIG9ic2VydmF0aW9uIgogIH0sCiAgewogICAgInRpbWUiOiAiUGVuZGluZyIsCiAgICAicG9zaXRpb24iOiAiQ2hvcnVzIDUsIG0uIDkiLAogICAgImV2ZW50IjogIkhvcm5zIGV4dGVuZCBBLWZsYXQgYWZ0ZXIgbGVnYXRvIGRlbGl2ZXJ5OyBIYW5jb2NrIGxheXMgb3V0OyBXaWxsaWFtcyBsb3dlcnMgaGlzIGR5bmFtaWMuIiwKICAgICJyZWxhdGlvbiI6ICJNZWVoYW4gbGlua3MgaG9ybiBleHRlbnNpb24gdG8gYWNjb21wYW5pbWVudCB3aXRoZHJhd2FsIGFuZCBhIGR5bmFtaWMgdmFsbGV5LiIsCiAgICAic291cmNlIjogIk1lZWhhbiBwLiAxNjIiLAogICAgInN0YXR1cyI6ICJMaXRlcmF0dXJlIGV2ZW50OyB0aW1lIHBlbmRpbmciCiAgfSwKICB7CiAgICAidGltZSI6ICIyOjQ1IiwKICAgICJwb3NpdGlvbiI6ICJDaG9ydXMgNSwgbS4gMTEiLAogICAgImV2ZW50IjogIkxvdWQgcmltc2hvdCBpbiB0aGUgbWVsb2RpYyBnYXA7IGNsZWFyZXIgc3dpbmcgcmV0dXJuczsgaG9ybnMgZGVsaXZlciBCLWZsYXQgc3Ryb25nbHkuIiwKICAgICJyZWxhdGlvbiI6ICJQcm9wb3NlZCBkcnVtLXRvLWhvcm4gcmVzcG9uc2UuIFJlYXNzdXJhbmNlIGFuZCBjb25maWRlbmNlIGRlc2NyaWJlIGFuIGludGVycHJldGF0aW9uLCBub3QgYSB2ZXJpZmllZCBtZW50YWwgc3RhdGUuIiwKICAgICJzb3VyY2UiOiAiR29sZGZvcmQiLAogICAgInN0YXR1cyI6ICJMaXN0ZW5pbmcgb2JzZXJ2YXRpb24iCiAgfSwKICB7CiAgICAidGltZSI6ICJQZW5kaW5nIiwKICAgICJwb3NpdGlvbiI6ICJDaG9ydXMgNSwgbWlkd2F5IHRocm91Z2ggbS4gMTIiLAogICAgImV2ZW50IjogIldpbGxpYW1zIHBsYXlzIGEgc3Ryb25nIGZpbGwgaW50byBhIG5ldyBjaG9yZDsgZW5zZW1ibGUgYXR0YWNrcyB3aXRoIHJlbmV3ZWQgaW50ZW5zaXR5LiIsCiAgICAicmVsYXRpb24iOiAiTWVlaGFuIHJlcG9ydHMgYSBjb29yZGluYXRlZCBpbnRlbnNpZmljYXRpb24gYWZ0ZXIgdGhlIHZhbGxleS4gUG9zc2libHkgdGhlIHNhbWUgZXZlbnQgYXMgdGhlIDI6NDUgcmltc2hvdCBhdCBtLiAxMS4iLAogICAgInNvdXJjZSI6ICJNZWVoYW4gcC4gMTYyIiwKICAgICJzdGF0dXMiOiAiTGl0ZXJhdHVyZSBldmVudDsgdGltZSBwZW5kaW5nIgogIH0sCiAgewogICAgInRpbWUiOiAiMjo1OSIsCiAgICAicG9zaXRpb24iOiAiQ2hvcnVzIDYsIHN0YXJ0IiwKICAgICJldmVudCI6ICJIZWF2aWVyLCBtb3JlIHBvaW50ZWQgaG9ybiBhdHRhY2tzLCB3aXRob3V0IHNob3J0ZXIgZHVyYXRpb25zIG9yIHN0YWNjYXRvLiIsCiAgICAicmVsYXRpb24iOiAiQXR0YWNrIHByb2ZpbGUgY2hhbmdlcyBpbmRlcGVuZGVudGx5IG9mIG5vdGUgbGVuZ3RoOyBubyBzcGVjaWZpYyBsaXRlcmF0dXJlIGNvcnJvYm9yYXRpb24gbG9jYXRlZC4iLAogICAgInNvdXJjZSI6ICJHb2xkZm9yZCIsCiAgICAic3RhdHVzIjogIkxpc3RlbmluZyBvYnNlcnZhdGlvbiIKICB9LAogIHsKICAgICJ0aW1lIjogIjM6MzQiLAogICAgInBvc2l0aW9uIjogIkNob3J1cyA3LCBzdGFydCIsCiAgICAiZXZlbnQiOiAiRHJ1bXMgdGFrZSBncmVhdGVyIGxpYmVydGllcy4iLAogICAgInJlbGF0aW9uIjogIlNwZWNpZnkgcmh5dGhtaWMgZGVwYXJ0dXJlcyB0aHJvdWdoIGZ1cnRoZXIgbGlzdGVuaW5nLiIsCiAgICAic291cmNlIjogIkdvbGRmb3JkIiwKICAgICJzdGF0dXMiOiAiTGlzdGVuaW5nIG9ic2VydmF0aW9uIgogIH0sCiAgewogICAgInRpbWUiOiAiNDowNCIsCiAgICAicG9zaXRpb24iOiAiQ2hvcnVzIDcsIGFwcHJveGltYXRlbHkgbW0uIDE14oCTMTYiLAogICAgImV2ZW50IjogIkFzY2VuZGluZyBjaHJvbWF0aWMgcGlhbm8gZmlndXJhdGlvbiBvdmVyIHRoZSBpZGVudGlmaWVkIEE3LWZsYXQ5LTEzIHR1cm5hcm91bmQuIiwKICAgICJyZWxhdGlvbiI6ICJCb3VuZGFyeS1kaXJlY3RlZCBwaWFubyBnZXN0dXJlOyBwaXRjaGVzIGF3YWl0IHRyYW5zY3JpcHRpb24uIiwKICAgICJzb3VyY2UiOiAiR29sZGZvcmQiLAogICAgInN0YXR1cyI6ICJMaXN0ZW5pbmcgb2JzZXJ2YXRpb24iCiAgfSwKICB7CiAgICAidGltZSI6ICI0OjA5IiwKICAgICJwb3NpdGlvbiI6ICJDaG9ydXMgOCwgc3RhcnQ7IHNwYW4gcGVuZGluZyIsCiAgICAiZXZlbnQiOiAiUXVpZXRlciBob3JucywgbG9uZ2VyIHN1c3RhaW5lZCBub3RlcyBhbmQgZmV3ZXIgaW50ZXJ2ZW5pbmcgcmVzdHMuIiwKICAgICJyZWxhdGlvbiI6ICJDaGFuZ2VzIGluIGR5bmFtaWNzIGFuZCBzcGFjaW5nOyBleGFjdCBzcGFuIHN0aWxsIG9wZW4uIiwKICAgICJzb3VyY2UiOiAiR29sZGZvcmQiLAogICAgInN0YXR1cyI6ICJMaXN0ZW5pbmcgb2JzZXJ2YXRpb24iCiAgfSwKICB7CiAgICAidGltZSI6ICJQZW5kaW5nIiwKICAgICJwb3NpdGlvbiI6ICJDaG9ydXMgOCwgc2Vjb25kIGhhbGYiLAogICAgImV2ZW50IjogIkVuc2VtYmxlIGRpbWludWVuZG8gYmVmb3JlIHRoZSBtb3JlIGFjdGl2ZSBzdWJzZXF1ZW50IGRydW0gcGFzc2FnZXMuIiwKICAgICJyZWxhdGlvbiI6ICJNZWVoYW4gZ3JvdXBzIGNob3J1c2VzIDnigJMxMSBhcyBpbnRlbnNpZmllZCBkcnVtIGFjdGl2aXR5LiIsCiAgICAic291cmNlIjogIk1lZWhhbiBwLiAxNjMiLAogICAgInN0YXR1cyI6ICJMaXRlcmF0dXJlIGV2ZW50OyB0aW1lIHBlbmRpbmciCiAgfSwKICB7CiAgICAidGltZSI6ICI0OjQ0IiwKICAgICJwb3NpdGlvbiI6ICJDaG9ydXMgOSwgc3RhcnQiLAogICAgImV2ZW50IjogIk5ldyBwaWFubyBmaWd1cmF0aW9uLCBsb3VkZXIgaG9ybnMgYW5kIGNoYW5nZWQgZHJ1bSBpbnRlcmFjdGlvbi4iLAogICAgInJlbGF0aW9uIjogIk11bHRpcGxlIHBhcmFtZXRlcnMgY2hhbmdlIG5lYXIgdGhlIGNob3J1cyBib3VuZGFyeS4iLAogICAgInNvdXJjZSI6ICJHb2xkZm9yZCIsCiAgICAic3RhdHVzIjogIkxpc3RlbmluZyBvYnNlcnZhdGlvbiIKICB9LAogIHsKICAgICJ0aW1lIjogIjU6MDEiLAogICAgInBvc2l0aW9uIjogIkNob3J1cyA5LCBtLiA5IiwKICAgICJldmVudCI6ICJSZXBlYXRlZCBpbnRydXNpdmUgc25hcmUgaGl0cyBpbnRlcmplY3QgaW50byBtZWxvZGljIHBocmFzZXMuIiwKICAgICJyZWxhdGlvbiI6ICJEcnVtcyBnYWluIGZvcmVncm91bmQgcHJvbWluZW5jZS4iLAogICAgInNvdXJjZSI6ICJHb2xkZm9yZCIsCiAgICAic3RhdHVzIjogIkxpc3RlbmluZyBvYnNlcnZhdGlvbiIKICB9LAogIHsKICAgICJ0aW1lIjogIjU6MTMiLAogICAgInBvc2l0aW9uIjogIkNob3J1cyA5LCBtLiAxNCIsCiAgICAiZXZlbnQiOiAiUmVwZWF0ZWQtc25hcmUgYWN0aXZpdHkgZWZmZWN0aXZlbHkgYmVjb21lcyBhIHRocmVlLWJhciBkcnVtIHNvbG8uIiwKICAgICJyZWxhdGlvbiI6ICJQZXJjZWl2ZWQgZHJ1bSBmb3JlZ3JvdW5kaW5nOyBub3QgYSBjbGFpbSB0aGF0IGFsbCBvdGhlciBpbnN0cnVtZW50cyBzdG9wLiIsCiAgICAic291cmNlIjogIkdvbGRmb3JkIiwKICAgICJzdGF0dXMiOiAiTGlzdGVuaW5nIG9ic2VydmF0aW9uIgogIH0sCiAgewogICAgInRpbWUiOiAiNToxOCIsCiAgICAicG9zaXRpb24iOiAiQ2hvcnVzIDEwLCBzdGFydCIsCiAgICAiZXZlbnQiOiAiRHJ1bSByb2xsIGludG8gdGhlIGNob3J1czsgRGF2aXMgbGVhZHMsIFNob3J0ZXIgZm9sbG93cyByb3VnaGx5IDHigJMxLjUgcXVhcnRlci1ub3RlIGJlYXRzIGxhdGVyLiIsCiAgICAicmVsYXRpb24iOiAiQ2Fub24tbGlrZSBtZWxvZGljIGRpc3BsYWNlbWVudDsgc3RyaWN0IGNhbm9uIGFuZCByZXNwb25zZSB0byB0aGUgcm9sbCBhcmUgdW52ZXJpZmllZC4iLAogICAgInNvdXJjZSI6ICJHb2xkZm9yZCIsCiAgICAic3RhdHVzIjogIkxpc3RlbmluZyBvYnNlcnZhdGlvbiIKICB9LAogIHsKICAgICJ0aW1lIjogIjU6NTQiLAogICAgInBvc2l0aW9uIjogIkNob3J1cyAxMSwgc3RhcnQiLAogICAgImV2ZW50IjogIlBpYW5vIGVpZ2h0aC1ub3RlIHRyaWxsIGZpZ3VyYXRpb24gYW5kIGdsaXNzYW5kb3M7IGN5bWJhbCBpbnRydXNpb25zLiIsCiAgICAicmVsYXRpb24iOiAiSW50ZXJ2ZW50aW9ucyBvdmVybGFwIG9yIGludGVycnVwdCB0aGUgaG9ybiBtZWxvZHkuIiwKICAgICJzb3VyY2UiOiAiR29sZGZvcmQ7IE1lZWhhbiBwLiAxNjMgKGJyb2FkZXIgZHJ1bSBhY3Rpdml0eSkiLAogICAgInN0YXR1cyI6ICJMaXN0ZW5pbmcgb2JzZXJ2YXRpb24iCiAgfSwKICB7CiAgICAidGltZSI6ICI2OjIxIiwKICAgICJwb3NpdGlvbiI6ICJDaG9ydXMgMTEsIG1tLiAxM+KAkzE2IiwKICAgICJldmVudCI6ICJFbnNlbWJsZSBkaW1pbnVlbmRvIHdpdGggc29mdGVyIHBpYW5vIHRyaWxsaW5nLiIsCiAgICAicmVsYXRpb24iOiAiSGFuY29jayBhcyBpbml0aWF0b3IgaXMgYSByZXNwb25zZSBoeXBvdGhlc2lzLiIsCiAgICAic291cmNlIjogIkdvbGRmb3JkIiwKICAgICJzdGF0dXMiOiAiTGlzdGVuaW5nIG9ic2VydmF0aW9uIgogIH0sCiAgewogICAgInRpbWUiOiAiNjozMCIsCiAgICAicG9zaXRpb24iOiAiQ2hvcnVzIDEyLCBzdGFydCIsCiAgICAiZXZlbnQiOiAiQm90aCBob3JucyBhYnNlbnQ7IHNpbXBsZSB3aG9sZS1ub3RlIHBpYW5vIGNob3JkcywgcHJvbWluZW50IGRydW1zIGFuZCBsYXRlciBkcnVtIHJvbGwuIiwKICAgICJyZWxhdGlvbiI6ICJNZWxvZGljIHdpdGhkcmF3YWwgcmVkaXN0cmlidXRlcyBmb3JlZ3JvdW5kIGFjdGl2aXR5LiIsCiAgICAic291cmNlIjogIkdvbGRmb3JkOyBNZWVoYW4gcC4gMTYyIG4uIDUxMjsgUGFzY2VyaSB0aXRsZS10cmFjayBwYXJhZ3JhcGgiLAogICAgInN0YXR1cyI6ICJMaXN0ZW5pbmcgb2JzZXJ2YXRpb24iCiAgfSwKICB7CiAgICAidGltZSI6ICI3OjA1IiwKICAgICJwb3NpdGlvbiI6ICJDaG9ydXMgMTMsIHN0YXJ0IiwKICAgICJldmVudCI6ICJCb3RoIGhvcm5zIHJldHVybiB0b2dldGhlciwgc3RhdGVseSBhbmQgYXV0aG9yaXRhdGl2ZTsgcmh5dGhtcyBoZWFyZCBhcyBhZGhlcmluZyB0byBub3RhdGlvbi4iLAogICAgInJlbGF0aW9uIjogIlJlc3RvcmF0aW9uIG9mIGNvb3JkaW5hdGVkIG1lbG9kaWMgZGVsaXZlcnk7IGNvbXBhcmlzb24gd2l0aCBhIHNwZWNpZmllZCBzY29yZSByZW1haW5zIHBlbmRpbmcuIiwKICAgICJzb3VyY2UiOiAiR29sZGZvcmQ7IE1lZWhhbiBwLiAxNjIgbi4gNTEyIChyZXR1cm4pIiwKICAgICJzdGF0dXMiOiAiTGlzdGVuaW5nIG9ic2VydmF0aW9uIgogIH0sCiAgewogICAgInRpbWUiOiAiNzo0MCIsCiAgICAicG9zaXRpb24iOiAiQWZ0ZXIgY2hvcnVzIDEzOyB2YW1wIG91dCIsCiAgICAiZXZlbnQiOiAiVmFtcCBvdXQ6IG5vIG5ldyBob3JuIHN0YXRlbWVudDsgdGltZSBjb250aW51ZXMgaW4gZHJ1bXMgYW5kIGJhc3MgYnJpZWZseSBpbnRvIGEgZmFkZS4iLAogICAgInJlbGF0aW9uIjogIlJlbGVhc2VkLXJlY29yZGluZyBlbmRpbmcsIHdpdGhvdXQgYW4gaW52ZW50ZWQgY29sbGVjdGl2ZSBzdG9wIGN1ZS4gVGltZSBjb250aW51ZXMsIGJ1dCBub3RoaW5nIGluIGFueSBwYXJ0IHN1Z2dlc3RzIHRoYXQgYSBuZXcgY2hvcnVzIGhhcyBiZWd1bi4iLAogICAgInNvdXJjZSI6ICJHb2xkZm9yZCIsCiAgICAic3RhdHVzIjogIkxpc3RlbmluZyBvYnNlcnZhdGlvbiIKICB9Cl0=" download>Download observation data</a>
+          <a class="download" href="data:application/json;base64,WwogIHsKICAgICJ0aW1lIjogIjA6MDAiLAogICAgInBvc2l0aW9uIjogIkNob3J1cyAxLCBtLiAxIiwKICAgICJldmVudCI6ICJTaG9ydGVyIHByZXNlbnRzIHRoZSBtZWxvZHkgd2l0aG91dCBEYXZpcy4iLAogICAgInJlbGF0aW9uIjogIkluaXRpYWwgc2luZ2xlLWhvcm4gcHJlc2VudGF0aW9uLiIsCiAgICAic291cmNlIjogIkdvbGRmb3JkOyBNZWVoYW4gcC4gMTYyIG4uIDUxMiIsCiAgICAic3RhdHVzIjogIkxpc3RlbmluZyBvYnNlcnZhdGlvbiIKICB9LAogIHsKICAgICJ0aW1lIjogIjA6MjgiLAogICAgInBvc2l0aW9uIjogIkNob3J1cyAxLCBtLiAxMyIsCiAgICAiZXZlbnQiOiAiUmlkZS1jeW1iYWwgaW50ZXJqZWN0aW9ucyBhZ2FpbnN0IHRoZSBmaW5hbCBzdXN0YWluZWQgQTMuIiwKICAgICJyZWxhdGlvbiI6ICJDbG9zaW5nIGZvdXIgYmFycyBiZWNvbWUgYW4gaW50ZXJhY3Rpb24gc2l0ZTsgcHJlcGFyYXRpb24gb2YgbGF0ZXIgdGV4dHVyZXMgaXMgYW4gaW50ZXJwcmV0YXRpb24uIiwKICAgICJzb3VyY2UiOiAiR29sZGZvcmQiLAogICAgInN0YXR1cyI6ICJMaXN0ZW5pbmcgb2JzZXJ2YXRpb24iCiAgfSwKICB7CiAgICAidGltZSI6ICIwOjU0IiwKICAgICJwb3NpdGlvbiI6ICJDaG9ydXMgMiwgbS4gOSIsCiAgICAiZXZlbnQiOiAiRGF2aXMgam9pbnMgU2hvcnRlcjsgcmlkZS1iZWxsIGF0dGFja3MgYWNjb21wYW55IHRoZSBlbnRyYW5jZS4iLAogICAgInJlbGF0aW9uIjogIkJyaWdodGVyIGRydW0gdGltYnJlIGNvaW5jaWRlcyB3aXRoIHRoaWNrZW5lZCBob3JuIHRleHR1cmUuIFZpc3VhbCBhbnRpY2lwYXRpb24gYnkgV2lsbGlhbXMgaXMgdW52ZXJpZmllZC4iLAogICAgInNvdXJjZSI6ICJHb2xkZm9yZDsgTWVlaGFuIHAuIDE2MiBuLiA1MTIiLAogICAgInN0YXR1cyI6ICJMaXN0ZW5pbmcgb2JzZXJ2YXRpb24iCiAgfSwKICB7CiAgICAidGltZSI6ICIxOjAzIiwKICAgICJwb3NpdGlvbiI6ICJDaG9ydXMgMiwgbS4gMTMgb253YXJkIiwKICAgICJldmVudCI6ICJQaWFubyBjaG9yZHMgYXQgZG90dGVkLXF1YXJ0ZXIgaW50ZXJ2YWxzOyBkcnVtIHB1bmN0dWF0aW9uIGluIHRoZSBmaW5hbCBiYXIuIiwKICAgICJyZWxhdGlvbiI6ICJCcmllZiBwb2x5bWV0cmljIGxheWVyOiByZWd1bGFyIGRvdHRlZC1xdWFydGVyIGR1cmF0aW9ucyBvdmVybGF5IHRoZSBwcmV2YWlsaW5nIGdyaWQgYWNyb3NzIHRoZSBjbG9zaW5nIHBhc3NhZ2U7IHBvc3NpYmxlIGNvb3JkaW5hdGlvbiBvZiBwdW5jdHVhdGlvbi4iLAogICAgInNvdXJjZSI6ICJHb2xkZm9yZCIsCiAgICAic3RhdHVzIjogIkxpc3RlbmluZyBvYnNlcnZhdGlvbiIKICB9LAogIHsKICAgICJ0aW1lIjogIjE6MTIiLAogICAgInBvc2l0aW9uIjogIkNob3J1cyAzLCBzdGFydCIsCiAgICAiZXZlbnQiOiAiQ2hvcnVzIGJvdW5kYXJ5LiIsCiAgICAicmVsYXRpb24iOiAiQW5jaG9yIGZvciB0aGUgZm9sbG93aW5nIGV2ZW50cy4iLAogICAgInNvdXJjZSI6ICJHb2xkZm9yZCIsCiAgICAic3RhdHVzIjogIkxpc3RlbmluZyBvYnNlcnZhdGlvbiIKICB9LAogIHsKICAgICJ0aW1lIjogIjE6MjUiLAogICAgInBvc2l0aW9uIjogIkNob3J1cyAzLCBtLiA3IiwKICAgICJldmVudCI6ICJQaWFubyBkdXJhdGlvbnMgc3BhbiB0d28gZWlnaHRoLW5vdGUtdHJpcGxldCB1bml0czsgYWNjZW50ZWQgcmVwZWF0ZWQgRS1mbGF0cy4iLAogICAgInJlbGF0aW9uIjogIkJyaWVmIHBvbHltZXRyaWMgbGF5ZXI6IHJlZ3VsYXIgZHVyYXRpb25zIG9mIHR3byBlaWdodGgtbm90ZS10cmlwbGV0IHVuaXRzIG92ZXJsYXkgdGhlIHByZXZhaWxpbmcgcHVsc2UuIiwKICAgICJzb3VyY2UiOiAiR29sZGZvcmQiLAogICAgInN0YXR1cyI6ICJMaXN0ZW5pbmcgb2JzZXJ2YXRpb24iCiAgfSwKICB7CiAgICAidGltZSI6ICJQZW5kaW5nIiwKICAgICJwb3NpdGlvbiI6ICJDaG9ydXMgMywgYXBwcm9hY2hpbmcgbW0uIDnigJMxNiIsCiAgICAiZXZlbnQiOiAiSGFuY29jayBhbmltYXRlcyB0aGUgYWNjb21wYW5pbWVudDsgV2lsbGlhbXMgc3Vic2VxdWVudGx5IHRha2VzIHVwIGl0cyBkYW5jaW5nIHF1YWxpdHkuIiwKICAgICJyZWxhdGlvbiI6ICJNZWVoYW4gZXhwbGljaXRseSBpbnRlcnByZXRzIHRoaXMgYXMgdXB0YWtlLiBEbyBub3QgZXF1YXRlIGl0IGF1dG9tYXRpY2FsbHkgd2l0aCB0aGUgMToyNSBldmVudC4iLAogICAgInNvdXJjZSI6ICJNZWVoYW4gcC4gMTYyIiwKICAgICJzdGF0dXMiOiAiTGl0ZXJhdHVyZSBldmVudDsgdGltZSBwZW5kaW5nIgogIH0sCiAgewogICAgInRpbWUiOiAiMTozNyIsCiAgICAicG9zaXRpb24iOiAiQ2hvcnVzIDMsIG0uIDEyIiwKICAgICJldmVudCI6ICJTaG9ydOKAk2xvbmcgYWNjZW50ZWQsIGNsb3NlLW9wZW4gaGktaGF0IGdlc3R1cmU7IHNpbWlsYXIgcGFpcmVkIHBpYW5vIGNob3JkcyBmb2xsb3cgaW50byBjaG9ydXMgNC4iLAogICAgInJlbGF0aW9uIjogIkRydW0tdG8tcGlhbm8gaW1pdGF0aW9uIGNyb3NzZXMgdGhlIGNob3J1cyBib3VuZGFyeS4iLAogICAgInNvdXJjZSI6ICJHb2xkZm9yZCIsCiAgICAic3RhdHVzIjogIkxpc3RlbmluZyBvYnNlcnZhdGlvbiIKICB9LAogIHsKICAgICJ0aW1lIjogIjE6NDgiLAogICAgInBvc2l0aW9uIjogIkNob3J1cyA0LCBzdGFydCIsCiAgICAiZXZlbnQiOiAiQ2hvcnVzIGJvdW5kYXJ5LiIsCiAgICAicmVsYXRpb24iOiAiQW5jaG9yOyBoaS1oYXQgZ2VzdHVyZSBmcm9tIHByZWNlZGluZyBjaG9ydXMgY29udGludWVzLiIsCiAgICAic291cmNlIjogIkdvbGRmb3JkIiwKICAgICJzdGF0dXMiOiAiTGlzdGVuaW5nIG9ic2VydmF0aW9uIgogIH0sCiAgewogICAgInRpbWUiOiAiMjoxMCIsCiAgICAicG9zaXRpb24iOiAiQ2hvcnVzIDQsIG0uIDExIiwKICAgICJldmVudCI6ICJUd28gcGlhbm8gY2hvcmRzIGluIHRoZSBtZWxvZGljIHJlc3Q7IEhhbmNvY2vigJlzIHJpZ2h0IGhhbmQgdm9pY2VzIDfigJMz4oCTMTMgb3ZlciB0aGUgaWRlbnRpZmllZCBENy1zaGFycDkvQi1mbGF0LCBjcmVhdGluZyBhIGJsdWVzIHNvdW5kLiIsCiAgICAicmVsYXRpb24iOiAiVGhpcyBibHVlcyB2b2ljaW5nIGluaXRpYXRlcyB0aGUgZW50aXJlIHBhc3NhZ2Ugb2YgZXhjaGFuZ2VzIHRoYXQgZm9sbG93cy4iLAogICAgInNvdXJjZSI6ICJHb2xkZm9yZCIsCiAgICAic3RhdHVzIjogIkxpc3RlbmluZyBvYnNlcnZhdGlvbiIKICB9LAogIHsKICAgICJ0aW1lIjogIjI6MTciLAogICAgInBvc2l0aW9uIjogIkNob3J1cyA0LCBtLiAxNCBhbmQgZm9sbG93aW5nIiwKICAgICJldmVudCI6ICJEYXZpcyBnaXZlcyB0aGUgbGFzdCBub3RlIGEgZG93bndhcmQgZ3Jvd2xpbmcgZ2xpc3NhbmRvOyBwaWFubyBmb2xsb3dzIHdpdGggQ+KAk0Mtc2hhcnAsIHRoZW4gRuKAk0UgZHlhZHMuIERydW1zIG1peCBzd3VuZyBhbmQgc3RyYWlnaHQgZWlnaHRocy4iLAogICAgInJlbGF0aW9uIjogIlRyYW5zZmVyIGZyb20gdm9jYWwgdHJ1bXBldCBpbmZsZWN0aW9uIHRvIHBpYW5vIHNlbWl0b25lIGRpc3NvbmFuY2U7IGZpbmFsIGNob3JkIGlzIEE3LWZsYXQ5LTEzLiIsCiAgICAic291cmNlIjogIkdvbGRmb3JkIiwKICAgICJzdGF0dXMiOiAiTGlzdGVuaW5nIG9ic2VydmF0aW9uIgogIH0sCiAgewogICAgInRpbWUiOiAiMjoyNCIsCiAgICAicG9zaXRpb24iOiAiQ2hvcnVzIDUsIHN0YXJ0IiwKICAgICJldmVudCI6ICJDaG9ydXMgYm91bmRhcnkuIiwKICAgICJyZWxhdGlvbiI6ICJBbmNob3IgZm9yIHRyaXBsZXQgZXhjaGFuZ2UgYW5kIGxpdGVyYXR1cmUgZXZlbnRzLiIsCiAgICAic291cmNlIjogIkdvbGRmb3JkIiwKICAgICJzdGF0dXMiOiAiTGlzdGVuaW5nIG9ic2VydmF0aW9uIgogIH0sCiAgewogICAgInRpbWUiOiAiMjoyOCIsCiAgICAicG9zaXRpb24iOiAiQ2hvcnVzIDUsIG0uIDMiLAogICAgImV2ZW50IjogIkFzY2VuZGluZyBxdWFydGVyLW5vdGUgdHJpcGxldHMgaW4gcGlhbm8uIiwKICAgICJyZWxhdGlvbiI6ICJIYW5jb2NrIGludHJvZHVjZXMgdGhlIHJoeXRobWljIG1hdGVyaWFsIHRha2VuIHVwIGJlbG93LiIsCiAgICAic291cmNlIjogIkdvbGRmb3JkIiwKICAgICJzdGF0dXMiOiAiTGlzdGVuaW5nIG9ic2VydmF0aW9uIgogIH0sCiAgewogICAgInRpbWUiOiAiMjozMyIsCiAgICAicG9zaXRpb24iOiAiQ2hvcnVzIDUsIG0uIDUiLAogICAgImV2ZW50IjogIlF1YXJ0ZXItbm90ZSB0cmlwbGV0cyBvbiB0b21zLiIsCiAgICAicmVsYXRpb24iOiAiV2lsbGlhbXMgYXBwZWFycyB0byB0YWtlIHVwIHRoZSBwaWFubyByaHl0aG0gaW4gYSBkaWZmZXJlbnQgdGltYnJlLiIsCiAgICAic291cmNlIjogIkdvbGRmb3JkIiwKICAgICJzdGF0dXMiOiAiTGlzdGVuaW5nIG9ic2VydmF0aW9uIgogIH0sCiAgewogICAgInRpbWUiOiAiMjozNiIsCiAgICAicG9zaXRpb24iOiAiQ2hvcnVzIDUsIG0uIDcgb253YXJkIiwKICAgICJldmVudCI6ICJGaXZlLW5vdGUgc3BhbmctYS1sYW5nLWxpa2UgdG9tIGZpZ3VyZSBvbiBhbiBlaWdodGgtbm90ZS10cmlwbGV0IGdyaWQ7IHN1YnNlcXVlbnQgZGltaW51dGlvbi4iLAogICAgInJlbGF0aW9uIjogIlJoeXRobWljIHVwdGFrZSBpcyB0cmFuc2Zvcm1lZCBpbiBncm91cGluZywgZHVyYXRpb24gYW5kIGRydW0gcGxhY2VtZW50LiIsCiAgICAic291cmNlIjogIkdvbGRmb3JkIiwKICAgICJzdGF0dXMiOiAiTGlzdGVuaW5nIG9ic2VydmF0aW9uIgogIH0sCiAgewogICAgInRpbWUiOiAiUGVuZGluZyIsCiAgICAicG9zaXRpb24iOiAiQ2hvcnVzIDUsIG0uIDkiLAogICAgImV2ZW50IjogIkhvcm5zIGV4dGVuZCBBLWZsYXQgYWZ0ZXIgbGVnYXRvIGRlbGl2ZXJ5OyBIYW5jb2NrIGxheXMgb3V0OyBXaWxsaWFtcyBsb3dlcnMgaGlzIGR5bmFtaWMuIiwKICAgICJyZWxhdGlvbiI6ICJNZWVoYW4gbGlua3MgaG9ybiBleHRlbnNpb24gdG8gYWNjb21wYW5pbWVudCB3aXRoZHJhd2FsIGFuZCBhIGR5bmFtaWMgdmFsbGV5LiIsCiAgICAic291cmNlIjogIk1lZWhhbiBwLiAxNjIiLAogICAgInN0YXR1cyI6ICJMaXRlcmF0dXJlIGV2ZW50OyB0aW1lIHBlbmRpbmciCiAgfSwKICB7CiAgICAidGltZSI6ICIyOjQ1IiwKICAgICJwb3NpdGlvbiI6ICJDaG9ydXMgNSwgbS4gMTEiLAogICAgImV2ZW50IjogIkxvdWQgcmltc2hvdCBpbiB0aGUgbWVsb2RpYyBnYXA7IGNsZWFyZXIgc3dpbmcgcmV0dXJuczsgaG9ybnMgZGVsaXZlciBCLWZsYXQgc3Ryb25nbHkuIiwKICAgICJyZWxhdGlvbiI6ICJEcnVtLXRvLWhvcm4gcmVzcG9uc2UuIFJlYXNzdXJhbmNlIGFuZCBjb25maWRlbmNlIGRlc2NyaWJlIGFuIGludGVycHJldGF0aW9uLCBub3QgYSB2ZXJpZmllZCBtZW50YWwgc3RhdGUuIiwKICAgICJzb3VyY2UiOiAiR29sZGZvcmQiLAogICAgInN0YXR1cyI6ICJMaXN0ZW5pbmcgb2JzZXJ2YXRpb24iCiAgfSwKICB7CiAgICAidGltZSI6ICJQZW5kaW5nIiwKICAgICJwb3NpdGlvbiI6ICJDaG9ydXMgNSwgbWlkd2F5IHRocm91Z2ggbS4gMTIiLAogICAgImV2ZW50IjogIldpbGxpYW1zIHBsYXlzIGEgc3Ryb25nIGZpbGwgaW50byBhIG5ldyBjaG9yZDsgZW5zZW1ibGUgYXR0YWNrcyB3aXRoIHJlbmV3ZWQgaW50ZW5zaXR5LiIsCiAgICAicmVsYXRpb24iOiAiTWVlaGFuIHJlcG9ydHMgYSBjb29yZGluYXRlZCBpbnRlbnNpZmljYXRpb24gYWZ0ZXIgdGhlIHZhbGxleS4gUG9zc2libHkgdGhlIHNhbWUgZXZlbnQgYXMgdGhlIDI6NDUgcmltc2hvdCBhdCBtLiAxMS4iLAogICAgInNvdXJjZSI6ICJNZWVoYW4gcC4gMTYyIiwKICAgICJzdGF0dXMiOiAiTGl0ZXJhdHVyZSBldmVudDsgdGltZSBwZW5kaW5nIgogIH0sCiAgewogICAgInRpbWUiOiAiMjo1OSIsCiAgICAicG9zaXRpb24iOiAiQ2hvcnVzIDYsIHN0YXJ0IiwKICAgICJldmVudCI6ICJIZWF2aWVyLCBtb3JlIHBvaW50ZWQgaG9ybiBhdHRhY2tzLCB3aXRob3V0IHNob3J0ZXIgZHVyYXRpb25zIG9yIHN0YWNjYXRvLiIsCiAgICAicmVsYXRpb24iOiAiQXR0YWNrIHByb2ZpbGUgY2hhbmdlcyBpbmRlcGVuZGVudGx5IG9mIG5vdGUgbGVuZ3RoOyBubyBzcGVjaWZpYyBsaXRlcmF0dXJlIGNvcnJvYm9yYXRpb24gbG9jYXRlZC4iLAogICAgInNvdXJjZSI6ICJHb2xkZm9yZCIsCiAgICAic3RhdHVzIjogIkxpc3RlbmluZyBvYnNlcnZhdGlvbiIKICB9LAogIHsKICAgICJ0aW1lIjogIjM6MzQiLAogICAgInBvc2l0aW9uIjogIkNob3J1cyA3LCBzdGFydCIsCiAgICAiZXZlbnQiOiAiRHJ1bXMgdGFrZSBncmVhdGVyIGxpYmVydGllcy4iLAogICAgInJlbGF0aW9uIjogIlNwZWNpZnkgcmh5dGhtaWMgZGVwYXJ0dXJlcyB0aHJvdWdoIGZ1cnRoZXIgbGlzdGVuaW5nLiIsCiAgICAic291cmNlIjogIkdvbGRmb3JkIiwKICAgICJzdGF0dXMiOiAiTGlzdGVuaW5nIG9ic2VydmF0aW9uIgogIH0sCiAgewogICAgInRpbWUiOiAiNDowNCIsCiAgICAicG9zaXRpb24iOiAiQ2hvcnVzIDcsIGFwcHJveGltYXRlbHkgbW0uIDE14oCTMTYiLAogICAgImV2ZW50IjogIkFzY2VuZGluZyBjaHJvbWF0aWMgcGlhbm8gZmlndXJhdGlvbiBvdmVyIHRoZSBpZGVudGlmaWVkIEE3LWZsYXQ5LTEzIHR1cm5hcm91bmQuIiwKICAgICJyZWxhdGlvbiI6ICJCb3VuZGFyeS1kaXJlY3RlZCBwaWFubyBnZXN0dXJlOyBwaXRjaGVzIGF3YWl0IHRyYW5zY3JpcHRpb24uIiwKICAgICJzb3VyY2UiOiAiR29sZGZvcmQiLAogICAgInN0YXR1cyI6ICJMaXN0ZW5pbmcgb2JzZXJ2YXRpb24iCiAgfSwKICB7CiAgICAidGltZSI6ICI0OjA5IiwKICAgICJwb3NpdGlvbiI6ICJDaG9ydXMgOCwgc3RhcnQ7IHNwYW4gcGVuZGluZyIsCiAgICAiZXZlbnQiOiAiUXVpZXRlciBob3JucywgbG9uZ2VyIHN1c3RhaW5lZCBub3RlcyBhbmQgZmV3ZXIgaW50ZXJ2ZW5pbmcgcmVzdHMuIiwKICAgICJyZWxhdGlvbiI6ICJDaGFuZ2VzIGluIGR5bmFtaWNzIGFuZCBzcGFjaW5nOyBleGFjdCBzcGFuIHN0aWxsIG9wZW4uIiwKICAgICJzb3VyY2UiOiAiR29sZGZvcmQiLAogICAgInN0YXR1cyI6ICJMaXN0ZW5pbmcgb2JzZXJ2YXRpb24iCiAgfSwKICB7CiAgICAidGltZSI6ICJQZW5kaW5nIiwKICAgICJwb3NpdGlvbiI6ICJDaG9ydXMgOCwgc2Vjb25kIGhhbGYiLAogICAgImV2ZW50IjogIkVuc2VtYmxlIGRpbWludWVuZG8gYmVmb3JlIHRoZSBtb3JlIGFjdGl2ZSBzdWJzZXF1ZW50IGRydW0gcGFzc2FnZXMuIiwKICAgICJyZWxhdGlvbiI6ICJNZWVoYW4gZ3JvdXBzIGNob3J1c2VzIDnigJMxMSBhcyBpbnRlbnNpZmllZCBkcnVtIGFjdGl2aXR5LiIsCiAgICAic291cmNlIjogIk1lZWhhbiBwLiAxNjMiLAogICAgInN0YXR1cyI6ICJMaXRlcmF0dXJlIGV2ZW50OyB0aW1lIHBlbmRpbmciCiAgfSwKICB7CiAgICAidGltZSI6ICI0OjQ0IiwKICAgICJwb3NpdGlvbiI6ICJDaG9ydXMgOSwgc3RhcnQiLAogICAgImV2ZW50IjogIk5ldyBwaWFubyBmaWd1cmF0aW9uLCBsb3VkZXIgaG9ybnMgYW5kIGNoYW5nZWQgZHJ1bSBpbnRlcmFjdGlvbi4iLAogICAgInJlbGF0aW9uIjogIk11bHRpcGxlIHBhcmFtZXRlcnMgY2hhbmdlIG5lYXIgdGhlIGNob3J1cyBib3VuZGFyeS4iLAogICAgInNvdXJjZSI6ICJHb2xkZm9yZCIsCiAgICAic3RhdHVzIjogIkxpc3RlbmluZyBvYnNlcnZhdGlvbiIKICB9LAogIHsKICAgICJ0aW1lIjogIjU6MDEiLAogICAgInBvc2l0aW9uIjogIkNob3J1cyA5LCBtLiA5IiwKICAgICJldmVudCI6ICJSZXBlYXRlZCBpbnRydXNpdmUgc25hcmUgaGl0cyBpbnRlcmplY3QgaW50byBtZWxvZGljIHBocmFzZXMuIiwKICAgICJyZWxhdGlvbiI6ICJEcnVtcyBnYWluIGZvcmVncm91bmQgcHJvbWluZW5jZS4iLAogICAgInNvdXJjZSI6ICJHb2xkZm9yZCIsCiAgICAic3RhdHVzIjogIkxpc3RlbmluZyBvYnNlcnZhdGlvbiIKICB9LAogIHsKICAgICJ0aW1lIjogIjU6MTMiLAogICAgInBvc2l0aW9uIjogIkNob3J1cyA5LCBtLiAxNCIsCiAgICAiZXZlbnQiOiAiUmVwZWF0ZWQtc25hcmUgYWN0aXZpdHkgZWZmZWN0aXZlbHkgYmVjb21lcyBhIHRocmVlLWJhciBkcnVtIHNvbG8uIiwKICAgICJyZWxhdGlvbiI6ICJQZXJjZWl2ZWQgZHJ1bSBmb3JlZ3JvdW5kaW5nOyBub3QgYSBjbGFpbSB0aGF0IGFsbCBvdGhlciBpbnN0cnVtZW50cyBzdG9wLiIsCiAgICAic291cmNlIjogIkdvbGRmb3JkIiwKICAgICJzdGF0dXMiOiAiTGlzdGVuaW5nIG9ic2VydmF0aW9uIgogIH0sCiAgewogICAgInRpbWUiOiAiNToxOCIsCiAgICAicG9zaXRpb24iOiAiQ2hvcnVzIDEwLCBzdGFydCIsCiAgICAiZXZlbnQiOiAiRHJ1bSByb2xsIGludG8gdGhlIGNob3J1czsgRGF2aXMgbGVhZHMsIFNob3J0ZXIgZm9sbG93cyByb3VnaGx5IDHigJMxLjUgcXVhcnRlci1ub3RlIGJlYXRzIGxhdGVyLiIsCiAgICAicmVsYXRpb24iOiAiQ2Fub24tbGlrZSBtZWxvZGljIGRpc3BsYWNlbWVudDsgc3RyaWN0IGNhbm9uIGFuZCByZXNwb25zZSB0byB0aGUgcm9sbCBhcmUgdW52ZXJpZmllZC4iLAogICAgInNvdXJjZSI6ICJHb2xkZm9yZCIsCiAgICAic3RhdHVzIjogIkxpc3RlbmluZyBvYnNlcnZhdGlvbiIKICB9LAogIHsKICAgICJ0aW1lIjogIjU6NTQiLAogICAgInBvc2l0aW9uIjogIkNob3J1cyAxMSwgc3RhcnQiLAogICAgImV2ZW50IjogIlBpYW5vIGVpZ2h0aC1ub3RlIHRyaWxsIGZpZ3VyYXRpb24gYW5kIGdsaXNzYW5kb3M7IGN5bWJhbCBpbnRydXNpb25zLiIsCiAgICAicmVsYXRpb24iOiAiSW50ZXJ2ZW50aW9ucyBvdmVybGFwIG9yIGludGVycnVwdCB0aGUgaG9ybiBtZWxvZHkuIiwKICAgICJzb3VyY2UiOiAiR29sZGZvcmQ7IE1lZWhhbiBwLiAxNjMgKGJyb2FkZXIgZHJ1bSBhY3Rpdml0eSkiLAogICAgInN0YXR1cyI6ICJMaXN0ZW5pbmcgb2JzZXJ2YXRpb24iCiAgfSwKICB7CiAgICAidGltZSI6ICI2OjIxIiwKICAgICJwb3NpdGlvbiI6ICJDaG9ydXMgMTEsIG1tLiAxM+KAkzE2IiwKICAgICJldmVudCI6ICJFbnNlbWJsZSBkaW1pbnVlbmRvIHdpdGggc29mdGVyIHBpYW5vIHRyaWxsaW5nLiIsCiAgICAicmVsYXRpb24iOiAiSGFuY29jayBhcyBpbml0aWF0b3IgaXMgYSByZXNwb25zZSBoeXBvdGhlc2lzLiIsCiAgICAic291cmNlIjogIkdvbGRmb3JkIiwKICAgICJzdGF0dXMiOiAiTGlzdGVuaW5nIG9ic2VydmF0aW9uIgogIH0sCiAgewogICAgInRpbWUiOiAiNjozMCIsCiAgICAicG9zaXRpb24iOiAiQ2hvcnVzIDEyLCBzdGFydCIsCiAgICAiZXZlbnQiOiAiQm90aCBob3JucyBhYnNlbnQ7IHNpbXBsZSB3aG9sZS1ub3RlIHBpYW5vIGNob3JkcywgcHJvbWluZW50IGRydW1zIGFuZCBsYXRlciBkcnVtIHJvbGwuIiwKICAgICJyZWxhdGlvbiI6ICJNZWxvZGljIHdpdGhkcmF3YWwgcmVkaXN0cmlidXRlcyBmb3JlZ3JvdW5kIGFjdGl2aXR5LiIsCiAgICAic291cmNlIjogIkdvbGRmb3JkOyBNZWVoYW4gcC4gMTYyIG4uIDUxMjsgUGFzY2VyaSB0aXRsZS10cmFjayBwYXJhZ3JhcGgiLAogICAgInN0YXR1cyI6ICJMaXN0ZW5pbmcgb2JzZXJ2YXRpb24iCiAgfSwKICB7CiAgICAidGltZSI6ICI3OjA1IiwKICAgICJwb3NpdGlvbiI6ICJDaG9ydXMgMTMsIHN0YXJ0IiwKICAgICJldmVudCI6ICJCb3RoIGhvcm5zIHJldHVybiB0b2dldGhlciwgc3RhdGVseSBhbmQgYXV0aG9yaXRhdGl2ZTsgcmh5dGhtcyBoZWFyZCBhcyBhZGhlcmluZyB0byBub3RhdGlvbi4iLAogICAgInJlbGF0aW9uIjogIlJlc3RvcmF0aW9uIG9mIGNvb3JkaW5hdGVkIG1lbG9kaWMgZGVsaXZlcnk7IGNvbXBhcmlzb24gd2l0aCBhIHNwZWNpZmllZCBzY29yZSByZW1haW5zIHBlbmRpbmcuIiwKICAgICJzb3VyY2UiOiAiR29sZGZvcmQ7IE1lZWhhbiBwLiAxNjIgbi4gNTEyIChyZXR1cm4pIiwKICAgICJzdGF0dXMiOiAiTGlzdGVuaW5nIG9ic2VydmF0aW9uIgogIH0sCiAgewogICAgInRpbWUiOiAiNzo0MCIsCiAgICAicG9zaXRpb24iOiAiQWZ0ZXIgY2hvcnVzIDEzOyB2YW1wIG91dCIsCiAgICAiZXZlbnQiOiAiVmFtcCBvdXQ6IG5vIG5ldyBob3JuIHN0YXRlbWVudDsgdGltZSBjb250aW51ZXMgaW4gZHJ1bXMgYW5kIGJhc3MgYnJpZWZseSBpbnRvIGEgZmFkZS4iLAogICAgInJlbGF0aW9uIjogIlJlbGVhc2VkLXJlY29yZGluZyBlbmRpbmcsIHdpdGhvdXQgYW4gaW52ZW50ZWQgY29sbGVjdGl2ZSBzdG9wIGN1ZS4gVGltZSBjb250aW51ZXMsIGJ1dCBub3RoaW5nIGluIGFueSBwYXJ0IHN1Z2dlc3RzIHRoYXQgYSBuZXcgY2hvcnVzIGhhcyBiZWd1bi4iLAogICAgInNvdXJjZSI6ICJHb2xkZm9yZCIsCiAgICAic3RhdHVzIjogIkxpc3RlbmluZyBvYnNlcnZhdGlvbiIKICB9Cl0=" download>Download observation data</a>
         </p>
       </section>
       <section id="notes">
@@ -762,6 +860,19 @@
             <em>Journal of Jazz Studies</em> 11, no. 1 (2016): 105–20.
           </li>
         </ul>
+        <div class="cite" id="how-to-cite">
+          <h3>How to cite</h3>
+          <p class="cite-label">Bibliography</p>
+          <p class="cite-entry">
+            Goldford, Louis. “Nefertiti: Interaction at Three Scales.” Last modified October 11, 2026.
+            <a href="https://einbahnstrasse.github.io/nefertiti-analysis/">https://einbahnstrasse.github.io/nefertiti-analysis/</a>.
+          </p>
+          <p class="cite-label">Note</p>
+          <p class="cite-entry">
+            Louis Goldford, “Nefertiti: Interaction at Three Scales,” last modified October 11, 2026,
+            <a href="https://einbahnstrasse.github.io/nefertiti-analysis/">https://einbahnstrasse.github.io/nefertiti-analysis/</a>.
+          </p>
+        </div>
       </section>
     </main>
     <footer>
@@ -3620,7 +3731,7 @@ globalThis["mermaid"] = globalThis.__esbuild_esm_mermaid_nm["mermaid"].default;
           scale: "performance",
           note: 11,
           title: "Participation and changing melodic delivery",
-          code: 'flowchart TD\n A["0:00 Shorter alone"] --> B["0:54 Davis joins; ride bell brightens texture"]\n B --> C{"Horns: preserve or change delivery?"}\n C --> D["2:59 Heavier horn attacks"]\n D --> D2["4:09 Sustained quiet horn delivery"]\n D2 --> E["5:18 Davis leads; Shorter delays the same melody"]\n E --> F{"Next melodic traversal: play or leave space?"}\n F --> G["6:30 Both horns absent; piano and drums foregrounded"]\n G --> H["7:05 Horns return together"]\n H --> I["7:40 No new horn statement; rhythm-section fade"]\n R["Sixteen-bar form: m. 1 through m. 16"] --> S["Return to m. 1 at each complete chorus"]\n S --> R\n R --- C\n P["Piano and drum interventions change the ensemble context"] -. "Proposed influence on subsequent delivery" .-> C\n D -. "Changed horn sound informs accompaniment?" .-> P\n E -. "Displaced melody informs accompaniment?" .-> P\n linkStyle 10 stroke:#b34c38,stroke-width:3px\n',
+          code: 'flowchart TD\n A["0:00 Shorter alone"] --> B["0:54 Davis joins; ride bell brightens texture"]\n B --> C{"Horns: preserve or change delivery?"}\n C --> D["2:59 Heavier horn attacks"]\n D --> D2["4:09 Sustained quiet horn delivery"]\n D2 --> E["5:18 Davis leads; Shorter delays the same melody"]\n E --> F{"Next melodic traversal: play or leave space?"}\n F --> G["6:30 Both horns absent; piano and drums foregrounded"]\n G --> H["7:05 Horns return together"]\n H --> I["7:40 No new horn statement; rhythm-section fade"]\n R["Sixteen-bar form: m. 1 through m. 16"] --> S["Return to m. 1 at each complete chorus"]\n S --> R\n R --- C\n P["Piano and drum interventions change the ensemble context"] -. "Influence on subsequent delivery" .-> C\n D -. "Changed horn sound informs accompaniment?" .-> P\n E -. "Displaced melody informs accompaniment?" .-> P\n linkStyle 10 stroke:#b34c38,stroke-width:3px\n',
           prose:
             "This overview separates formal repetition from interpersonal recursion. The red return closes the sixteen-bar loop. Dashed connections propose that a changed horn delivery affects accompaniment and that the resulting context informs later delivery. They summarize an analytical possibility; the local graphs locate specific supporting events. Diamonds name performance variables, not documented internal deliberations.",
           sources: "Goldford observations; Meehan pp. 162–163, especially n. 512.",
@@ -3680,9 +3791,9 @@ globalThis["mermaid"] = globalThis.__esbuild_esm_mermaid_nm["mermaid"].default;
           scale: "passage",
           note: 12,
           title: "Closing passages become places to redirect the ensemble",
-          code: 'flowchart TD\n A["0:28 Chorus 1: ride comments on sustained ending"] --> B["1:03 Chorus 2: dotted-quarter piano chords"]\n B --> C["1:37 Chorus 3: long-short cymbal gesture"]\n C --> D["Into chorus 4: similarly paired piano chords"]\n D --> E["2:17 Chorus 4: trumpet growl and piano semitone dyads"]\n C -. "Proposed rhythmic uptake" .-> D\n Q{"In the closing space: sustain, punctuate or introduce a figure?"} --> A\n Q --> B\n Q --> C\n Q --> E\n E -. "Different material available at the next boundary" .-> Q\n',
+          code: 'flowchart TD\n A["0:28 Chorus 1: ride comments on sustained ending"] --> B["1:03 Chorus 2: dotted-quarter piano chords form a brief polymetric layer"]\n B --> C["1:37 Chorus 3: short-long close-open hi-hat gesture"]\n C --> D["Into chorus 4: similarly paired piano chords"]\n D --> E["2:17 Chorus 4: trumpet growl and piano semitone dyads"]\n C -. "Rhythmic uptake" .-> D\n Q{"In the closing space: sustain, punctuate or introduce a figure?"} --> A\n Q --> B\n Q --> C\n Q --> E\n E -. "Different material available at the next boundary" .-> Q\n',
           prose:
-            "The chronological path compares closing passages, while the choice node identifies the recurring opportunity: the ending of the melody can coexist with a new accompaniment gesture. Only the chorus-3-to-4 passage currently supplies a proposed cross-boundary imitation; successive closing gestures are not automatically responses to one another.",
+            "The chronological path compares closing passages, while the choice node identifies the recurring opportunity: the ending of the melody can coexist with a new accompaniment gesture. At 1:03, the dotted-quarter piano chords form a brief polymetric layer over the prevailing grid. Only the chorus-3-to-4 passage currently supplies a cross-boundary imitation; successive closing gestures are not automatically responses to one another.",
           sources: "Goldford observations at 0:28, 1:03, 1:37 and 2:17.",
           links: {
             A: {
@@ -3695,13 +3806,13 @@ globalThis["mermaid"] = globalThis.__esbuild_esm_mermaid_nm["mermaid"].default;
               time: "1:03",
               seconds: 63,
               url: "https://www.youtube.com/watch?v=F2zUua79c6U&t=63s",
-              label: "1:03 Chorus 2: dotted-quarter piano chords",
+              label: "1:03 Chorus 2: dotted-quarter piano chords form a brief polymetric layer",
             },
             C: {
               time: "1:37",
               seconds: 97,
               url: "https://www.youtube.com/watch?v=F2zUua79c6U&t=97s",
-              label: "1:37 Chorus 3: long-short cymbal gesture",
+              label: "1:37 Chorus 3: short-long close-open hi-hat gesture",
             },
             E: {
               time: "2:17",
@@ -3716,9 +3827,9 @@ globalThis["mermaid"] = globalThis.__esbuild_esm_mermaid_nm["mermaid"].default;
           scale: "passage",
           note: 13,
           title: "From drum interjection to melodic displacement and withdrawal",
-          code: 'flowchart TD\n A["4:44 Chorus 9: louder horns and new piano figure"] --> B["5:01 Snare interjects into melody"]\n B --> C["5:13 Repeated snare takes foreground"]\n C --> D["5:18 Drum roll enters chorus 10"]\n D --> E{"Horns: align or offset melodic entrances?"}\n E --> F["Davis leads; Shorter follows about 1–1.5 beats later"]\n F --> G["5:54 Chorus 11: trills, glissandos and cymbal intrusions"]\n G --> H["6:21 Softer trilling and ensemble diminuendo"]\n H --> I{"Chorus 12: restate or withhold melody?"}\n I --> J["6:30 Horns withhold; rhythm section continues"]\n J --> K["7:05 Horns return together"]\n D -. "Influence on horn alignment unverified" .-> F\n H -. "Influence on withdrawal unverified" .-> J\n',
+          code: 'flowchart TD\n A["4:44 Chorus 9: louder horns and new piano figure"] --> B["5:01 Snare interjects into melody"]\n B --> C["5:13 Repeated snare takes foreground"]\n C --> D["5:18 Drum roll enters chorus 10"]\n D --> E{"Horns: align or offset melodic entrances?"}\n E --> F["Davis leads; Shorter follows about 1–1.5 beats later"]\n F --> G["5:54 Chorus 11: trills, glissandos and cymbal intrusions"]\n G --> H["6:21 Softer trilling and ensemble diminuendo"]\n H --> I{"Chorus 12: restate or withhold melody?"}\n I --> J["6:30 Horns withhold; rhythm section continues"]\n J --> K["7:05 Horns return together"]\n D -. "Influence on horn alignment" .-> F\n H -. "Influence on withdrawal" .-> J\n',
           prose:
-            "This passage preserves the sequence without turning temporal proximity into proven causation. Two specific variables are visible: alignment of the horn parts and presence of the melodic layer. Meehan supports intensified drumming in choruses 9–11 and the absence/return in choruses 12–13, but not every fine-grained gesture or proposed response here.",
+            "This passage preserves the sequence without turning temporal proximity into proven causation. Two specific variables are visible: alignment of the horn parts and presence of the melodic layer. Meehan supports intensified drumming in choruses 9–11 and the absence/return in choruses 12–13, but not every fine-grained gesture or response here.",
           sources: "Goldford observations; Meehan pp. 162–163; Pasceri title-track paragraph.",
           links: {
             A: {
@@ -3776,9 +3887,9 @@ globalThis["mermaid"] = globalThis.__esbuild_esm_mermaid_nm["mermaid"].default;
           scale: "local",
           note: 14,
           title: "2:28–2:45 • A piano rhythm is taken up and transformed",
-          code: 'flowchart TD\n A["2:28 Hancock: ascending quarter-note triplets"] --> B{"Williams: retain time pattern or adopt triplets?"}\n B --> C["2:33 Quarter-note triplets on toms"]\n C --> D{"Repeat the adopted figure or transform it?"}\n D --> E["2:36 Five-note figure on eighth-note-triplet grid"]\n E --> F["Toms phrase undergoes diminution"]\n F --> G["2:45 Rimshot in melodic gap; clearer swing returns"]\n G --> H["Horns give B-flat a stronger attack"]\n A -. "Proposed uptake" .-> C\n G -. "Proposed response" .-> H\n H -. "Changed horn energy becomes new input for Williams" .-> B\n',
+          code: 'flowchart TD\n A["2:28 Hancock: ascending quarter-note triplets"] --> B{"Williams: retain time pattern or adopt triplets?"}\n B --> C["2:33 Quarter-note triplets on toms"]\n C --> D{"Repeat the adopted figure or transform it?"}\n D --> E["2:36 Five-note figure on eighth-note-triplet grid"]\n E --> F["Toms phrase undergoes diminution"]\n F --> G["2:45 Rimshot in melodic gap; clearer swing returns"]\n G --> H["Horns give B-flat a stronger attack"]\n A -. "Uptake" .-> C\n G -. "Response" .-> H\n H -. "Changed horn energy becomes new input for Williams" .-> B\n',
           prose:
-            "This is the strongest current example of a proposed recursive exchange: piano introduces material, drums adopt and transform it, and drum punctuation is followed by changed horn delivery. The quarter-note triplets form a brief polymetric layer: continual, regular durations set against the prevailing grid for no more than a few bars. Fleeting as such layers are, they show how other metrical groupings within the existing grid can be expressive and offer ideas that others take up in turn. The dashed return represents a renewed input to subsequent drum choices, not a claim that time runs backward or that a further response has already been identified. Hearing the rimshot as reassurance is Goldford’s interpretation.",
+            "This is the strongest current example of a recursive exchange: piano introduces material, drums adopt and transform it, and drum punctuation is followed by changed horn delivery. The quarter-note triplets form a brief polymetric layer: continual, regular durations set against the prevailing grid for no more than a few bars. Fleeting as such layers are, they show how other metrical groupings within the existing grid can be expressive and offer ideas that others take up in turn. The dashed return represents a renewed input to subsequent drum choices, not a claim that time runs backward or that a further response has already been identified. Hearing the rimshot as reassurance is Goldford’s interpretation.",
           sources: "Goldford observations at 2:28, 2:33, 2:36 and 2:45.",
           links: {
             A: {
@@ -3812,22 +3923,22 @@ globalThis["mermaid"] = globalThis.__esbuild_esm_mermaid_nm["mermaid"].default;
           scale: "local",
           note: 15,
           title: "2:10–2:17 onward • Vocal inflection and semitone dissonance",
-          code: 'flowchart TD\n A["2:10 Hancock: blues-like voicing in melodic rest"] --> B["2:17 Davis: downward growling tail to sustained note"]\n B --> C{"Hancock: retain voicing or answer with sharper dissonance?"}\n C --> D["C–C-sharp dyad, then F–E dyad"]\n B -. "Proposed timbral-to-harmonic response" .-> D\n T["Williams mixes straight and swung eighths"] --- B\n T --- D\n D --> E["Changed ensemble context at the next chorus"]\n E -. "Input to subsequent horn and piano choices" .-> C\n',
+          code: 'flowchart TD\n A["2:10 Hancock: right-hand 7–3–13 voicing suggests blues-like sound"] --> B["2:17 Davis: downward glissando growling tail of final A melody note"]\n B --> C{"Hancock: retain voicing or answer with sharper dissonance?"}\n C --> D["C–C-sharp dyad, then F–E dyad"]\n B -. "Timbral-to-harmonic response" .-> D\n T["Williams mixes straight and swung eighths"] --- B\n T --- D\n D --> E["Changed ensemble context at the next chorus"]\n E -. "Input to subsequent horn and piano choices" .-> C\n',
           prose:
-            "Goldford hears a correspondence between trumpet’s vocal, blues-associated inflection and piano’s semitone dissonances. This is not literal melodic imitation: a quality is proposed to migrate between timbre and harmony. The return arrow is a model of ongoing responsiveness; the subsequent piano answer still needs identification. Chord alterations and pitches await transcription.",
+            "Hancock’s right-hand 7–3–13 voicing at 2:10 creates the blues sound that initiates the entire passage of exchanges. Goldford hears a correspondence between trumpet’s vocal, blues-associated inflection and piano’s semitone dissonances. This is not literal melodic imitation: a quality is proposed to migrate between timbre and harmony. The return arrow is a model of ongoing responsiveness; the subsequent piano answer still needs identification. Chord alterations and pitches await transcription.",
           sources: "Goldford observations at 2:10 and 2:17; harmony labels provisional.",
           links: {
             A: {
               time: "2:10",
               seconds: 130,
               url: "https://www.youtube.com/watch?v=F2zUua79c6U&t=130s",
-              label: "2:10 Hancock: blues-like voicing in melodic rest",
+              label: "2:10 Hancock: right-hand 7–3–13 voicing suggests blues-like sound",
             },
             B: {
               time: "2:17",
               seconds: 137,
               url: "https://www.youtube.com/watch?v=F2zUua79c6U&t=137s",
-              label: "2:17 Davis: downward growling tail to sustained note",
+              label: "2:17 Davis: downward glissando growling tail of final A melody note",
             },
           },
         },
@@ -3909,8 +4020,8 @@ globalThis["mermaid"] = globalThis.__esbuild_esm_mermaid_nm["mermaid"].default;
           time: "1:37",
           position: "Chorus 3, m. 12",
           event:
-            "Long–short accented, ringing ride-cymbal scrape; similar paired piano chords follow into chorus 4.",
-          relation: "Proposed drum-to-piano imitation crosses the chorus boundary.",
+            "Short–long accented, close-open hi-hat gesture; similar paired piano chords follow into chorus 4.",
+          relation: "Drum-to-piano imitation crosses the chorus boundary.",
           source: "Goldford",
           status: "Listening observation",
         },
@@ -3918,7 +4029,7 @@ globalThis["mermaid"] = globalThis.__esbuild_esm_mermaid_nm["mermaid"].default;
           time: "1:48",
           position: "Chorus 4, start",
           event: "Chorus boundary.",
-          relation: "Anchor; cymbal gesture from preceding chorus continues.",
+          relation: "Anchor; hi-hat gesture from preceding chorus continues.",
           source: "Goldford",
           status: "Listening observation",
         },
@@ -3926,9 +4037,9 @@ globalThis["mermaid"] = globalThis.__esbuild_esm_mermaid_nm["mermaid"].default;
           time: "2:10",
           position: "Chorus 4, m. 11",
           event:
-            "Two piano chords in the melodic rest; blues-like flat-13 voicing over the identified D7-sharp9/B-flat.",
+            "Two piano chords in the melodic rest; Hancock’s right hand voices 7–3–13 over the identified D7-sharp9/B-flat, creating a blues sound.",
           relation:
-            "Piano introduces a blues-associated color in the melodic gap; voicing needs transcription.",
+            "This blues voicing initiates the entire passage of exchanges that follows.",
           source: "Goldford",
           status: "Listening observation",
         },
@@ -3938,7 +4049,7 @@ globalThis["mermaid"] = globalThis.__esbuild_esm_mermaid_nm["mermaid"].default;
           event:
             "Davis gives the last note a downward growling glissando; piano follows with C–C-sharp, then F–E dyads. Drums mix swung and straight eighths.",
           relation:
-            "Proposed transfer from vocal trumpet inflection to piano semitone dissonance; final chord is A7-flat9-13.",
+            "Transfer from vocal trumpet inflection to piano semitone dissonance; final chord is A7-flat9-13.",
           source: "Goldford",
           status: "Listening observation",
         },
@@ -3990,7 +4101,7 @@ globalThis["mermaid"] = globalThis.__esbuild_esm_mermaid_nm["mermaid"].default;
           event:
             "Loud rimshot in the melodic gap; clearer swing returns; horns deliver B-flat strongly.",
           relation:
-            "Proposed drum-to-horn response. Reassurance and confidence describe an interpretation, not a verified mental state.",
+            "Drum-to-horn response. Reassurance and confidence describe an interpretation, not a verified mental state.",
           source: "Goldford",
           status: "Listening observation",
         },
@@ -4206,6 +4317,7 @@ globalThis["mermaid"] = globalThis.__esbuild_esm_mermaid_nm["mermaid"].default;
             `<span class="graph-tip-time">${esc(link.time)}</span>` +
             `<span class="graph-tip-label">${esc(link.label.replace(/^\d+:\d+\s+/, ""))}</span>` +
             `<span class="graph-tip-hint">Open the recording here <span class="ext" aria-hidden="true">↗</span></span>`;
+          tip.classList.remove("is-note");
           tip.classList.add("visible");
           moveTip(x, y);
         };
@@ -4219,6 +4331,45 @@ globalThis["mermaid"] = globalThis.__esbuild_esm_mermaid_nm["mermaid"].default;
         });
         anchor.addEventListener("blur", hide);
       }
+
+      function noteFor(target) {
+        const a = target.closest && target.closest(".fnref a");
+        const li = a && document.getElementById(a.getAttribute("href").slice(1));
+        if (!li) return null;
+        const body = li.cloneNode(true);
+        body.querySelector(".fn-back")?.remove();
+        return { a, html: `<span class="graph-tip-head">Note ${esc(a.textContent)}</span>${body.innerHTML.trim()}` };
+      }
+
+      function showNote(note, x, y) {
+        tip.innerHTML = note.html;
+        tip.classList.add("visible", "is-note");
+        moveTip(x, y);
+      }
+
+      function hideNote() {
+        if (tip.classList.contains("is-note")) tip.classList.remove("visible", "is-note");
+      }
+
+      document.addEventListener("mouseover", (e) => {
+        const note = noteFor(e.target);
+        if (note) showNote(note, e.clientX, e.clientY);
+      });
+      document.addEventListener("mousemove", (e) => {
+        if (tip.classList.contains("is-note")) moveTip(e.clientX, e.clientY);
+      });
+      document.addEventListener("mouseout", (e) => {
+        if (noteFor(e.target)) hideNote();
+      });
+      document.addEventListener("focusin", (e) => {
+        const note = noteFor(e.target);
+        if (!note) return;
+        const r = note.a.getBoundingClientRect();
+        showNote(note, r.right, r.bottom);
+      });
+      document.addEventListener("focusout", (e) => {
+        if (noteFor(e.target)) hideNote();
+      });
 
       function attachVideoLinks(container, g) {
         const ns = "http://www.w3.org/2000/svg";

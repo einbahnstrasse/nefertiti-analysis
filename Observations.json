@@ -58,8 +58,8 @@
   {
     "time": "1:37",
     "position": "Chorus 3, m. 12",
-    "event": "Long–short accented, ringing ride-cymbal scrape; similar paired piano chords follow into chorus 4.",
-    "relation": "Proposed drum-to-piano imitation crosses the chorus boundary.",
+    "event": "Short–long accented, close-open hi-hat gesture; similar paired piano chords follow into chorus 4.",
+    "relation": "Drum-to-piano imitation crosses the chorus boundary.",
     "source": "Goldford",
     "status": "Listening observation"
   },
@@ -67,15 +67,15 @@
     "time": "1:48",
     "position": "Chorus 4, start",
     "event": "Chorus boundary.",
-    "relation": "Anchor; cymbal gesture from preceding chorus continues.",
+    "relation": "Anchor; hi-hat gesture from preceding chorus continues.",
     "source": "Goldford",
     "status": "Listening observation"
   },
   {
     "time": "2:10",
     "position": "Chorus 4, m. 11",
-    "event": "Two piano chords in the melodic rest; blues-like flat-13 voicing over the identified D7-sharp9/B-flat.",
-    "relation": "Piano introduces a blues-associated color in the melodic gap; voicing needs transcription.",
+    "event": "Two piano chords in the melodic rest; Hancock’s right hand voices 7–3–13 over the identified D7-sharp9/B-flat, creating a blues sound.",
+    "relation": "This blues voicing initiates the entire passage of exchanges that follows.",
     "source": "Goldford",
     "status": "Listening observation"
   },
@@ -83,7 +83,7 @@
     "time": "2:17",
     "position": "Chorus 4, m. 14 and following",
     "event": "Davis gives the last note a downward growling glissando; piano follows with C–C-sharp, then F–E dyads. Drums mix swung and straight eighths.",
-    "relation": "Proposed transfer from vocal trumpet inflection to piano semitone dissonance; final chord is A7-flat9-13.",
+    "relation": "Transfer from vocal trumpet inflection to piano semitone dissonance; final chord is A7-flat9-13.",
     "source": "Goldford",
     "status": "Listening observation"
   },
@@ -131,7 +131,7 @@
     "time": "2:45",
     "position": "Chorus 5, m. 11",
     "event": "Loud rimshot in the melodic gap; clearer swing returns; horns deliver B-flat strongly.",
-    "relation": "Proposed drum-to-horn response. Reassurance and confidence describe an interpretation, not a verified mental state.",
+    "relation": "Drum-to-horn response. Reassurance and confidence describe an interpretation, not a verified mental state.",
     "source": "Goldford",
     "status": "Listening observation"
   },

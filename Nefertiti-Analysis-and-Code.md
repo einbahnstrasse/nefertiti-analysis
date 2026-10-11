@@ -1,6 +1,6 @@
 # Nefertiti: Interaction at Three Scales
 
-Snapshot: October 11, 2026
+Last modified: October 11, 2026
 
 Assigned recording: https://youtu.be/F2zUua79c6U
 
@@ -12,7 +12,7 @@ Ingrid Monson makes this analytical need explicit in *Saying Something: Jazz Imp
 
 Monson demonstrates this approach at different scales. Her analysis of Geri Allen and Ralph Peterson on “Princess” traces rhythmic interventions, interruptions, and subsequent responses between piano and drums.[^3] Her extended analysis of “Bass-ment Blues” examines how exchanges, recovery, and stylistic references contribute to intensification across successive choruses.[^4] These examples suggest an approach to “Nefertiti” that connects individual gestures with developments across choruses and with changes in the performance as a whole.
 
-David Borgo supplies a complementary account of **recursive interaction**. In *Sync or Swarm*, his discussion developed with Joseph Goguen describes music making and listening as coupled processes: “the current state of each acts as the control of the other.”[^5] Musicians hear the ensemble sound, act in relation to it, and thereby change the sound available for subsequent listening and action. A response can also change how an earlier gesture is understood.[^6] In our analysis, a feedback connection identifies a proposed relationship of this kind. The mere return of the sixteen-bar form establishes recurrence; identifying interpersonal recursion requires evidence of uptake, transformation, or adjustment.
+David Borgo supplies a complementary account of **recursive interaction**. In *Sync or Swarm*, his discussion developed with Joseph Goguen describes music making and listening as coupled processes: “the current state of each acts as the control of the other.”[^5] Musicians hear the ensemble sound, act in relation to it, and thereby change the sound available for subsequent listening and action. A response can also change how an earlier gesture is understood.[^6] In our analysis, a feedback connection identifies a relationship of this kind. The mere return of the sixteen-bar form establishes recurrence; identifying interpersonal recursion requires evidence of uptake, transformation, or adjustment.
 
 Two further perspectives clarify what this approach attends to. Paul Berliner describes the solo as one strand within a texture whose accompanying parts are themselves commonly improvised.[^7] George E. Lewis emphasizes how personal sound communicates meanings beyond pitches and intervals.[^8] Together, these perspectives encourage attention to the rhythmic and timbral specificity of the quintet’s exchanges: a piano rhythm transferred to toms, a trumpet growl followed by semitone piano dissonances, or a change in horn participation that redistributes foreground activity.
 
@@ -22,9 +22,9 @@ The graphs offer three connected scales of attention:
 - **Passage:** How do exchanges develop across phrases and chorus boundaries? This view examines recurring opportunities for intervention, especially the melody’s closing measures, and follows changes that persist into subsequent choruses.
 - **Local exchange:** What does one musician introduce, what follows from another, and how is the material transformed? This view examines specific instances such as Hancock’s quarter-note triplets at 2:28, Williams’s apparent uptake on toms at 2:33, and his subsequent transformation of the figure.
 
-These are complementary zoom levels rather than a fixed hierarchy of musical importance. A local exchange may remain local or contribute to a wider change; the graphs allow those relationships to be investigated. All timestamps refer to the assigned YouTube recording.[^9] Listening observations and literature accounts are attributed separately, and proposed response relationships remain distinguishable from the reported sequence of events.
+These are complementary zoom levels rather than a fixed hierarchy of musical importance. A local exchange may remain local or contribute to a wider change; the graphs allow those relationships to be investigated. All timestamps refer to the assigned YouTube recording.[^9] Listening observations and literature accounts are attributed separately, and response relationships remain distinguishable from the reported sequence of events.
 
-Solid arrow · reported sequence / structural relation Dashed arrow · proposed response / feedback Red return · formal recurrence Diamond · specific performance choice inferred from action
+Solid arrow · reported sequence / structural relation Dashed arrow · response / feedback Red return · formal recurrence Diamond · specific performance choice inferred from action
 
 Untaken alternatives inside diamonds are analytical contrasts, not additional recorded events. A dashed backward connection means a renewed input to subsequent actions, not a return to an earlier timestamp.
 
@@ -70,7 +70,7 @@ flowchart TD
  R["Sixteen-bar form: m. 1 through m. 16"] --> S["Return to m. 1 at each complete chorus"]
  S --> R
  R --- C
- P["Piano and drum interventions change the ensemble context"] -. "Proposed influence on subsequent delivery" .-> C
+ P["Piano and drum interventions change the ensemble context"] -. "Influence on subsequent delivery" .-> C
  D -. "Changed horn sound informs accompaniment?" .-> P
  E -. "Displaced melody informs accompaniment?" .-> P
  linkStyle 10 stroke:#b34c38,stroke-width:3px
@@ -80,15 +80,15 @@ flowchart TD
 
 Scale: passage
 
-The chronological path compares closing passages, while the choice node identifies the recurring opportunity: the ending of the melody can coexist with a new accompaniment gesture. Only the chorus-3-to-4 passage currently supplies a proposed cross-boundary imitation; successive closing gestures are not automatically responses to one another.[^12]
+The chronological path compares closing passages, while the choice node identifies the recurring opportunity: the ending of the melody can coexist with a new accompaniment gesture. At 1:03, the dotted-quarter piano chords form a brief polymetric layer over the prevailing grid. Only the chorus-3-to-4 passage currently supplies a cross-boundary imitation; successive closing gestures are not automatically responses to one another.[^12]
 
 ```mermaid
 flowchart TD
- A["0:28 Chorus 1: ride comments on sustained ending"] --> B["1:03 Chorus 2: dotted-quarter piano chords"]
- B --> C["1:37 Chorus 3: long-short cymbal gesture"]
+ A["0:28 Chorus 1: ride comments on sustained ending"] --> B["1:03 Chorus 2: dotted-quarter piano chords form a brief polymetric layer"]
+ B --> C["1:37 Chorus 3: short-long close-open hi-hat gesture"]
  C --> D["Into chorus 4: similarly paired piano chords"]
  D --> E["2:17 Chorus 4: trumpet growl and piano semitone dyads"]
- C -. "Proposed rhythmic uptake" .-> D
+ C -. "Rhythmic uptake" .-> D
  Q{"In the closing space: sustain, punctuate or introduce a figure?"} --> A
  Q --> B
  Q --> C
@@ -100,7 +100,7 @@ flowchart TD
 
 Scale: passage
 
-This passage preserves the sequence without turning temporal proximity into proven causation. Two specific variables are visible: alignment of the horn parts and presence of the melodic layer. Meehan supports intensified drumming in choruses 9–11 and the absence/return in choruses 12–13, but not every fine-grained gesture or proposed response here.[^13]
+This passage preserves the sequence without turning temporal proximity into proven causation. Two specific variables are visible: alignment of the horn parts and presence of the melodic layer. Meehan supports intensified drumming in choruses 9–11 and the absence/return in choruses 12–13, but not every fine-grained gesture or response here.[^13]
 
 ```mermaid
 flowchart TD
@@ -114,15 +114,15 @@ flowchart TD
  H --> I{"Chorus 12: restate or withhold melody?"}
  I --> J["6:30 Horns withhold; rhythm section continues"]
  J --> K["7:05 Horns return together"]
- D -. "Influence on horn alignment unverified" .-> F
- H -. "Influence on withdrawal unverified" .-> J
+ D -. "Influence on horn alignment" .-> F
+ H -. "Influence on withdrawal" .-> J
 ```
 
 ### 2:28–2:45 • A piano rhythm is taken up and transformed
 
 Scale: local
 
-This is the strongest current example of a proposed recursive exchange: piano introduces material, drums adopt and transform it, and drum punctuation is followed by changed horn delivery. The quarter-note triplets form a brief polymetric layer: continual, regular durations set against the prevailing grid for no more than a few bars. Fleeting as such layers are, they show how other metrical groupings within the existing grid can be expressive and offer ideas that others take up in turn. The dashed return represents a renewed input to subsequent drum choices, not a claim that time runs backward or that a further response has already been identified. Hearing the rimshot as reassurance is Goldford’s interpretation.[^14]
+This is the strongest current example of a recursive exchange: piano introduces material, drums adopt and transform it, and drum punctuation is followed by changed horn delivery. The quarter-note triplets form a brief polymetric layer: continual, regular durations set against the prevailing grid for no more than a few bars. Fleeting as such layers are, they show how other metrical groupings within the existing grid can be expressive and offer ideas that others take up in turn. The dashed return represents a renewed input to subsequent drum choices, not a claim that time runs backward or that a further response has already been identified. Hearing the rimshot as reassurance is Goldford’s interpretation.[^14]
 
 ```mermaid
 flowchart TD
@@ -133,8 +133,8 @@ flowchart TD
  E --> F["Toms phrase undergoes diminution"]
  F --> G["2:45 Rimshot in melodic gap; clearer swing returns"]
  G --> H["Horns give B-flat a stronger attack"]
- A -. "Proposed uptake" .-> C
- G -. "Proposed response" .-> H
+ A -. "Uptake" .-> C
+ G -. "Response" .-> H
  H -. "Changed horn energy becomes new input for Williams" .-> B
 ```
 
@@ -142,14 +142,14 @@ flowchart TD
 
 Scale: local
 
-Goldford hears a correspondence between trumpet’s vocal, blues-associated inflection and piano’s semitone dissonances. This is not literal melodic imitation: a quality is proposed to migrate between timbre and harmony. The return arrow is a model of ongoing responsiveness; the subsequent piano answer still needs identification. Chord alterations and pitches await transcription.[^15]
+Hancock’s right-hand 7–3–13 voicing at 2:10 creates the blues sound that initiates the entire passage of exchanges. Goldford hears a correspondence between trumpet’s vocal, blues-associated inflection and piano’s semitone dissonances. This is not literal melodic imitation: a quality is proposed to migrate between timbre and harmony. The return arrow is a model of ongoing responsiveness; the subsequent piano answer still needs identification. Chord alterations and pitches await transcription.[^15]
 
 ```mermaid
 flowchart TD
- A["2:10 Hancock: blues-like voicing in melodic rest"] --> B["2:17 Davis: downward growling tail to sustained note"]
+ A["2:10 Hancock: right-hand 7–3–13 voicing suggests blues-like sound"] --> B["2:17 Davis: downward glissando growling tail of final A melody note"]
  B --> C{"Hancock: retain voicing or answer with sharper dissonance?"}
  C --> D["C–C-sharp dyad, then F–E dyad"]
- B -. "Proposed timbral-to-harmonic response" .-> D
+ B -. "Timbral-to-harmonic response" .-> D
  T["Williams mixes straight and swung eighths"] --- B
  T --- D
  D --> E["Changed ensemble context at the next chorus"]
@@ -189,16 +189,16 @@ flowchart TD
 | 1:12 | Chorus 3, start | Chorus boundary. | Anchor for the following events. | Goldford |
 | 1:25 | Chorus 3, m. 7 | Piano durations span two eighth-note-triplet units; accented repeated E-flats. | Brief polymetric layer: regular durations of two eighth-note-triplet units overlay the prevailing pulse. | Goldford |
 | Pending | Chorus 3, approaching mm. 9–16 | Hancock animates the accompaniment; Williams subsequently takes up its dancing quality. | Meehan explicitly interprets this as uptake. Do not equate it automatically with the 1:25 event. | Meehan p. 162 |
-| 1:37 | Chorus 3, m. 12 | Long–short accented, ringing ride-cymbal scrape; similar paired piano chords follow into chorus 4. | Proposed drum-to-piano imitation crosses the chorus boundary. | Goldford |
-| 1:48 | Chorus 4, start | Chorus boundary. | Anchor; cymbal gesture from preceding chorus continues. | Goldford |
-| 2:10 | Chorus 4, m. 11 | Two piano chords in the melodic rest; blues-like flat-13 voicing over the identified D7-sharp9/B-flat. | Piano introduces a blues-associated color in the melodic gap; voicing needs transcription. | Goldford |
-| 2:17 | Chorus 4, m. 14 and following | Davis gives the last note a downward growling glissando; piano follows with C–C-sharp, then F–E dyads. Drums mix swung and straight eighths. | Proposed transfer from vocal trumpet inflection to piano semitone dissonance; final chord is A7-flat9-13. | Goldford |
+| 1:37 | Chorus 3, m. 12 | Short–long accented, close-open hi-hat gesture; similar paired piano chords follow into chorus 4. | Drum-to-piano imitation crosses the chorus boundary. | Goldford |
+| 1:48 | Chorus 4, start | Chorus boundary. | Anchor; hi-hat gesture from preceding chorus continues. | Goldford |
+| 2:10 | Chorus 4, m. 11 | Two piano chords in the melodic rest; Hancock’s right hand voices 7–3–13 over the identified D7-sharp9/B-flat, creating a blues sound. | This blues voicing initiates the entire passage of exchanges that follows. | Goldford |
+| 2:17 | Chorus 4, m. 14 and following | Davis gives the last note a downward growling glissando; piano follows with C–C-sharp, then F–E dyads. Drums mix swung and straight eighths. | Transfer from vocal trumpet inflection to piano semitone dissonance; final chord is A7-flat9-13. | Goldford |
 | 2:24 | Chorus 5, start | Chorus boundary. | Anchor for triplet exchange and literature events. | Goldford |
 | 2:28 | Chorus 5, m. 3 | Ascending quarter-note triplets in piano. | Hancock introduces the rhythmic material taken up below. | Goldford |
 | 2:33 | Chorus 5, m. 5 | Quarter-note triplets on toms. | Williams appears to take up the piano rhythm in a different timbre. | Goldford |
 | 2:36 | Chorus 5, m. 7 onward | Five-note spang-a-lang-like tom figure on an eighth-note-triplet grid; subsequent diminution. | Rhythmic uptake is transformed in grouping, duration and drum placement. | Goldford |
 | Pending | Chorus 5, m. 9 | Horns extend A-flat after legato delivery; Hancock lays out; Williams lowers his dynamic. | Meehan links horn extension to accompaniment withdrawal and a dynamic valley. | Meehan p. 162 |
-| 2:45 | Chorus 5, m. 11 | Loud rimshot in the melodic gap; clearer swing returns; horns deliver B-flat strongly. | Proposed drum-to-horn response. Reassurance and confidence describe an interpretation, not a verified mental state. | Goldford |
+| 2:45 | Chorus 5, m. 11 | Loud rimshot in the melodic gap; clearer swing returns; horns deliver B-flat strongly. | Drum-to-horn response. Reassurance and confidence describe an interpretation, not a verified mental state. | Goldford |
 | Pending | Chorus 5, midway through m. 12 | Williams plays a strong fill into a new chord; ensemble attacks with renewed intensity. | Meehan reports a coordinated intensification after the valley. Possibly the same event as the 2:45 rimshot at m. 11.[^17] | Meehan p. 162 |
 | 2:59 | Chorus 6, start | Heavier, more pointed horn attacks, without shorter durations or staccato. | Attack profile changes independently of note length; no specific literature corroboration located. | Goldford |
 | 3:34 | Chorus 7, start | Drums take greater liberties. | Specify rhythmic departures through further listening. | Goldford |
@@ -240,3 +240,9 @@ Smither, William. “Guide-Tone Space: Navigating Voice-Leading Syntax in Tonal 
 Waters, Keith. *The Studio Recordings of the Miles Davis Quintet, 1965–68*. New York: Oxford University Press, 2011.
 
 Waters, Keith, Henry Martin, Steve Larson, and Steven Strunk. “Circular Thinking.” *Journal of Jazz Studies* 11, no. 1 (2016): 105–20.
+
+## How to cite
+
+Bibliography: Goldford, Louis. “Nefertiti: Interaction at Three Scales.” Last modified October 11, 2026. <https://einbahnstrasse.github.io/nefertiti-analysis/>.
+
+Note: Louis Goldford, “Nefertiti: Interaction at Three Scales,” last modified October 11, 2026, <https://einbahnstrasse.github.io/nefertiti-analysis/>.

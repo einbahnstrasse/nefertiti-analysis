@@ -4,7 +4,7 @@ const graphs = [
     scale: "performance",
     note: 11,
     title: "Participation and changing melodic delivery",
-    code: 'flowchart TD\n A["0:00 Shorter alone"] --> B["0:54 Davis joins; ride bell brightens texture"]\n B --> C{"Horns: preserve or change delivery?"}\n C --> D["2:59 Heavier horn attacks"]\n D --> D2["4:09 Sustained quiet horn delivery"]\n D2 --> E["5:18 Davis leads; Shorter delays the same melody"]\n E --> F{"Next melodic traversal: play or leave space?"}\n F --> G["6:30 Both horns absent; piano and drums foregrounded"]\n G --> H["7:05 Horns return together"]\n H --> I["7:40 No new horn statement; rhythm-section fade"]\n R["Sixteen-bar form: m. 1 through m. 16"] --> S["Return to m. 1 at each complete chorus"]\n S --> R\n R --- C\n P["Piano and drum interventions change the ensemble context"] -. "Proposed influence on subsequent delivery" .-> C\n D -. "Changed horn sound informs accompaniment?" .-> P\n E -. "Displaced melody informs accompaniment?" .-> P\n linkStyle 10 stroke:#b34c38,stroke-width:3px\n',
+    code: 'flowchart TD\n A["0:00 Shorter alone"] --> B["0:54 Davis joins; ride bell brightens texture"]\n B --> C{"Horns: preserve or change delivery?"}\n C --> D["2:59 Heavier horn attacks"]\n D --> D2["4:09 Sustained quiet horn delivery"]\n D2 --> E["5:18 Davis leads; Shorter delays the same melody"]\n E --> F{"Next melodic traversal: play or leave space?"}\n F --> G["6:30 Both horns absent; piano and drums foregrounded"]\n G --> H["7:05 Horns return together"]\n H --> I["7:40 No new horn statement; rhythm-section fade"]\n R["Sixteen-bar form: m. 1 through m. 16"] --> S["Return to m. 1 at each complete chorus"]\n S --> R\n R --- C\n P["Piano and drum interventions change the ensemble context"] -. "Influence on subsequent delivery" .-> C\n D -. "Changed horn sound informs accompaniment?" .-> P\n E -. "Displaced melody informs accompaniment?" .-> P\n linkStyle 10 stroke:#b34c38,stroke-width:3px\n',
     prose:
       "This overview separates formal repetition from interpersonal recursion. The red return closes the sixteen-bar loop. Dashed connections propose that a changed horn delivery affects accompaniment and that the resulting context informs later delivery. They summarize an analytical possibility; the local graphs locate specific supporting events. Diamonds name performance variables, not documented internal deliberations.",
     sources: "Goldford observations; Meehan pp. 162–163, especially n. 512.",
@@ -64,9 +64,9 @@ const graphs = [
     scale: "passage",
     note: 12,
     title: "Closing passages become places to redirect the ensemble",
-    code: 'flowchart TD\n A["0:28 Chorus 1: ride comments on sustained ending"] --> B["1:03 Chorus 2: dotted-quarter piano chords"]\n B --> C["1:37 Chorus 3: long-short cymbal gesture"]\n C --> D["Into chorus 4: similarly paired piano chords"]\n D --> E["2:17 Chorus 4: trumpet growl and piano semitone dyads"]\n C -. "Proposed rhythmic uptake" .-> D\n Q{"In the closing space: sustain, punctuate or introduce a figure?"} --> A\n Q --> B\n Q --> C\n Q --> E\n E -. "Different material available at the next boundary" .-> Q\n',
+    code: 'flowchart TD\n A["0:28 Chorus 1: ride comments on sustained ending"] --> B["1:03 Chorus 2: dotted-quarter piano chords form a brief polymetric layer"]\n B --> C["1:37 Chorus 3: short-long close-open hi-hat gesture"]\n C --> D["Into chorus 4: similarly paired piano chords"]\n D --> E["2:17 Chorus 4: trumpet growl and piano semitone dyads"]\n C -. "Rhythmic uptake" .-> D\n Q{"In the closing space: sustain, punctuate or introduce a figure?"} --> A\n Q --> B\n Q --> C\n Q --> E\n E -. "Different material available at the next boundary" .-> Q\n',
     prose:
-      "The chronological path compares closing passages, while the choice node identifies the recurring opportunity: the ending of the melody can coexist with a new accompaniment gesture. Only the chorus-3-to-4 passage currently supplies a proposed cross-boundary imitation; successive closing gestures are not automatically responses to one another.",
+      "The chronological path compares closing passages, while the choice node identifies the recurring opportunity: the ending of the melody can coexist with a new accompaniment gesture. At 1:03, the dotted-quarter piano chords form a brief polymetric layer over the prevailing grid. Only the chorus-3-to-4 passage currently supplies a cross-boundary imitation; successive closing gestures are not automatically responses to one another.",
     sources: "Goldford observations at 0:28, 1:03, 1:37 and 2:17.",
     links: {
       A: {
@@ -79,13 +79,13 @@ const graphs = [
         time: "1:03",
         seconds: 63,
         url: "https://www.youtube.com/watch?v=F2zUua79c6U&t=63s",
-        label: "1:03 Chorus 2: dotted-quarter piano chords",
+        label: "1:03 Chorus 2: dotted-quarter piano chords form a brief polymetric layer",
       },
       C: {
         time: "1:37",
         seconds: 97,
         url: "https://www.youtube.com/watch?v=F2zUua79c6U&t=97s",
-        label: "1:37 Chorus 3: long-short cymbal gesture",
+        label: "1:37 Chorus 3: short-long close-open hi-hat gesture",
       },
       E: {
         time: "2:17",
@@ -100,9 +100,9 @@ const graphs = [
     scale: "passage",
     note: 13,
     title: "From drum interjection to melodic displacement and withdrawal",
-    code: 'flowchart TD\n A["4:44 Chorus 9: louder horns and new piano figure"] --> B["5:01 Snare interjects into melody"]\n B --> C["5:13 Repeated snare takes foreground"]\n C --> D["5:18 Drum roll enters chorus 10"]\n D --> E{"Horns: align or offset melodic entrances?"}\n E --> F["Davis leads; Shorter follows about 1–1.5 beats later"]\n F --> G["5:54 Chorus 11: trills, glissandos and cymbal intrusions"]\n G --> H["6:21 Softer trilling and ensemble diminuendo"]\n H --> I{"Chorus 12: restate or withhold melody?"}\n I --> J["6:30 Horns withhold; rhythm section continues"]\n J --> K["7:05 Horns return together"]\n D -. "Influence on horn alignment unverified" .-> F\n H -. "Influence on withdrawal unverified" .-> J\n',
+    code: 'flowchart TD\n A["4:44 Chorus 9: louder horns and new piano figure"] --> B["5:01 Snare interjects into melody"]\n B --> C["5:13 Repeated snare takes foreground"]\n C --> D["5:18 Drum roll enters chorus 10"]\n D --> E{"Horns: align or offset melodic entrances?"}\n E --> F["Davis leads; Shorter follows about 1–1.5 beats later"]\n F --> G["5:54 Chorus 11: trills, glissandos and cymbal intrusions"]\n G --> H["6:21 Softer trilling and ensemble diminuendo"]\n H --> I{"Chorus 12: restate or withhold melody?"}\n I --> J["6:30 Horns withhold; rhythm section continues"]\n J --> K["7:05 Horns return together"]\n D -. "Influence on horn alignment" .-> F\n H -. "Influence on withdrawal" .-> J\n',
     prose:
-      "This passage preserves the sequence without turning temporal proximity into proven causation. Two specific variables are visible: alignment of the horn parts and presence of the melodic layer. Meehan supports intensified drumming in choruses 9–11 and the absence/return in choruses 12–13, but not every fine-grained gesture or proposed response here.",
+      "This passage preserves the sequence without turning temporal proximity into proven causation. Two specific variables are visible: alignment of the horn parts and presence of the melodic layer. Meehan supports intensified drumming in choruses 9–11 and the absence/return in choruses 12–13, but not every fine-grained gesture or response here.",
     sources: "Goldford observations; Meehan pp. 162–163; Pasceri title-track paragraph.",
     links: {
       A: {
@@ -160,9 +160,9 @@ const graphs = [
     scale: "local",
     note: 14,
     title: "2:28–2:45 • A piano rhythm is taken up and transformed",
-    code: 'flowchart TD\n A["2:28 Hancock: ascending quarter-note triplets"] --> B{"Williams: retain time pattern or adopt triplets?"}\n B --> C["2:33 Quarter-note triplets on toms"]\n C --> D{"Repeat the adopted figure or transform it?"}\n D --> E["2:36 Five-note figure on eighth-note-triplet grid"]\n E --> F["Toms phrase undergoes diminution"]\n F --> G["2:45 Rimshot in melodic gap; clearer swing returns"]\n G --> H["Horns give B-flat a stronger attack"]\n A -. "Proposed uptake" .-> C\n G -. "Proposed response" .-> H\n H -. "Changed horn energy becomes new input for Williams" .-> B\n',
+    code: 'flowchart TD\n A["2:28 Hancock: ascending quarter-note triplets"] --> B{"Williams: retain time pattern or adopt triplets?"}\n B --> C["2:33 Quarter-note triplets on toms"]\n C --> D{"Repeat the adopted figure or transform it?"}\n D --> E["2:36 Five-note figure on eighth-note-triplet grid"]\n E --> F["Toms phrase undergoes diminution"]\n F --> G["2:45 Rimshot in melodic gap; clearer swing returns"]\n G --> H["Horns give B-flat a stronger attack"]\n A -. "Uptake" .-> C\n G -. "Response" .-> H\n H -. "Changed horn energy becomes new input for Williams" .-> B\n',
     prose:
-      "This is the strongest current example of a proposed recursive exchange: piano introduces material, drums adopt and transform it, and drum punctuation is followed by changed horn delivery. The quarter-note triplets form a brief polymetric layer: continual, regular durations set against the prevailing grid for no more than a few bars. Fleeting as such layers are, they show how other metrical groupings within the existing grid can be expressive and offer ideas that others take up in turn. The dashed return represents a renewed input to subsequent drum choices, not a claim that time runs backward or that a further response has already been identified. Hearing the rimshot as reassurance is Goldford’s interpretation.",
+      "This is the strongest current example of a recursive exchange: piano introduces material, drums adopt and transform it, and drum punctuation is followed by changed horn delivery. The quarter-note triplets form a brief polymetric layer: continual, regular durations set against the prevailing grid for no more than a few bars. Fleeting as such layers are, they show how other metrical groupings within the existing grid can be expressive and offer ideas that others take up in turn. The dashed return represents a renewed input to subsequent drum choices, not a claim that time runs backward or that a further response has already been identified. Hearing the rimshot as reassurance is Goldford’s interpretation.",
     sources: "Goldford observations at 2:28, 2:33, 2:36 and 2:45.",
     links: {
       A: {
@@ -196,22 +196,22 @@ const graphs = [
     scale: "local",
     note: 15,
     title: "2:10–2:17 onward • Vocal inflection and semitone dissonance",
-    code: 'flowchart TD\n A["2:10 Hancock: blues-like voicing in melodic rest"] --> B["2:17 Davis: downward growling tail to sustained note"]\n B --> C{"Hancock: retain voicing or answer with sharper dissonance?"}\n C --> D["C–C-sharp dyad, then F–E dyad"]\n B -. "Proposed timbral-to-harmonic response" .-> D\n T["Williams mixes straight and swung eighths"] --- B\n T --- D\n D --> E["Changed ensemble context at the next chorus"]\n E -. "Input to subsequent horn and piano choices" .-> C\n',
+    code: 'flowchart TD\n A["2:10 Hancock: right-hand 7–3–13 voicing suggests blues-like sound"] --> B["2:17 Davis: downward glissando growling tail of final A melody note"]\n B --> C{"Hancock: retain voicing or answer with sharper dissonance?"}\n C --> D["C–C-sharp dyad, then F–E dyad"]\n B -. "Timbral-to-harmonic response" .-> D\n T["Williams mixes straight and swung eighths"] --- B\n T --- D\n D --> E["Changed ensemble context at the next chorus"]\n E -. "Input to subsequent horn and piano choices" .-> C\n',
     prose:
-      "Goldford hears a correspondence between trumpet’s vocal, blues-associated inflection and piano’s semitone dissonances. This is not literal melodic imitation: a quality is proposed to migrate between timbre and harmony. The return arrow is a model of ongoing responsiveness; the subsequent piano answer still needs identification. Chord alterations and pitches await transcription.",
+      "Hancock’s right-hand 7–3–13 voicing at 2:10 creates the blues sound that initiates the entire passage of exchanges. Goldford hears a correspondence between trumpet’s vocal, blues-associated inflection and piano’s semitone dissonances. This is not literal melodic imitation: a quality is proposed to migrate between timbre and harmony. The return arrow is a model of ongoing responsiveness; the subsequent piano answer still needs identification. Chord alterations and pitches await transcription.",
     sources: "Goldford observations at 2:10 and 2:17; harmony labels provisional.",
     links: {
       A: {
         time: "2:10",
         seconds: 130,
         url: "https://www.youtube.com/watch?v=F2zUua79c6U&t=130s",
-        label: "2:10 Hancock: blues-like voicing in melodic rest",
+        label: "2:10 Hancock: right-hand 7–3–13 voicing suggests blues-like sound",
       },
       B: {
         time: "2:17",
         seconds: 137,
         url: "https://www.youtube.com/watch?v=F2zUua79c6U&t=137s",
-        label: "2:17 Davis: downward growling tail to sustained note",
+        label: "2:17 Davis: downward glissando growling tail of final A melody note",
       },
     },
   },
@@ -293,8 +293,8 @@ const rows = [
     time: "1:37",
     position: "Chorus 3, m. 12",
     event:
-      "Long–short accented, ringing ride-cymbal scrape; similar paired piano chords follow into chorus 4.",
-    relation: "Proposed drum-to-piano imitation crosses the chorus boundary.",
+      "Short–long accented, close-open hi-hat gesture; similar paired piano chords follow into chorus 4.",
+    relation: "Drum-to-piano imitation crosses the chorus boundary.",
     source: "Goldford",
     status: "Listening observation",
   },
@@ -302,7 +302,7 @@ const rows = [
     time: "1:48",
     position: "Chorus 4, start",
     event: "Chorus boundary.",
-    relation: "Anchor; cymbal gesture from preceding chorus continues.",
+    relation: "Anchor; hi-hat gesture from preceding chorus continues.",
     source: "Goldford",
     status: "Listening observation",
   },
@@ -310,9 +310,9 @@ const rows = [
     time: "2:10",
     position: "Chorus 4, m. 11",
     event:
-      "Two piano chords in the melodic rest; blues-like flat-13 voicing over the identified D7-sharp9/B-flat.",
+      "Two piano chords in the melodic rest; Hancock’s right hand voices 7–3–13 over the identified D7-sharp9/B-flat, creating a blues sound.",
     relation:
-      "Piano introduces a blues-associated color in the melodic gap; voicing needs transcription.",
+      "This blues voicing initiates the entire passage of exchanges that follows.",
     source: "Goldford",
     status: "Listening observation",
   },
@@ -322,7 +322,7 @@ const rows = [
     event:
       "Davis gives the last note a downward growling glissando; piano follows with C–C-sharp, then F–E dyads. Drums mix swung and straight eighths.",
     relation:
-      "Proposed transfer from vocal trumpet inflection to piano semitone dissonance; final chord is A7-flat9-13.",
+      "Transfer from vocal trumpet inflection to piano semitone dissonance; final chord is A7-flat9-13.",
     source: "Goldford",
     status: "Listening observation",
   },
@@ -373,7 +373,7 @@ const rows = [
     position: "Chorus 5, m. 11",
     event: "Loud rimshot in the melodic gap; clearer swing returns; horns deliver B-flat strongly.",
     relation:
-      "Proposed drum-to-horn response. Reassurance and confidence describe an interpretation, not a verified mental state.",
+      "Drum-to-horn response. Reassurance and confidence describe an interpretation, not a verified mental state.",
     source: "Goldford",
     status: "Listening observation",
   },
@@ -587,6 +587,7 @@ function bindTip(anchor, link) {
       `<span class="graph-tip-time">${esc(link.time)}</span>` +
       `<span class="graph-tip-label">${esc(link.label.replace(/^\d+:\d+\s+/, ""))}</span>` +
       `<span class="graph-tip-hint">Open the recording here <span class="ext" aria-hidden="true">↗</span></span>`;
+    tip.classList.remove("is-note");
     tip.classList.add("visible");
     moveTip(x, y);
   };
@@ -600,6 +601,45 @@ function bindTip(anchor, link) {
   });
   anchor.addEventListener("blur", hide);
 }
+
+function noteFor(target) {
+  const a = target.closest && target.closest(".fnref a");
+  const li = a && document.getElementById(a.getAttribute("href").slice(1));
+  if (!li) return null;
+  const body = li.cloneNode(true);
+  body.querySelector(".fn-back")?.remove();
+  return { a, html: `<span class="graph-tip-head">Note ${esc(a.textContent)}</span>${body.innerHTML.trim()}` };
+}
+
+function showNote(note, x, y) {
+  tip.innerHTML = note.html;
+  tip.classList.add("visible", "is-note");
+  moveTip(x, y);
+}
+
+function hideNote() {
+  if (tip.classList.contains("is-note")) tip.classList.remove("visible", "is-note");
+}
+
+document.addEventListener("mouseover", (e) => {
+  const note = noteFor(e.target);
+  if (note) showNote(note, e.clientX, e.clientY);
+});
+document.addEventListener("mousemove", (e) => {
+  if (tip.classList.contains("is-note")) moveTip(e.clientX, e.clientY);
+});
+document.addEventListener("mouseout", (e) => {
+  if (noteFor(e.target)) hideNote();
+});
+document.addEventListener("focusin", (e) => {
+  const note = noteFor(e.target);
+  if (!note) return;
+  const r = note.a.getBoundingClientRect();
+  showNote(note, r.right, r.bottom);
+});
+document.addEventListener("focusout", (e) => {
+  if (noteFor(e.target)) hideNote();
+});
 
 function attachVideoLinks(container, g) {
   const ns = "http://www.w3.org/2000/svg";

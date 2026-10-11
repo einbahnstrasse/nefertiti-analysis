@@ -136,17 +136,38 @@ h3 {
   padding: 12px 20px;
   background: #edf1e9;
 }
-.legend {
-  display: flex;
-  gap: 24px;
-  flex-wrap: wrap;
+.key {
+  width: auto;
+  max-width: 830px;
+  margin-top: 28px;
+  font-size: 17px;
+}
+.key caption {
+  padding-bottom: 8px;
+  color: var(--teal);
+  font-size: 12px;
+  letter-spacing: 0.13em;
+  text-align: left;
+  text-transform: uppercase;
+}
+.key th,
+.key td {
+  padding: 10px 14px;
+  vertical-align: middle;
+}
+.key thead th {
+  position: static;
   font-size: 14px;
-  color: var(--muted);
 }
-.legend b {
-  color: var(--ink);
+.key tbody th {
+  position: static;
+  background: none;
+  white-space: nowrap;
 }
-.legend .recurrence {
+.key svg {
+  display: block;
+}
+.key .recurrence {
   color: var(--rust);
 }
 .scales li {
@@ -238,7 +259,6 @@ article {
   margin: auto;
   max-width: 100%;
   height: auto;
-  max-height: 1100px;
 }
 .prose {
   max-width: 890px;
@@ -313,17 +333,17 @@ td {
   border-bottom: 1px solid var(--line);
   vertical-align: top;
 }
-td:first-child {
+.tablewrap td:first-child {
   white-space: nowrap;
   font-variant-numeric: oldstyle-nums tabular-nums;
 }
-td:nth-child(2) {
+.tablewrap td:nth-child(2) {
   white-space: nowrap;
 }
-td:nth-child(3) {
+.tablewrap td:nth-child(3) {
   min-width: 260px;
 }
-td:nth-child(4) {
+.tablewrap td:nth-child(4) {
   min-width: 260px;
 }
 .badge {
@@ -380,6 +400,52 @@ td:nth-child(4) {
   font-size: 12px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+}
+.graph-tip.is-note {
+  max-width: 420px;
+}
+.graph-tip-head {
+  display: block;
+  margin-bottom: 4px;
+  color: #cce8a9;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.graph-tip a {
+  color: #cce8a9;
+}
+header .modified {
+  margin-top: 6px;
+  color: #b8d7cb;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.cite {
+  max-width: 930px;
+  margin-top: 40px;
+  padding: 18px 22px;
+  border-left: 3px solid var(--teal);
+  background: #edf1e9;
+}
+.cite h3 {
+  margin: 0 0 8px;
+}
+.cite-label {
+  margin: 14px 0 2px;
+  color: var(--teal);
+  font-size: 12px;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+.cite-entry {
+  margin: 0;
+  padding-left: 2em;
+  text-indent: -2em;
+}
+.cite-entry a {
+  overflow-wrap: anywhere;
 }
 footer {
   border-top: 1px solid var(--line);

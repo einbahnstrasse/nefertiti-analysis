@@ -60,13 +60,13 @@
       "time": "1:03",
       "seconds": 63,
       "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=63s",
-      "label": "1:03 Chorus 2: dotted-quarter piano chords"
+      "label": "1:03 Chorus 2: dotted-quarter piano chords form a brief polymetric layer"
     },
     "C": {
       "time": "1:37",
       "seconds": 97,
       "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=97s",
-      "label": "1:37 Chorus 3: long-short cymbal gesture"
+      "label": "1:37 Chorus 3: short-long close-open hi-hat gesture"
     },
     "E": {
       "time": "2:17",
@@ -156,13 +156,13 @@
       "time": "2:10",
       "seconds": 130,
       "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=130s",
-      "label": "2:10 Hancock: blues-like voicing in melodic rest"
+      "label": "2:10 Hancock: right-hand 7–3–13 voicing suggests blues-like sound"
     },
     "B": {
       "time": "2:17",
       "seconds": 137,
       "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=137s",
-      "label": "2:17 Davis: downward growling tail to sustained note"
+      "label": "2:17 Davis: downward glissando growling tail of final A melody note"
     }
   },
   "valley": {}
