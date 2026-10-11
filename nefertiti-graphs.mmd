@@ -1,0 +1,90 @@
+%% Participation and changing melodic delivery
+flowchart TD
+ A["0:00 Shorter alone"] --> B["0:54 Davis joins; ride bell brightens texture"]
+ B --> C{"Horns: preserve or change delivery?"}
+ C --> D["2:59 Heavier horn attacks"]
+ D --> D2["4:09 Sustained quiet horn delivery"]
+ D2 --> E["5:18 Davis leads; Shorter delays the same melody"]
+ E --> F{"Next melodic traversal: play or leave space?"}
+ F --> G["6:30 Both horns absent; piano and drums foregrounded"]
+ G --> H["7:05 Horns return together"]
+ H --> I["7:40 No new horn statement; rhythm-section fade"]
+ R["Sixteen-bar form: m. 1 through m. 16"] --> S["Return to m. 1 at each complete cycle"]
+ S --> R
+ R --- C
+ P["Piano and drum interventions change the ensemble context"] -. "Proposed influence on subsequent delivery" .-> C
+ D -. "Changed horn sound informs accompaniment?" .-> P
+ E -. "Displaced melody informs accompaniment?" .-> P
+ linkStyle 10 stroke:#b34c38,stroke-width:3px
+
+
+%% Closing passages become places to redirect the ensemble
+flowchart TD
+ A["0:28 Cycle 1: ride comments on sustained ending"] --> B["1:03 Cycle 2: dotted-quarter piano chords"]
+ B --> C["1:37 Cycle 3: long-short cymbal gesture"]
+ C --> D["Into cycle 4: similarly paired piano chords"]
+ D --> E["2:17 Cycle 4: trumpet growl and piano semitone dyads"]
+ C -. "Proposed rhythmic uptake" .-> D
+ Q{"In the closing space: sustain, punctuate or introduce a figure?"} --> A
+ Q --> B
+ Q --> C
+ Q --> E
+ E -. "Different material available at the next boundary" .-> Q
+
+
+%% From drum interjection to melodic displacement and withdrawal
+flowchart TD
+ A["4:44 Cycle 9: louder horns and new piano figure"] --> B["5:01 Snare interjects into melody"]
+ B --> C["5:13 Repeated snare takes foreground"]
+ C --> D["5:18 Drum roll enters cycle 10"]
+ D --> E{"Horns: align or offset melodic entrances?"}
+ E --> F["Davis leads; Shorter follows about 1–1.5 beats later"]
+ F --> G["5:54 Cycle 11: trills, glissandos and cymbal intrusions"]
+ G --> H["6:21 Softer trilling and ensemble diminuendo"]
+ H --> I{"Cycle 12: restate or withhold melody?"}
+ I --> J["6:30 Horns withhold; rhythm section continues"]
+ J --> K["7:05 Horns return together"]
+ D -. "Influence on horn alignment unverified" .-> F
+ H -. "Influence on withdrawal unverified" .-> J
+
+
+%% 2:28–2:45 • A piano rhythm is taken up and transformed
+flowchart TD
+ A["2:28 Hancock: ascending quarter-note triplets"] --> B{"Williams: retain time pattern or adopt triplets?"}
+ B --> C["2:33 Quarter-note triplets on toms"]
+ C --> D{"Repeat the adopted figure or transform it?"}
+ D --> E["2:36 Five-note figure on eighth-note-triplet grid"]
+ E --> F["Toms phrase undergoes diminution"]
+ F --> G["2:45 Rimshot in melodic gap; clearer swing returns"]
+ G --> H["Horns give B-flat a stronger attack"]
+ A -. "Proposed uptake" .-> C
+ G -. "Proposed response" .-> H
+ H -. "Changed horn energy becomes new input for Williams" .-> B
+
+
+%% 2:10–2:17 onward • Vocal inflection and semitone dissonance
+flowchart TD
+ A["2:10 Hancock: blues-like voicing in melodic rest"] --> B["2:17 Davis: downward growling tail to sustained note"]
+ B --> C{"Hancock: retain voicing or answer with sharper dissonance?"}
+ C --> D["C–C-sharp dyad, then F–E dyad"]
+ B -. "Proposed timbral-to-harmonic response" .-> D
+ T["Williams mixes straight and swung eighths"] --- B
+ T --- D
+ D --> E["Changed ensemble context at the next cycle"]
+ E -. "Input to subsequent horn and piano choices" .-> C
+
+
+%% Cycle 5, mm. 9–12 • Extension, withdrawal and renewed intensity
+flowchart TD
+ A["m. 9 Horns extend A-flat after legato phrasing"] --> B{"Hancock: continue comping or leave space?"}
+ B --> C["Piano lays out"]
+ A --> D{"Williams: sustain intensity or lower dynamic?"}
+ D --> E["Drums become softer"]
+ C --> F["Reduced texture: a dynamic valley"]
+ E --> F
+ F --> G{"Williams: maintain the valley or interrupt it?"}
+ G --> H["Mid-m. 12: strong fill into new chord"]
+ H --> I["Ensemble attacks with renewed intensity"]
+ A -. "Meehan's response interpretation" .-> C
+ A -. "Meehan's response interpretation" .-> E
+ I -. "New intensity informs subsequent delivery" .-> B

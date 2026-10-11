@@ -1,0 +1,217 @@
+[
+  {
+    "id": "overview",
+    "scale": "performance",
+    "title": "Participation and changing melodic delivery",
+    "code": "flowchart TD\n A[\"0:00 Shorter alone\"] --> B[\"0:54 Davis joins; ride bell brightens texture\"]\n B --> C{\"Horns: preserve or change delivery?\"}\n C --> D[\"2:59 Heavier horn attacks\"]\n D --> D2[\"4:09 Sustained quiet horn delivery\"]\n D2 --> E[\"5:18 Davis leads; Shorter delays the same melody\"]\n E --> F{\"Next melodic traversal: play or leave space?\"}\n F --> G[\"6:30 Both horns absent; piano and drums foregrounded\"]\n G --> H[\"7:05 Horns return together\"]\n H --> I[\"7:40 No new horn statement; rhythm-section fade\"]\n R[\"Sixteen-bar form: m. 1 through m. 16\"] --> S[\"Return to m. 1 at each complete cycle\"]\n S --> R\n R --- C\n P[\"Piano and drum interventions change the ensemble context\"] -. \"Proposed influence on subsequent delivery\" .-> C\n D -. \"Changed horn sound informs accompaniment?\" .-> P\n E -. \"Displaced melody informs accompaniment?\" .-> P\n linkStyle 10 stroke:#b34c38,stroke-width:3px\n",
+    "prose": "This overview separates formal repetition from interpersonal recursion. The red return closes the sixteen-bar loop. Dashed connections propose that a changed horn delivery affects accompaniment and that the resulting context informs later delivery. They summarize an analytical possibility; the local graphs locate specific supporting events. Diamonds name performance variables, not documented internal deliberations.",
+    "sources": "Goldford observations; Meehan pp. 162–163, especially n. 512.",
+    "links": {
+      "A": {
+        "time": "0:00",
+        "seconds": 0,
+        "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=0s",
+        "label": "0:00 Shorter alone"
+      },
+      "B": {
+        "time": "0:54",
+        "seconds": 54,
+        "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=54s",
+        "label": "0:54 Davis joins; ride bell brightens texture"
+      },
+      "D": {
+        "time": "2:59",
+        "seconds": 179,
+        "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=179s",
+        "label": "2:59 Heavier horn attacks"
+      },
+      "D2": {
+        "time": "4:09",
+        "seconds": 249,
+        "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=249s",
+        "label": "4:09 Sustained quiet horn delivery"
+      },
+      "E": {
+        "time": "5:18",
+        "seconds": 318,
+        "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=318s",
+        "label": "5:18 Davis leads; Shorter delays the same melody"
+      },
+      "G": {
+        "time": "6:30",
+        "seconds": 390,
+        "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=390s",
+        "label": "6:30 Both horns absent; piano and drums foregrounded"
+      },
+      "H": {
+        "time": "7:05",
+        "seconds": 425,
+        "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=425s",
+        "label": "7:05 Horns return together"
+      },
+      "I": {
+        "time": "7:40",
+        "seconds": 460,
+        "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=460s",
+        "label": "7:40 No new horn statement; rhythm-section fade"
+      }
+    }
+  },
+  {
+    "id": "boundaries",
+    "scale": "passage",
+    "title": "Closing passages become places to redirect the ensemble",
+    "code": "flowchart TD\n A[\"0:28 Cycle 1: ride comments on sustained ending\"] --> B[\"1:03 Cycle 2: dotted-quarter piano chords\"]\n B --> C[\"1:37 Cycle 3: long-short cymbal gesture\"]\n C --> D[\"Into cycle 4: similarly paired piano chords\"]\n D --> E[\"2:17 Cycle 4: trumpet growl and piano semitone dyads\"]\n C -. \"Proposed rhythmic uptake\" .-> D\n Q{\"In the closing space: sustain, punctuate or introduce a figure?\"} --> A\n Q --> B\n Q --> C\n Q --> E\n E -. \"Different material available at the next boundary\" .-> Q\n",
+    "prose": "The chronological path compares closing passages, while the choice node identifies the recurring opportunity: the ending of the melody can coexist with a new accompaniment gesture. Only the cycle-3-to-4 passage currently supplies a proposed cross-boundary imitation; successive closing gestures are not automatically responses to one another.",
+    "sources": "Goldford observations at 0:28, 1:03, 1:37 and 2:17.",
+    "links": {
+      "A": {
+        "time": "0:28",
+        "seconds": 28,
+        "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=28s",
+        "label": "0:28 Cycle 1: ride comments on sustained ending"
+      },
+      "B": {
+        "time": "1:03",
+        "seconds": 63,
+        "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=63s",
+        "label": "1:03 Cycle 2: dotted-quarter piano chords"
+      },
+      "C": {
+        "time": "1:37",
+        "seconds": 97,
+        "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=97s",
+        "label": "1:37 Cycle 3: long-short cymbal gesture"
+      },
+      "E": {
+        "time": "2:17",
+        "seconds": 137,
+        "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=137s",
+        "label": "2:17 Cycle 4: trumpet growl and piano semitone dyads"
+      }
+    }
+  },
+  {
+    "id": "late",
+    "scale": "passage",
+    "title": "From drum interjection to melodic displacement and withdrawal",
+    "code": "flowchart TD\n A[\"4:44 Cycle 9: louder horns and new piano figure\"] --> B[\"5:01 Snare interjects into melody\"]\n B --> C[\"5:13 Repeated snare takes foreground\"]\n C --> D[\"5:18 Drum roll enters cycle 10\"]\n D --> E{\"Horns: align or offset melodic entrances?\"}\n E --> F[\"Davis leads; Shorter follows about 1–1.5 beats later\"]\n F --> G[\"5:54 Cycle 11: trills, glissandos and cymbal intrusions\"]\n G --> H[\"6:21 Softer trilling and ensemble diminuendo\"]\n H --> I{\"Cycle 12: restate or withhold melody?\"}\n I --> J[\"6:30 Horns withhold; rhythm section continues\"]\n J --> K[\"7:05 Horns return together\"]\n D -. \"Influence on horn alignment unverified\" .-> F\n H -. \"Influence on withdrawal unverified\" .-> J\n",
+    "prose": "This passage preserves the sequence without turning temporal proximity into proven causation. Two specific variables are visible: alignment of the horn parts and presence of the melodic layer. Meehan supports intensified drumming in cycles 9–11 and the absence/return in cycles 12–13, but not every fine-grained gesture or proposed response here.",
+    "sources": "Goldford observations; Meehan pp. 162–163; Pasceri title-track paragraph.",
+    "links": {
+      "A": {
+        "time": "4:44",
+        "seconds": 284,
+        "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=284s",
+        "label": "4:44 Cycle 9: louder horns and new piano figure"
+      },
+      "B": {
+        "time": "5:01",
+        "seconds": 301,
+        "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=301s",
+        "label": "5:01 Snare interjects into melody"
+      },
+      "C": {
+        "time": "5:13",
+        "seconds": 313,
+        "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=313s",
+        "label": "5:13 Repeated snare takes foreground"
+      },
+      "D": {
+        "time": "5:18",
+        "seconds": 318,
+        "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=318s",
+        "label": "5:18 Drum roll enters cycle 10"
+      },
+      "G": {
+        "time": "5:54",
+        "seconds": 354,
+        "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=354s",
+        "label": "5:54 Cycle 11: trills, glissandos and cymbal intrusions"
+      },
+      "H": {
+        "time": "6:21",
+        "seconds": 381,
+        "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=381s",
+        "label": "6:21 Softer trilling and ensemble diminuendo"
+      },
+      "J": {
+        "time": "6:30",
+        "seconds": 390,
+        "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=390s",
+        "label": "6:30 Horns withhold; rhythm section continues"
+      },
+      "K": {
+        "time": "7:05",
+        "seconds": 425,
+        "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=425s",
+        "label": "7:05 Horns return together"
+      }
+    }
+  },
+  {
+    "id": "triplets",
+    "scale": "local",
+    "title": "2:28–2:45 • A piano rhythm is taken up and transformed",
+    "code": "flowchart TD\n A[\"2:28 Hancock: ascending quarter-note triplets\"] --> B{\"Williams: retain time pattern or adopt triplets?\"}\n B --> C[\"2:33 Quarter-note triplets on toms\"]\n C --> D{\"Repeat the adopted figure or transform it?\"}\n D --> E[\"2:36 Five-note figure on eighth-note-triplet grid\"]\n E --> F[\"Toms phrase undergoes diminution\"]\n F --> G[\"2:45 Rimshot in melodic gap; clearer swing returns\"]\n G --> H[\"Horns give B-flat a stronger attack\"]\n A -. \"Proposed uptake\" .-> C\n G -. \"Proposed response\" .-> H\n H -. \"Changed horn energy becomes new input for Williams\" .-> B\n",
+    "prose": "This is the strongest current example of a proposed recursive exchange: piano introduces material, drums adopt and transform it, and drum punctuation is followed by changed horn delivery. The dashed return represents a renewed input to subsequent drum choices, not a claim that time runs backward or that a further response has already been identified. Hearing the rimshot as reassurance is Goldford’s interpretation.",
+    "sources": "Goldford observations at 2:28, 2:33, 2:36 and 2:45.",
+    "links": {
+      "A": {
+        "time": "2:28",
+        "seconds": 148,
+        "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=148s",
+        "label": "2:28 Hancock: ascending quarter-note triplets"
+      },
+      "C": {
+        "time": "2:33",
+        "seconds": 153,
+        "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=153s",
+        "label": "2:33 Quarter-note triplets on toms"
+      },
+      "E": {
+        "time": "2:36",
+        "seconds": 156,
+        "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=156s",
+        "label": "2:36 Five-note figure on eighth-note-triplet grid"
+      },
+      "G": {
+        "time": "2:45",
+        "seconds": 165,
+        "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=165s",
+        "label": "2:45 Rimshot in melodic gap; clearer swing returns"
+      }
+    }
+  },
+  {
+    "id": "blues",
+    "scale": "local",
+    "title": "2:10–2:17 onward • Vocal inflection and semitone dissonance",
+    "code": "flowchart TD\n A[\"2:10 Hancock: blues-like voicing in melodic rest\"] --> B[\"2:17 Davis: downward growling tail to sustained note\"]\n B --> C{\"Hancock: retain voicing or answer with sharper dissonance?\"}\n C --> D[\"C–C-sharp dyad, then F–E dyad\"]\n B -. \"Proposed timbral-to-harmonic response\" .-> D\n T[\"Williams mixes straight and swung eighths\"] --- B\n T --- D\n D --> E[\"Changed ensemble context at the next cycle\"]\n E -. \"Input to subsequent horn and piano choices\" .-> C\n",
+    "prose": "Goldford hears a correspondence between trumpet’s vocal, blues-associated inflection and piano’s semitone dissonances. This is not literal melodic imitation: a quality is proposed to migrate between timbre and harmony. The return arrow is a model of ongoing responsiveness; the subsequent piano answer still needs identification. Chord alterations and pitches await transcription.",
+    "sources": "Goldford observations at 2:10 and 2:17; harmony labels provisional.",
+    "links": {
+      "A": {
+        "time": "2:10",
+        "seconds": 130,
+        "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=130s",
+        "label": "2:10 Hancock: blues-like voicing in melodic rest"
+      },
+      "B": {
+        "time": "2:17",
+        "seconds": 137,
+        "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=137s",
+        "label": "2:17 Davis: downward growling tail to sustained note"
+      }
+    }
+  },
+  {
+    "id": "valley",
+    "scale": "local",
+    "title": "Cycle 5, mm. 9–12 • Extension, withdrawal and renewed intensity",
+    "code": "flowchart TD\n A[\"m. 9 Horns extend A-flat after legato phrasing\"] --> B{\"Hancock: continue comping or leave space?\"}\n B --> C[\"Piano lays out\"]\n A --> D{\"Williams: sustain intensity or lower dynamic?\"}\n D --> E[\"Drums become softer\"]\n C --> F[\"Reduced texture: a dynamic valley\"]\n E --> F\n F --> G{\"Williams: maintain the valley or interrupt it?\"}\n G --> H[\"Mid-m. 12: strong fill into new chord\"]\n H --> I[\"Ensemble attacks with renewed intensity\"]\n A -. \"Meehan's response interpretation\" .-> C\n A -. \"Meehan's response interpretation\" .-> E\n I -. \"New intensity informs subsequent delivery\" .-> B\n",
+    "prose": "Meehan explicitly links the sustained horn note with piano withdrawal and reduced drum dynamics. The local graph preserves concurrent piano and drum actions rather than making them mutually exclusive. Exact YouTube times remain pending. This m. 12 fill must not be merged with Goldford’s 2:45 rimshot at m. 11.",
+    "sources": "Meehan p. 162. YouTube timestamps pending for m. 9 and mid-m. 12.",
+    "links": {}
+  }
+]

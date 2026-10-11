@@ -1,0 +1,169 @@
+{
+  "overview": {
+    "A": {
+      "time": "0:00",
+      "seconds": 0,
+      "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=0s",
+      "label": "0:00 Shorter alone"
+    },
+    "B": {
+      "time": "0:54",
+      "seconds": 54,
+      "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=54s",
+      "label": "0:54 Davis joins; ride bell brightens texture"
+    },
+    "D": {
+      "time": "2:59",
+      "seconds": 179,
+      "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=179s",
+      "label": "2:59 Heavier horn attacks"
+    },
+    "D2": {
+      "time": "4:09",
+      "seconds": 249,
+      "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=249s",
+      "label": "4:09 Sustained quiet horn delivery"
+    },
+    "E": {
+      "time": "5:18",
+      "seconds": 318,
+      "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=318s",
+      "label": "5:18 Davis leads; Shorter delays the same melody"
+    },
+    "G": {
+      "time": "6:30",
+      "seconds": 390,
+      "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=390s",
+      "label": "6:30 Both horns absent; piano and drums foregrounded"
+    },
+    "H": {
+      "time": "7:05",
+      "seconds": 425,
+      "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=425s",
+      "label": "7:05 Horns return together"
+    },
+    "I": {
+      "time": "7:40",
+      "seconds": 460,
+      "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=460s",
+      "label": "7:40 No new horn statement; rhythm-section fade"
+    }
+  },
+  "boundaries": {
+    "A": {
+      "time": "0:28",
+      "seconds": 28,
+      "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=28s",
+      "label": "0:28 Cycle 1: ride comments on sustained ending"
+    },
+    "B": {
+      "time": "1:03",
+      "seconds": 63,
+      "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=63s",
+      "label": "1:03 Cycle 2: dotted-quarter piano chords"
+    },
+    "C": {
+      "time": "1:37",
+      "seconds": 97,
+      "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=97s",
+      "label": "1:37 Cycle 3: long-short cymbal gesture"
+    },
+    "E": {
+      "time": "2:17",
+      "seconds": 137,
+      "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=137s",
+      "label": "2:17 Cycle 4: trumpet growl and piano semitone dyads"
+    }
+  },
+  "late": {
+    "A": {
+      "time": "4:44",
+      "seconds": 284,
+      "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=284s",
+      "label": "4:44 Cycle 9: louder horns and new piano figure"
+    },
+    "B": {
+      "time": "5:01",
+      "seconds": 301,
+      "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=301s",
+      "label": "5:01 Snare interjects into melody"
+    },
+    "C": {
+      "time": "5:13",
+      "seconds": 313,
+      "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=313s",
+      "label": "5:13 Repeated snare takes foreground"
+    },
+    "D": {
+      "time": "5:18",
+      "seconds": 318,
+      "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=318s",
+      "label": "5:18 Drum roll enters cycle 10"
+    },
+    "G": {
+      "time": "5:54",
+      "seconds": 354,
+      "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=354s",
+      "label": "5:54 Cycle 11: trills, glissandos and cymbal intrusions"
+    },
+    "H": {
+      "time": "6:21",
+      "seconds": 381,
+      "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=381s",
+      "label": "6:21 Softer trilling and ensemble diminuendo"
+    },
+    "J": {
+      "time": "6:30",
+      "seconds": 390,
+      "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=390s",
+      "label": "6:30 Horns withhold; rhythm section continues"
+    },
+    "K": {
+      "time": "7:05",
+      "seconds": 425,
+      "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=425s",
+      "label": "7:05 Horns return together"
+    }
+  },
+  "triplets": {
+    "A": {
+      "time": "2:28",
+      "seconds": 148,
+      "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=148s",
+      "label": "2:28 Hancock: ascending quarter-note triplets"
+    },
+    "C": {
+      "time": "2:33",
+      "seconds": 153,
+      "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=153s",
+      "label": "2:33 Quarter-note triplets on toms"
+    },
+    "E": {
+      "time": "2:36",
+      "seconds": 156,
+      "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=156s",
+      "label": "2:36 Five-note figure on eighth-note-triplet grid"
+    },
+    "G": {
+      "time": "2:45",
+      "seconds": 165,
+      "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=165s",
+      "label": "2:45 Rimshot in melodic gap; clearer swing returns"
+    }
+  },
+  "blues": {
+    "A": {
+      "time": "2:10",
+      "seconds": 130,
+      "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=130s",
+      "label": "2:10 Hancock: blues-like voicing in melodic rest"
+    },
+    "B": {
+      "time": "2:17",
+      "seconds": 137,
+      "url": "https://www.youtube.com/watch?v=F2zUua79c6U&t=137s",
+      "label": "2:17 Davis: downward growling tail to sustained note"
+    }
+  },
+  "valley": {}
+}
