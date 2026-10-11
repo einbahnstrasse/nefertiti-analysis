@@ -4,31 +4,6 @@ Analysis of the Miles Davis Quintet’s “Nefertiti” (1967), with timestamp-l
 
 Complete webpage and analytical materials, October 11, 2026.
 
-## Open locally
-
-Open index.html, keeping mermaid.min.js beside it. Or open Nefertiti-Complete-Offline.html, a self-contained edition. Both display all six diagrams and source code without an internet connection. Video and source links require internet access. If clipboard access is blocked locally, select the Mermaid code directly.
-
-Click a timestamped graph node to open the assigned YouTube video in a new tab at that time. Keyboard users can tab to these links. Nodes without a verified timestamp remain unlinked. Mermaid code itself has no click directives: the webpage adds SVG links using the per-graph links metadata in graphs.json. node-links.json also exports that mapping.
-
-## GitHub Pages: simplest setup
-
-1. Create a repository (a public repository works with GitHub Free).
-2. Unzip Nefertiti-All-Materials-v2.zip.
-3. Upload the CONTENTS of the extracted folder to the repository root, so index.html is directly beside README.md and mermaid.min.js. Do not upload the ZIP itself or put everything inside another enclosing folder.
-4. Commit the files to main.
-5. Open repository Settings > Pages.
-6. Under Build and deployment, choose Deploy from a branch.
-7. Choose main and / (root), then Save.
-8. Use the Pages URL shown by GitHub after deployment, typically https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/.
-
-No npm installation, framework build or custom GitHub Actions workflow is needed. All asset links are relative, so a project repository path works. The empty .nojekyll file bypasses Jekyll processing. Keep it when uploading; some file pickers hide dotfiles.
-
-Alternative: put ALL these files in a folder named docs and choose main /docs in Pages settings. An arbitrary folder named website is not one of the branch-publishing folder choices; the previous package required moving its contents to the root or docs.
-
-Official instructions:
-- https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
-- https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
-
 ## Files
 
 - index.html: GitHub Pages entry point, containing prose, citations, embedded analytical data and application code. Its styling comes from website.css.
