@@ -38,7 +38,13 @@ Untaken alternatives inside diamonds are analytical contrasts, not additional re
 [^8]: George E. Lewis, “Improvised Music after 1950: Afrological and Eurological Perspectives,” *Black Music Research Journal* 22, suppl. (2002): 241, reprinted from *Black Music Research Journal* 16, no. 1 (1996).
 [^9]: All timestamps follow Goldford’s timings of the assigned YouTube upload, which may differ from the markers of the 1968 Columbia album release. Meehan places the hornless twelfth chorus and the horns’ return in the thirteenth at 6:32 and 7:08; in this upload the same moments fall at 6:30 and 7:05, an offset of about two to three seconds. Norman Lawrence Meehan, “Creativity in Jazz” (PhD diss., Victoria University of Wellington, 2014), 162n512.
 [^10]: Students can use the Mermaid Live Editor to create their own interaction-analysis graphs like these and then include them in their papers. See *Mermaid Live Editor*, accessed October 11, 2026, <https://mermaid.live/>; and “Flowcharts – Basic Syntax,” Mermaid, accessed October 11, 2026, <https://mermaid.js.org/syntax/flowchart.html>.
-[^11]: Meehan’s “strong fill” midway through m. 12 of chorus 5, followed by renewed ensemble intensity, may be the same event as the loud rimshot heard at 2:45 (chorus 5, m. 11); the two accounts place it a measure apart. Meehan, “Creativity in Jazz,” 162.
+[^11]: Louis Goldford, listening observations on the Miles Davis Quintet’s “Nefertiti,” unpublished notes, October 11, 2026; Meehan, “Creativity in Jazz,” 162–63, especially 162n512.
+[^12]: Goldford, listening observations, at 0:28, 1:03, 1:37, and 2:17.
+[^13]: Goldford, listening observations; Meehan, “Creativity in Jazz,” 162–63; Carlo Pasceri, “Nefertiti, l’ultimo capolavoro del Davis acustico,” *Carlo Pasceri* (blog), n.d., title-track paragraph.
+[^14]: Goldford, listening observations, at 2:28, 2:33, 2:36, and 2:45.
+[^15]: Goldford, listening observations, at 2:10 and 2:17. Harmony labels are provisional.
+[^16]: Meehan, “Creativity in Jazz,” 162. YouTube timestamps for m. 9 and mid-m. 12 are pending.
+[^17]: Meehan’s “strong fill” midway through m. 12 of chorus 5, followed by renewed ensemble intensity, may be the same event as the loud rimshot heard at 2:45 (chorus 5, m. 11); the two accounts place it a measure apart. Meehan, “Creativity in Jazz,” 162.
 
 ## Graphs
 
@@ -48,9 +54,7 @@ Each diagram below is written in Mermaid.[^10]
 
 Scale: performance
 
-This overview separates formal repetition from interpersonal recursion. The red return closes the sixteen-bar loop. Dashed connections propose that a changed horn delivery affects accompaniment and that the resulting context informs later delivery. They summarize an analytical possibility; the local graphs locate specific supporting events. Diamonds name performance variables, not documented internal deliberations.
-
-Sources: Goldford observations; Meehan pp. 162–163, especially n. 512.
+This overview separates formal repetition from interpersonal recursion. The red return closes the sixteen-bar loop. Dashed connections propose that a changed horn delivery affects accompaniment and that the resulting context informs later delivery. They summarize an analytical possibility; the local graphs locate specific supporting events. Diamonds name performance variables, not documented internal deliberations.[^11]
 
 ```mermaid
 flowchart TD
@@ -76,9 +80,7 @@ flowchart TD
 
 Scale: passage
 
-The chronological path compares closing passages, while the choice node identifies the recurring opportunity: the ending of the melody can coexist with a new accompaniment gesture. Only the chorus-3-to-4 passage currently supplies a proposed cross-boundary imitation; successive closing gestures are not automatically responses to one another.
-
-Sources: Goldford observations at 0:28, 1:03, 1:37 and 2:17.
+The chronological path compares closing passages, while the choice node identifies the recurring opportunity: the ending of the melody can coexist with a new accompaniment gesture. Only the chorus-3-to-4 passage currently supplies a proposed cross-boundary imitation; successive closing gestures are not automatically responses to one another.[^12]
 
 ```mermaid
 flowchart TD
@@ -98,9 +100,7 @@ flowchart TD
 
 Scale: passage
 
-This passage preserves the sequence without turning temporal proximity into proven causation. Two specific variables are visible: alignment of the horn parts and presence of the melodic layer. Meehan supports intensified drumming in choruses 9–11 and the absence/return in choruses 12–13, but not every fine-grained gesture or proposed response here.
-
-Sources: Goldford observations; Meehan pp. 162–163; Pasceri title-track paragraph.
+This passage preserves the sequence without turning temporal proximity into proven causation. Two specific variables are visible: alignment of the horn parts and presence of the melodic layer. Meehan supports intensified drumming in choruses 9–11 and the absence/return in choruses 12–13, but not every fine-grained gesture or proposed response here.[^13]
 
 ```mermaid
 flowchart TD
@@ -122,9 +122,7 @@ flowchart TD
 
 Scale: local
 
-This is the strongest current example of a proposed recursive exchange: piano introduces material, drums adopt and transform it, and drum punctuation is followed by changed horn delivery. The quarter-note triplets form a brief polymetric layer: continual, regular durations set against the prevailing grid for no more than a few bars. Fleeting as such layers are, they show how other metrical groupings within the existing grid can be expressive and offer ideas that others take up in turn. The dashed return represents a renewed input to subsequent drum choices, not a claim that time runs backward or that a further response has already been identified. Hearing the rimshot as reassurance is Goldford’s interpretation.
-
-Sources: Goldford observations at 2:28, 2:33, 2:36 and 2:45.
+This is the strongest current example of a proposed recursive exchange: piano introduces material, drums adopt and transform it, and drum punctuation is followed by changed horn delivery. The quarter-note triplets form a brief polymetric layer: continual, regular durations set against the prevailing grid for no more than a few bars. Fleeting as such layers are, they show how other metrical groupings within the existing grid can be expressive and offer ideas that others take up in turn. The dashed return represents a renewed input to subsequent drum choices, not a claim that time runs backward or that a further response has already been identified. Hearing the rimshot as reassurance is Goldford’s interpretation.[^14]
 
 ```mermaid
 flowchart TD
@@ -144,9 +142,7 @@ flowchart TD
 
 Scale: local
 
-Goldford hears a correspondence between trumpet’s vocal, blues-associated inflection and piano’s semitone dissonances. This is not literal melodic imitation: a quality is proposed to migrate between timbre and harmony. The return arrow is a model of ongoing responsiveness; the subsequent piano answer still needs identification. Chord alterations and pitches await transcription.
-
-Sources: Goldford observations at 2:10 and 2:17; harmony labels provisional.
+Goldford hears a correspondence between trumpet’s vocal, blues-associated inflection and piano’s semitone dissonances. This is not literal melodic imitation: a quality is proposed to migrate between timbre and harmony. The return arrow is a model of ongoing responsiveness; the subsequent piano answer still needs identification. Chord alterations and pitches await transcription.[^15]
 
 ```mermaid
 flowchart TD
@@ -164,9 +160,7 @@ flowchart TD
 
 Scale: local
 
-Meehan explicitly links the sustained horn note with piano withdrawal and reduced drum dynamics. The local graph preserves concurrent piano and drum actions rather than making them mutually exclusive. Exact YouTube times remain pending. This m. 12 fill may be the same event as Goldford’s 2:45 rimshot at m. 11.
-
-Sources: Meehan p. 162. YouTube timestamps pending for m. 9 and mid-m. 12.
+Meehan explicitly links the sustained horn note with piano withdrawal and reduced drum dynamics. The local graph preserves concurrent piano and drum actions rather than making them mutually exclusive. Exact YouTube times remain pending. This m. 12 fill may be the same event as Goldford’s 2:45 rimshot at m. 11.[^16]
 
 ```mermaid
 flowchart TD
@@ -205,7 +199,7 @@ flowchart TD
 | 2:36 | Chorus 5, m. 7 onward | Five-note spang-a-lang-like tom figure on an eighth-note-triplet grid; subsequent diminution. | Rhythmic uptake is transformed in grouping, duration and drum placement. | Goldford |
 | Pending | Chorus 5, m. 9 | Horns extend A-flat after legato delivery; Hancock lays out; Williams lowers his dynamic. | Meehan links horn extension to accompaniment withdrawal and a dynamic valley. | Meehan p. 162 |
 | 2:45 | Chorus 5, m. 11 | Loud rimshot in the melodic gap; clearer swing returns; horns deliver B-flat strongly. | Proposed drum-to-horn response. Reassurance and confidence describe an interpretation, not a verified mental state. | Goldford |
-| Pending | Chorus 5, midway through m. 12 | Williams plays a strong fill into a new chord; ensemble attacks with renewed intensity. | Meehan reports a coordinated intensification after the valley. Possibly the same event as the 2:45 rimshot at m. 11.[^11] | Meehan p. 162 |
+| Pending | Chorus 5, midway through m. 12 | Williams plays a strong fill into a new chord; ensemble attacks with renewed intensity. | Meehan reports a coordinated intensification after the valley. Possibly the same event as the 2:45 rimshot at m. 11.[^17] | Meehan p. 162 |
 | 2:59 | Chorus 6, start | Heavier, more pointed horn attacks, without shorter durations or staccato. | Attack profile changes independently of note length; no specific literature corroboration located. | Goldford |
 | 3:34 | Chorus 7, start | Drums take greater liberties. | Specify rhythmic departures through further listening. | Goldford |
 | 4:04 | Chorus 7, approximately mm. 15–16 | Ascending chromatic piano figuration over the identified A7-flat9-13 turnaround. | Boundary-directed piano gesture; pitches await transcription. | Goldford |

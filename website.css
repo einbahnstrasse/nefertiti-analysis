@@ -63,7 +63,7 @@ header .eyebrow {
 }
 h1 {
   font:
-    600 clamp(48px, 7vw, 88px) / 1.05 "Crimson Pro",
+    italic 500 clamp(48px, 7vw, 88px) / 1.05 "Crimson Pro",
     Georgia,
     serif;
   font-variant-numeric: oldstyle-nums;
@@ -162,24 +162,14 @@ h3 {
   text-decoration: none;
 }
 .footnotes {
-  max-width: 830px;
-  margin-top: 36px;
-  border-top: 1px solid var(--line);
-  font-size: 15px;
-  color: var(--muted);
-}
-.footnotes h3 {
-  margin: 18px 0 8px;
-  font-size: 18px;
-  color: var(--ink);
-}
-.footnotes ol {
+  max-width: 930px;
   margin: 0;
   padding: 0;
+  font-size: 17px;
   list-style: none;
 }
 .footnotes li {
-  margin: 6px 0;
+  margin: 10px 0;
   padding-left: 1.6em;
   text-indent: -1.6em;
 }
@@ -262,9 +252,14 @@ details {
   padding-top: 13px;
 }
 summary {
+  padding: 4px 0;
+  color: var(--teal);
   cursor: pointer;
-  font-size: 14px;
+  font-size: 19px;
   font-weight: 600;
+}
+summary:hover {
+  text-decoration: underline;
 }
 pre {
   white-space: pre;

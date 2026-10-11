@@ -2,6 +2,7 @@ const graphs = [
   {
     id: "overview",
     scale: "performance",
+    note: 11,
     title: "Participation and changing melodic delivery",
     code: 'flowchart TD\n A["0:00 Shorter alone"] --> B["0:54 Davis joins; ride bell brightens texture"]\n B --> C{"Horns: preserve or change delivery?"}\n C --> D["2:59 Heavier horn attacks"]\n D --> D2["4:09 Sustained quiet horn delivery"]\n D2 --> E["5:18 Davis leads; Shorter delays the same melody"]\n E --> F{"Next melodic traversal: play or leave space?"}\n F --> G["6:30 Both horns absent; piano and drums foregrounded"]\n G --> H["7:05 Horns return together"]\n H --> I["7:40 No new horn statement; rhythm-section fade"]\n R["Sixteen-bar form: m. 1 through m. 16"] --> S["Return to m. 1 at each complete chorus"]\n S --> R\n R --- C\n P["Piano and drum interventions change the ensemble context"] -. "Proposed influence on subsequent delivery" .-> C\n D -. "Changed horn sound informs accompaniment?" .-> P\n E -. "Displaced melody informs accompaniment?" .-> P\n linkStyle 10 stroke:#b34c38,stroke-width:3px\n',
     prose:
@@ -61,6 +62,7 @@ const graphs = [
   {
     id: "boundaries",
     scale: "passage",
+    note: 12,
     title: "Closing passages become places to redirect the ensemble",
     code: 'flowchart TD\n A["0:28 Chorus 1: ride comments on sustained ending"] --> B["1:03 Chorus 2: dotted-quarter piano chords"]\n B --> C["1:37 Chorus 3: long-short cymbal gesture"]\n C --> D["Into chorus 4: similarly paired piano chords"]\n D --> E["2:17 Chorus 4: trumpet growl and piano semitone dyads"]\n C -. "Proposed rhythmic uptake" .-> D\n Q{"In the closing space: sustain, punctuate or introduce a figure?"} --> A\n Q --> B\n Q --> C\n Q --> E\n E -. "Different material available at the next boundary" .-> Q\n',
     prose:
@@ -96,6 +98,7 @@ const graphs = [
   {
     id: "late",
     scale: "passage",
+    note: 13,
     title: "From drum interjection to melodic displacement and withdrawal",
     code: 'flowchart TD\n A["4:44 Chorus 9: louder horns and new piano figure"] --> B["5:01 Snare interjects into melody"]\n B --> C["5:13 Repeated snare takes foreground"]\n C --> D["5:18 Drum roll enters chorus 10"]\n D --> E{"Horns: align or offset melodic entrances?"}\n E --> F["Davis leads; Shorter follows about 1–1.5 beats later"]\n F --> G["5:54 Chorus 11: trills, glissandos and cymbal intrusions"]\n G --> H["6:21 Softer trilling and ensemble diminuendo"]\n H --> I{"Chorus 12: restate or withhold melody?"}\n I --> J["6:30 Horns withhold; rhythm section continues"]\n J --> K["7:05 Horns return together"]\n D -. "Influence on horn alignment unverified" .-> F\n H -. "Influence on withdrawal unverified" .-> J\n',
     prose:
@@ -155,6 +158,7 @@ const graphs = [
   {
     id: "triplets",
     scale: "local",
+    note: 14,
     title: "2:28–2:45 • A piano rhythm is taken up and transformed",
     code: 'flowchart TD\n A["2:28 Hancock: ascending quarter-note triplets"] --> B{"Williams: retain time pattern or adopt triplets?"}\n B --> C["2:33 Quarter-note triplets on toms"]\n C --> D{"Repeat the adopted figure or transform it?"}\n D --> E["2:36 Five-note figure on eighth-note-triplet grid"]\n E --> F["Toms phrase undergoes diminution"]\n F --> G["2:45 Rimshot in melodic gap; clearer swing returns"]\n G --> H["Horns give B-flat a stronger attack"]\n A -. "Proposed uptake" .-> C\n G -. "Proposed response" .-> H\n H -. "Changed horn energy becomes new input for Williams" .-> B\n',
     prose:
@@ -190,6 +194,7 @@ const graphs = [
   {
     id: "blues",
     scale: "local",
+    note: 15,
     title: "2:10–2:17 onward • Vocal inflection and semitone dissonance",
     code: 'flowchart TD\n A["2:10 Hancock: blues-like voicing in melodic rest"] --> B["2:17 Davis: downward growling tail to sustained note"]\n B --> C{"Hancock: retain voicing or answer with sharper dissonance?"}\n C --> D["C–C-sharp dyad, then F–E dyad"]\n B -. "Proposed timbral-to-harmonic response" .-> D\n T["Williams mixes straight and swung eighths"] --- B\n T --- D\n D --> E["Changed ensemble context at the next chorus"]\n E -. "Input to subsequent horn and piano choices" .-> C\n',
     prose:
@@ -213,6 +218,7 @@ const graphs = [
   {
     id: "valley",
     scale: "local",
+    note: 16,
     title: "Chorus 5, mm. 9–12 • Extension, withdrawal and renewed intensity",
     code: 'flowchart TD\n A["m. 9 Horns extend A-flat after legato phrasing"] --> B{"Hancock: continue comping or leave space?"}\n B --> C["Piano lays out"]\n A --> D{"Williams: sustain intensity or lower dynamic?"}\n D --> E["Drums become softer"]\n C --> F["Reduced texture: a dynamic valley"]\n E --> F\n F --> G{"Williams: maintain the valley or interrupt it?"}\n G --> H["Mid-m. 12: strong fill into new chord"]\n H --> I["Ensemble attacks with renewed intensity"]\n A -. "Meehan\'s response interpretation" .-> C\n A -. "Meehan\'s response interpretation" .-> E\n I -. "New intensity informs subsequent delivery" .-> B\n',
     prose:
@@ -511,7 +517,7 @@ graphs.forEach((g) => {
   const a = document.createElement("article");
   a.dataset.scale = g.scale;
   a.id = g.id;
-  a.innerHTML = `<div class="kicker">${esc(g.scale)} scale</div><h3>${esc(g.title)}</h3><div class="diagram" role="img" aria-label="${esc(g.title)}"></div><p class="prose">${esc(g.prose)}</p><p class="source">Sources: ${esc(g.sources)}</p><details><summary>Mermaid source code</summary><button class="copy" type="button">Copy code</button><pre><code>${esc(g.code)}</code></pre></details>`;
+  a.innerHTML = `<div class="kicker">${esc(g.scale)} scale</div><h3>${esc(g.title)}</h3><div class="diagram" role="img" aria-label="${esc(g.title)}"></div><p class="prose">${esc(g.prose)}<sup class="fnref" id="fnref-${g.note}"><a href="#fn-${g.note}" aria-label="Note ${g.note}">${g.note}</a></sup></p><details><summary>Mermaid source code</summary><button class="copy" type="button">Copy code</button><pre><code>${esc(g.code)}</code></pre></details>`;
   list.append(a);
   a.querySelector(".copy").onclick = async (e) => {
     try {

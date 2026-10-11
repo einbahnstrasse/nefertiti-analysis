@@ -70,7 +70,7 @@
       }
       h1 {
         font:
-          600 clamp(48px, 7vw, 88px) / 1.05 "Crimson Pro",
+          italic 500 clamp(48px, 7vw, 88px) / 1.05 "Crimson Pro",
           Georgia,
           serif;
         font-variant-numeric: oldstyle-nums;
@@ -169,24 +169,14 @@
         text-decoration: none;
       }
       .footnotes {
-        max-width: 830px;
-        margin-top: 36px;
-        border-top: 1px solid var(--line);
-        font-size: 15px;
-        color: var(--muted);
-      }
-      .footnotes h3 {
-        margin: 18px 0 8px;
-        font-size: 18px;
-        color: var(--ink);
-      }
-      .footnotes ol {
+        max-width: 930px;
         margin: 0;
         padding: 0;
+        font-size: 17px;
         list-style: none;
       }
       .footnotes li {
-        margin: 6px 0;
+        margin: 10px 0;
         padding-left: 1.6em;
         text-indent: -1.6em;
       }
@@ -269,9 +259,14 @@
         padding-top: 13px;
       }
       summary {
+        padding: 4px 0;
+        color: var(--teal);
         cursor: pointer;
-        font-size: 14px;
+        font-size: 19px;
         font-weight: 600;
+      }
+      summary:hover {
+        text-decoration: underline;
       }
       pre {
         white-space: pre;
@@ -447,6 +442,7 @@
       <a href="#approach">Approach</a>
       <a href="#graphs">Graphs & code</a>
       <a href="#observations">Observation ledger</a>
+      <a href="#notes">Notes</a>
       <a href="#sources">Bibliography</a>
     </nav>
     <main>
@@ -560,72 +556,6 @@
           events. A dashed backward connection means a renewed input to subsequent actions, not a
           return to an earlier timestamp.
         </p>
-        <aside class="footnotes" aria-labelledby="approach-notes">
-          <h3 id="approach-notes">Notes</h3>
-          <ol>
-            <li id="fn-1">
-              <a class="fn-back" href="#fnref-1" aria-label="Back to text for note 1">1.</a> Ingrid
-              Monson, <em>Saying Something: Jazz Improvisation and Interaction</em> (Chicago:
-              University of Chicago Press, 1996), 136.
-            </li>
-            <li id="fn-2">
-              <a class="fn-back" href="#fnref-2" aria-label="Back to text for note 2">2.</a> Monson,
-              <em>Saying Something</em>, 27.
-            </li>
-            <li id="fn-3">
-              <a class="fn-back" href="#fnref-3" aria-label="Back to text for note 3">3.</a> Monson,
-              <em>Saying Something</em>, 77–81.
-            </li>
-            <li id="fn-4">
-              <a class="fn-back" href="#fnref-4" aria-label="Back to text for note 4">4.</a> Monson,
-              <em>Saying Something</em>, 137–91.
-            </li>
-            <li id="fn-5">
-              <a class="fn-back" href="#fnref-5" aria-label="Back to text for note 5">5.</a> David
-              Borgo, <em>Sync or Swarm: Improvising Music in a Complex Age</em> (New York:
-              Continuum, 2005), 67.
-            </li>
-            <li id="fn-6">
-              <a class="fn-back" href="#fnref-6" aria-label="Back to text for note 6">6.</a> Borgo,
-              <em>Sync or Swarm</em>, 67–68.
-            </li>
-            <li id="fn-7">
-              <a class="fn-back" href="#fnref-7" aria-label="Back to text for note 7">7.</a> Paul F.
-              Berliner, <em>Thinking in Jazz: The Infinite Art of Improvisation</em> (Chicago:
-              University of Chicago Press, 1994), 285.
-            </li>
-            <li id="fn-8">
-              <a class="fn-back" href="#fnref-8" aria-label="Back to text for note 8">8.</a> George
-              E. Lewis, “Improvised Music after 1950: Afrological and Eurological Perspectives,”
-              <em>Black Music Research Journal</em> 22, suppl. (2002): 241, reprinted from <em>Black
-              Music Research Journal</em> 16, no. 1 (1996).
-            </li>
-            <li id="fn-9">
-              <a class="fn-back" href="#fnref-9" aria-label="Back to text for note 9">9.</a> All
-              timestamps follow Goldford’s timings of the assigned YouTube upload, which may differ
-              from the markers of the 1968 Columbia album release. Meehan places the hornless
-              twelfth chorus and the horns’ return in the thirteenth at 6:32 and 7:08; in this upload
-              the same moments fall at 6:30 and 7:05, an offset of about two to three seconds.
-              Norman Lawrence Meehan, “Creativity in Jazz” (PhD diss., Victoria University of
-              Wellington, 2014), 162n512.
-            </li>
-            <li id="fn-10">
-              <a class="fn-back" href="#fnref-10" aria-label="Back to text for note 10">10.</a>
-              Students can use the Mermaid Live Editor to create their own interaction-analysis
-              graphs like these and then include them in their papers. See <em>Mermaid Live
-              Editor</em>, accessed October 11, 2026,
-              <a href="https://mermaid.live/" target="_blank" rel="noopener">https://mermaid.live/</a>;
-              and “Flowcharts – Basic Syntax,” Mermaid, accessed October 11, 2026,
-              <a href="https://mermaid.js.org/syntax/flowchart.html" target="_blank" rel="noopener">https://mermaid.js.org/syntax/flowchart.html</a>.
-            </li>
-            <li id="fn-11">
-              <a class="fn-back" href="#fnref-11" aria-label="Back to text for note 11">11.</a>
-              Meehan’s “strong fill” midway through m. 12 of chorus 5, followed by renewed ensemble
-              intensity, may be the same event as the loud rimshot heard at 2:45 (chorus 5, m. 11);
-              the two accounts place it a measure apart. Meehan, “Creativity in Jazz,” 162.
-            </li>
-          </ol>
-        </aside>
       </section>
       <section id="graphs">
         <h2>Explore the graphs</h2>
@@ -648,7 +578,7 @@
         <p>
           One timeline, multiple sources. Timestamp links open the assigned video at that point.
           Literature-only events retain their chorus and measure while their exact YouTube times
-          remain pending.<sup class="fnref" id="fnref-11"><a href="#fn-11" aria-label="Note 11">11</a></sup>
+          remain pending.<sup class="fnref" id="fnref-17"><a href="#fn-17" aria-label="Note 17">17</a></sup>
         </p>
         <div class="filters">
           <input
@@ -682,6 +612,100 @@
         <p>
           <a class="download" href="data:application/json;base64,WwogIHsKICAgICJ0aW1lIjogIjA6MDAiLAogICAgInBvc2l0aW9uIjogIkNob3J1cyAxLCBtLiAxIiwKICAgICJldmVudCI6ICJTaG9ydGVyIHByZXNlbnRzIHRoZSBtZWxvZHkgd2l0aG91dCBEYXZpcy4iLAogICAgInJlbGF0aW9uIjogIkluaXRpYWwgc2luZ2xlLWhvcm4gcHJlc2VudGF0aW9uLiIsCiAgICAic291cmNlIjogIkdvbGRmb3JkOyBNZWVoYW4gcC4gMTYyIG4uIDUxMiIsCiAgICAic3RhdHVzIjogIkxpc3RlbmluZyBvYnNlcnZhdGlvbiIKICB9LAogIHsKICAgICJ0aW1lIjogIjA6MjgiLAogICAgInBvc2l0aW9uIjogIkNob3J1cyAxLCBtLiAxMyIsCiAgICAiZXZlbnQiOiAiUmlkZS1jeW1iYWwgaW50ZXJqZWN0aW9ucyBhZ2FpbnN0IHRoZSBmaW5hbCBzdXN0YWluZWQgQTMuIiwKICAgICJyZWxhdGlvbiI6ICJDbG9zaW5nIGZvdXIgYmFycyBiZWNvbWUgYW4gaW50ZXJhY3Rpb24gc2l0ZTsgcHJlcGFyYXRpb24gb2YgbGF0ZXIgdGV4dHVyZXMgaXMgYW4gaW50ZXJwcmV0YXRpb24uIiwKICAgICJzb3VyY2UiOiAiR29sZGZvcmQiLAogICAgInN0YXR1cyI6ICJMaXN0ZW5pbmcgb2JzZXJ2YXRpb24iCiAgfSwKICB7CiAgICAidGltZSI6ICIwOjU0IiwKICAgICJwb3NpdGlvbiI6ICJDaG9ydXMgMiwgbS4gOSIsCiAgICAiZXZlbnQiOiAiRGF2aXMgam9pbnMgU2hvcnRlcjsgcmlkZS1iZWxsIGF0dGFja3MgYWNjb21wYW55IHRoZSBlbnRyYW5jZS4iLAogICAgInJlbGF0aW9uIjogIkJyaWdodGVyIGRydW0gdGltYnJlIGNvaW5jaWRlcyB3aXRoIHRoaWNrZW5lZCBob3JuIHRleHR1cmUuIFZpc3VhbCBhbnRpY2lwYXRpb24gYnkgV2lsbGlhbXMgaXMgdW52ZXJpZmllZC4iLAogICAgInNvdXJjZSI6ICJHb2xkZm9yZDsgTWVlaGFuIHAuIDE2MiBuLiA1MTIiLAogICAgInN0YXR1cyI6ICJMaXN0ZW5pbmcgb2JzZXJ2YXRpb24iCiAgfSwKICB7CiAgICAidGltZSI6ICIxOjAzIiwKICAgICJwb3NpdGlvbiI6ICJDaG9ydXMgMiwgbS4gMTMgb253YXJkIiwKICAgICJldmVudCI6ICJQaWFubyBjaG9yZHMgYXQgZG90dGVkLXF1YXJ0ZXIgaW50ZXJ2YWxzOyBkcnVtIHB1bmN0dWF0aW9uIGluIHRoZSBmaW5hbCBiYXIuIiwKICAgICJyZWxhdGlvbiI6ICJCcmllZiBwb2x5bWV0cmljIGxheWVyOiByZWd1bGFyIGRvdHRlZC1xdWFydGVyIGR1cmF0aW9ucyBvdmVybGF5IHRoZSBwcmV2YWlsaW5nIGdyaWQgYWNyb3NzIHRoZSBjbG9zaW5nIHBhc3NhZ2U7IHBvc3NpYmxlIGNvb3JkaW5hdGlvbiBvZiBwdW5jdHVhdGlvbi4iLAogICAgInNvdXJjZSI6ICJHb2xkZm9yZCIsCiAgICAic3RhdHVzIjogIkxpc3RlbmluZyBvYnNlcnZhdGlvbiIKICB9LAogIHsKICAgICJ0aW1lIjogIjE6MTIiLAogICAgInBvc2l0aW9uIjogIkNob3J1cyAzLCBzdGFydCIsCiAgICAiZXZlbnQiOiAiQ2hvcnVzIGJvdW5kYXJ5LiIsCiAgICAicmVsYXRpb24iOiAiQW5jaG9yIGZvciB0aGUgZm9sbG93aW5nIGV2ZW50cy4iLAogICAgInNvdXJjZSI6ICJHb2xkZm9yZCIsCiAgICAic3RhdHVzIjogIkxpc3RlbmluZyBvYnNlcnZhdGlvbiIKICB9LAogIHsKICAgICJ0aW1lIjogIjE6MjUiLAogICAgInBvc2l0aW9uIjogIkNob3J1cyAzLCBtLiA3IiwKICAgICJldmVudCI6ICJQaWFubyBkdXJhdGlvbnMgc3BhbiB0d28gZWlnaHRoLW5vdGUtdHJpcGxldCB1bml0czsgYWNjZW50ZWQgcmVwZWF0ZWQgRS1mbGF0cy4iLAogICAgInJlbGF0aW9uIjogIkJyaWVmIHBvbHltZXRyaWMgbGF5ZXI6IHJlZ3VsYXIgZHVyYXRpb25zIG9mIHR3byBlaWdodGgtbm90ZS10cmlwbGV0IHVuaXRzIG92ZXJsYXkgdGhlIHByZXZhaWxpbmcgcHVsc2UuIiwKICAgICJzb3VyY2UiOiAiR29sZGZvcmQiLAogICAgInN0YXR1cyI6ICJMaXN0ZW5pbmcgb2JzZXJ2YXRpb24iCiAgfSwKICB7CiAgICAidGltZSI6ICJQZW5kaW5nIiwKICAgICJwb3NpdGlvbiI6ICJDaG9ydXMgMywgYXBwcm9hY2hpbmcgbW0uIDnigJMxNiIsCiAgICAiZXZlbnQiOiAiSGFuY29jayBhbmltYXRlcyB0aGUgYWNjb21wYW5pbWVudDsgV2lsbGlhbXMgc3Vic2VxdWVudGx5IHRha2VzIHVwIGl0cyBkYW5jaW5nIHF1YWxpdHkuIiwKICAgICJyZWxhdGlvbiI6ICJNZWVoYW4gZXhwbGljaXRseSBpbnRlcnByZXRzIHRoaXMgYXMgdXB0YWtlLiBEbyBub3QgZXF1YXRlIGl0IGF1dG9tYXRpY2FsbHkgd2l0aCB0aGUgMToyNSBldmVudC4iLAogICAgInNvdXJjZSI6ICJNZWVoYW4gcC4gMTYyIiwKICAgICJzdGF0dXMiOiAiTGl0ZXJhdHVyZSBldmVudDsgdGltZSBwZW5kaW5nIgogIH0sCiAgewogICAgInRpbWUiOiAiMTozNyIsCiAgICAicG9zaXRpb24iOiAiQ2hvcnVzIDMsIG0uIDEyIiwKICAgICJldmVudCI6ICJMb25n4oCTc2hvcnQgYWNjZW50ZWQsIHJpbmdpbmcgcmlkZS1jeW1iYWwgc2NyYXBlOyBzaW1pbGFyIHBhaXJlZCBwaWFubyBjaG9yZHMgZm9sbG93IGludG8gY2hvcnVzIDQuIiwKICAgICJyZWxhdGlvbiI6ICJQcm9wb3NlZCBkcnVtLXRvLXBpYW5vIGltaXRhdGlvbiBjcm9zc2VzIHRoZSBjaG9ydXMgYm91bmRhcnkuIiwKICAgICJzb3VyY2UiOiAiR29sZGZvcmQiLAogICAgInN0YXR1cyI6ICJMaXN0ZW5pbmcgb2JzZXJ2YXRpb24iCiAgfSwKICB7CiAgICAidGltZSI6ICIxOjQ4IiwKICAgICJwb3NpdGlvbiI6ICJDaG9ydXMgNCwgc3RhcnQiLAogICAgImV2ZW50IjogIkNob3J1cyBib3VuZGFyeS4iLAogICAgInJlbGF0aW9uIjogIkFuY2hvcjsgY3ltYmFsIGdlc3R1cmUgZnJvbSBwcmVjZWRpbmcgY2hvcnVzIGNvbnRpbnVlcy4iLAogICAgInNvdXJjZSI6ICJHb2xkZm9yZCIsCiAgICAic3RhdHVzIjogIkxpc3RlbmluZyBvYnNlcnZhdGlvbiIKICB9LAogIHsKICAgICJ0aW1lIjogIjI6MTAiLAogICAgInBvc2l0aW9uIjogIkNob3J1cyA0LCBtLiAxMSIsCiAgICAiZXZlbnQiOiAiVHdvIHBpYW5vIGNob3JkcyBpbiB0aGUgbWVsb2RpYyByZXN0OyBibHVlcy1saWtlIGZsYXQtMTMgdm9pY2luZyBvdmVyIHRoZSBpZGVudGlmaWVkIEQ3LXNoYXJwOS9CLWZsYXQuIiwKICAgICJyZWxhdGlvbiI6ICJQaWFubyBpbnRyb2R1Y2VzIGEgYmx1ZXMtYXNzb2NpYXRlZCBjb2xvciBpbiB0aGUgbWVsb2RpYyBnYXA7IHZvaWNpbmcgbmVlZHMgdHJhbnNjcmlwdGlvbi4iLAogICAgInNvdXJjZSI6ICJHb2xkZm9yZCIsCiAgICAic3RhdHVzIjogIkxpc3RlbmluZyBvYnNlcnZhdGlvbiIKICB9LAogIHsKICAgICJ0aW1lIjogIjI6MTciLAogICAgInBvc2l0aW9uIjogIkNob3J1cyA0LCBtLiAxNCBhbmQgZm9sbG93aW5nIiwKICAgICJldmVudCI6ICJEYXZpcyBnaXZlcyB0aGUgbGFzdCBub3RlIGEgZG93bndhcmQgZ3Jvd2xpbmcgZ2xpc3NhbmRvOyBwaWFubyBmb2xsb3dzIHdpdGggQ+KAk0Mtc2hhcnAsIHRoZW4gRuKAk0UgZHlhZHMuIERydW1zIG1peCBzd3VuZyBhbmQgc3RyYWlnaHQgZWlnaHRocy4iLAogICAgInJlbGF0aW9uIjogIlByb3Bvc2VkIHRyYW5zZmVyIGZyb20gdm9jYWwgdHJ1bXBldCBpbmZsZWN0aW9uIHRvIHBpYW5vIHNlbWl0b25lIGRpc3NvbmFuY2U7IGZpbmFsIGNob3JkIGlzIEE3LWZsYXQ5LTEzLiIsCiAgICAic291cmNlIjogIkdvbGRmb3JkIiwKICAgICJzdGF0dXMiOiAiTGlzdGVuaW5nIG9ic2VydmF0aW9uIgogIH0sCiAgewogICAgInRpbWUiOiAiMjoyNCIsCiAgICAicG9zaXRpb24iOiAiQ2hvcnVzIDUsIHN0YXJ0IiwKICAgICJldmVudCI6ICJDaG9ydXMgYm91bmRhcnkuIiwKICAgICJyZWxhdGlvbiI6ICJBbmNob3IgZm9yIHRyaXBsZXQgZXhjaGFuZ2UgYW5kIGxpdGVyYXR1cmUgZXZlbnRzLiIsCiAgICAic291cmNlIjogIkdvbGRmb3JkIiwKICAgICJzdGF0dXMiOiAiTGlzdGVuaW5nIG9ic2VydmF0aW9uIgogIH0sCiAgewogICAgInRpbWUiOiAiMjoyOCIsCiAgICAicG9zaXRpb24iOiAiQ2hvcnVzIDUsIG0uIDMiLAogICAgImV2ZW50IjogIkFzY2VuZGluZyBxdWFydGVyLW5vdGUgdHJpcGxldHMgaW4gcGlhbm8uIiwKICAgICJyZWxhdGlvbiI6ICJIYW5jb2NrIGludHJvZHVjZXMgdGhlIHJoeXRobWljIG1hdGVyaWFsIHRha2VuIHVwIGJlbG93LiIsCiAgICAic291cmNlIjogIkdvbGRmb3JkIiwKICAgICJzdGF0dXMiOiAiTGlzdGVuaW5nIG9ic2VydmF0aW9uIgogIH0sCiAgewogICAgInRpbWUiOiAiMjozMyIsCiAgICAicG9zaXRpb24iOiAiQ2hvcnVzIDUsIG0uIDUiLAogICAgImV2ZW50IjogIlF1YXJ0ZXItbm90ZSB0cmlwbGV0cyBvbiB0b21zLiIsCiAgICAicmVsYXRpb24iOiAiV2lsbGlhbXMgYXBwZWFycyB0byB0YWtlIHVwIHRoZSBwaWFubyByaHl0aG0gaW4gYSBkaWZmZXJlbnQgdGltYnJlLiIsCiAgICAic291cmNlIjogIkdvbGRmb3JkIiwKICAgICJzdGF0dXMiOiAiTGlzdGVuaW5nIG9ic2VydmF0aW9uIgogIH0sCiAgewogICAgInRpbWUiOiAiMjozNiIsCiAgICAicG9zaXRpb24iOiAiQ2hvcnVzIDUsIG0uIDcgb253YXJkIiwKICAgICJldmVudCI6ICJGaXZlLW5vdGUgc3BhbmctYS1sYW5nLWxpa2UgdG9tIGZpZ3VyZSBvbiBhbiBlaWdodGgtbm90ZS10cmlwbGV0IGdyaWQ7IHN1YnNlcXVlbnQgZGltaW51dGlvbi4iLAogICAgInJlbGF0aW9uIjogIlJoeXRobWljIHVwdGFrZSBpcyB0cmFuc2Zvcm1lZCBpbiBncm91cGluZywgZHVyYXRpb24gYW5kIGRydW0gcGxhY2VtZW50LiIsCiAgICAic291cmNlIjogIkdvbGRmb3JkIiwKICAgICJzdGF0dXMiOiAiTGlzdGVuaW5nIG9ic2VydmF0aW9uIgogIH0sCiAgewogICAgInRpbWUiOiAiUGVuZGluZyIsCiAgICAicG9zaXRpb24iOiAiQ2hvcnVzIDUsIG0uIDkiLAogICAgImV2ZW50IjogIkhvcm5zIGV4dGVuZCBBLWZsYXQgYWZ0ZXIgbGVnYXRvIGRlbGl2ZXJ5OyBIYW5jb2NrIGxheXMgb3V0OyBXaWxsaWFtcyBsb3dlcnMgaGlzIGR5bmFtaWMuIiwKICAgICJyZWxhdGlvbiI6ICJNZWVoYW4gbGlua3MgaG9ybiBleHRlbnNpb24gdG8gYWNjb21wYW5pbWVudCB3aXRoZHJhd2FsIGFuZCBhIGR5bmFtaWMgdmFsbGV5LiIsCiAgICAic291cmNlIjogIk1lZWhhbiBwLiAxNjIiLAogICAgInN0YXR1cyI6ICJMaXRlcmF0dXJlIGV2ZW50OyB0aW1lIHBlbmRpbmciCiAgfSwKICB7CiAgICAidGltZSI6ICIyOjQ1IiwKICAgICJwb3NpdGlvbiI6ICJDaG9ydXMgNSwgbS4gMTEiLAogICAgImV2ZW50IjogIkxvdWQgcmltc2hvdCBpbiB0aGUgbWVsb2RpYyBnYXA7IGNsZWFyZXIgc3dpbmcgcmV0dXJuczsgaG9ybnMgZGVsaXZlciBCLWZsYXQgc3Ryb25nbHkuIiwKICAgICJyZWxhdGlvbiI6ICJQcm9wb3NlZCBkcnVtLXRvLWhvcm4gcmVzcG9uc2UuIFJlYXNzdXJhbmNlIGFuZCBjb25maWRlbmNlIGRlc2NyaWJlIGFuIGludGVycHJldGF0aW9uLCBub3QgYSB2ZXJpZmllZCBtZW50YWwgc3RhdGUuIiwKICAgICJzb3VyY2UiOiAiR29sZGZvcmQiLAogICAgInN0YXR1cyI6ICJMaXN0ZW5pbmcgb2JzZXJ2YXRpb24iCiAgfSwKICB7CiAgICAidGltZSI6ICJQZW5kaW5nIiwKICAgICJwb3NpdGlvbiI6ICJDaG9ydXMgNSwgbWlkd2F5IHRocm91Z2ggbS4gMTIiLAogICAgImV2ZW50IjogIldpbGxpYW1zIHBsYXlzIGEgc3Ryb25nIGZpbGwgaW50byBhIG5ldyBjaG9yZDsgZW5zZW1ibGUgYXR0YWNrcyB3aXRoIHJlbmV3ZWQgaW50ZW5zaXR5LiIsCiAgICAicmVsYXRpb24iOiAiTWVlaGFuIHJlcG9ydHMgYSBjb29yZGluYXRlZCBpbnRlbnNpZmljYXRpb24gYWZ0ZXIgdGhlIHZhbGxleS4gUG9zc2libHkgdGhlIHNhbWUgZXZlbnQgYXMgdGhlIDI6NDUgcmltc2hvdCBhdCBtLiAxMS4iLAogICAgInNvdXJjZSI6ICJNZWVoYW4gcC4gMTYyIiwKICAgICJzdGF0dXMiOiAiTGl0ZXJhdHVyZSBldmVudDsgdGltZSBwZW5kaW5nIgogIH0sCiAgewogICAgInRpbWUiOiAiMjo1OSIsCiAgICAicG9zaXRpb24iOiAiQ2hvcnVzIDYsIHN0YXJ0IiwKICAgICJldmVudCI6ICJIZWF2aWVyLCBtb3JlIHBvaW50ZWQgaG9ybiBhdHRhY2tzLCB3aXRob3V0IHNob3J0ZXIgZHVyYXRpb25zIG9yIHN0YWNjYXRvLiIsCiAgICAicmVsYXRpb24iOiAiQXR0YWNrIHByb2ZpbGUgY2hhbmdlcyBpbmRlcGVuZGVudGx5IG9mIG5vdGUgbGVuZ3RoOyBubyBzcGVjaWZpYyBsaXRlcmF0dXJlIGNvcnJvYm9yYXRpb24gbG9jYXRlZC4iLAogICAgInNvdXJjZSI6ICJHb2xkZm9yZCIsCiAgICAic3RhdHVzIjogIkxpc3RlbmluZyBvYnNlcnZhdGlvbiIKICB9LAogIHsKICAgICJ0aW1lIjogIjM6MzQiLAogICAgInBvc2l0aW9uIjogIkNob3J1cyA3LCBzdGFydCIsCiAgICAiZXZlbnQiOiAiRHJ1bXMgdGFrZSBncmVhdGVyIGxpYmVydGllcy4iLAogICAgInJlbGF0aW9uIjogIlNwZWNpZnkgcmh5dGhtaWMgZGVwYXJ0dXJlcyB0aHJvdWdoIGZ1cnRoZXIgbGlzdGVuaW5nLiIsCiAgICAic291cmNlIjogIkdvbGRmb3JkIiwKICAgICJzdGF0dXMiOiAiTGlzdGVuaW5nIG9ic2VydmF0aW9uIgogIH0sCiAgewogICAgInRpbWUiOiAiNDowNCIsCiAgICAicG9zaXRpb24iOiAiQ2hvcnVzIDcsIGFwcHJveGltYXRlbHkgbW0uIDE14oCTMTYiLAogICAgImV2ZW50IjogIkFzY2VuZGluZyBjaHJvbWF0aWMgcGlhbm8gZmlndXJhdGlvbiBvdmVyIHRoZSBpZGVudGlmaWVkIEE3LWZsYXQ5LTEzIHR1cm5hcm91bmQuIiwKICAgICJyZWxhdGlvbiI6ICJCb3VuZGFyeS1kaXJlY3RlZCBwaWFubyBnZXN0dXJlOyBwaXRjaGVzIGF3YWl0IHRyYW5zY3JpcHRpb24uIiwKICAgICJzb3VyY2UiOiAiR29sZGZvcmQiLAogICAgInN0YXR1cyI6ICJMaXN0ZW5pbmcgb2JzZXJ2YXRpb24iCiAgfSwKICB7CiAgICAidGltZSI6ICI0OjA5IiwKICAgICJwb3NpdGlvbiI6ICJDaG9ydXMgOCwgc3RhcnQ7IHNwYW4gcGVuZGluZyIsCiAgICAiZXZlbnQiOiAiUXVpZXRlciBob3JucywgbG9uZ2VyIHN1c3RhaW5lZCBub3RlcyBhbmQgZmV3ZXIgaW50ZXJ2ZW5pbmcgcmVzdHMuIiwKICAgICJyZWxhdGlvbiI6ICJDaGFuZ2VzIGluIGR5bmFtaWNzIGFuZCBzcGFjaW5nOyBleGFjdCBzcGFuIHN0aWxsIG9wZW4uIiwKICAgICJzb3VyY2UiOiAiR29sZGZvcmQiLAogICAgInN0YXR1cyI6ICJMaXN0ZW5pbmcgb2JzZXJ2YXRpb24iCiAgfSwKICB7CiAgICAidGltZSI6ICJQZW5kaW5nIiwKICAgICJwb3NpdGlvbiI6ICJDaG9ydXMgOCwgc2Vjb25kIGhhbGYiLAogICAgImV2ZW50IjogIkVuc2VtYmxlIGRpbWludWVuZG8gYmVmb3JlIHRoZSBtb3JlIGFjdGl2ZSBzdWJzZXF1ZW50IGRydW0gcGFzc2FnZXMuIiwKICAgICJyZWxhdGlvbiI6ICJNZWVoYW4gZ3JvdXBzIGNob3J1c2VzIDnigJMxMSBhcyBpbnRlbnNpZmllZCBkcnVtIGFjdGl2aXR5LiIsCiAgICAic291cmNlIjogIk1lZWhhbiBwLiAxNjMiLAogICAgInN0YXR1cyI6ICJMaXRlcmF0dXJlIGV2ZW50OyB0aW1lIHBlbmRpbmciCiAgfSwKICB7CiAgICAidGltZSI6ICI0OjQ0IiwKICAgICJwb3NpdGlvbiI6ICJDaG9ydXMgOSwgc3RhcnQiLAogICAgImV2ZW50IjogIk5ldyBwaWFubyBmaWd1cmF0aW9uLCBsb3VkZXIgaG9ybnMgYW5kIGNoYW5nZWQgZHJ1bSBpbnRlcmFjdGlvbi4iLAogICAgInJlbGF0aW9uIjogIk11bHRpcGxlIHBhcmFtZXRlcnMgY2hhbmdlIG5lYXIgdGhlIGNob3J1cyBib3VuZGFyeS4iLAogICAgInNvdXJjZSI6ICJHb2xkZm9yZCIsCiAgICAic3RhdHVzIjogIkxpc3RlbmluZyBvYnNlcnZhdGlvbiIKICB9LAogIHsKICAgICJ0aW1lIjogIjU6MDEiLAogICAgInBvc2l0aW9uIjogIkNob3J1cyA5LCBtLiA5IiwKICAgICJldmVudCI6ICJSZXBlYXRlZCBpbnRydXNpdmUgc25hcmUgaGl0cyBpbnRlcmplY3QgaW50byBtZWxvZGljIHBocmFzZXMuIiwKICAgICJyZWxhdGlvbiI6ICJEcnVtcyBnYWluIGZvcmVncm91bmQgcHJvbWluZW5jZS4iLAogICAgInNvdXJjZSI6ICJHb2xkZm9yZCIsCiAgICAic3RhdHVzIjogIkxpc3RlbmluZyBvYnNlcnZhdGlvbiIKICB9LAogIHsKICAgICJ0aW1lIjogIjU6MTMiLAogICAgInBvc2l0aW9uIjogIkNob3J1cyA5LCBtLiAxNCIsCiAgICAiZXZlbnQiOiAiUmVwZWF0ZWQtc25hcmUgYWN0aXZpdHkgZWZmZWN0aXZlbHkgYmVjb21lcyBhIHRocmVlLWJhciBkcnVtIHNvbG8uIiwKICAgICJyZWxhdGlvbiI6ICJQZXJjZWl2ZWQgZHJ1bSBmb3JlZ3JvdW5kaW5nOyBub3QgYSBjbGFpbSB0aGF0IGFsbCBvdGhlciBpbnN0cnVtZW50cyBzdG9wLiIsCiAgICAic291cmNlIjogIkdvbGRmb3JkIiwKICAgICJzdGF0dXMiOiAiTGlzdGVuaW5nIG9ic2VydmF0aW9uIgogIH0sCiAgewogICAgInRpbWUiOiAiNToxOCIsCiAgICAicG9zaXRpb24iOiAiQ2hvcnVzIDEwLCBzdGFydCIsCiAgICAiZXZlbnQiOiAiRHJ1bSByb2xsIGludG8gdGhlIGNob3J1czsgRGF2aXMgbGVhZHMsIFNob3J0ZXIgZm9sbG93cyByb3VnaGx5IDHigJMxLjUgcXVhcnRlci1ub3RlIGJlYXRzIGxhdGVyLiIsCiAgICAicmVsYXRpb24iOiAiQ2Fub24tbGlrZSBtZWxvZGljIGRpc3BsYWNlbWVudDsgc3RyaWN0IGNhbm9uIGFuZCByZXNwb25zZSB0byB0aGUgcm9sbCBhcmUgdW52ZXJpZmllZC4iLAogICAgInNvdXJjZSI6ICJHb2xkZm9yZCIsCiAgICAic3RhdHVzIjogIkxpc3RlbmluZyBvYnNlcnZhdGlvbiIKICB9LAogIHsKICAgICJ0aW1lIjogIjU6NTQiLAogICAgInBvc2l0aW9uIjogIkNob3J1cyAxMSwgc3RhcnQiLAogICAgImV2ZW50IjogIlBpYW5vIGVpZ2h0aC1ub3RlIHRyaWxsIGZpZ3VyYXRpb24gYW5kIGdsaXNzYW5kb3M7IGN5bWJhbCBpbnRydXNpb25zLiIsCiAgICAicmVsYXRpb24iOiAiSW50ZXJ2ZW50aW9ucyBvdmVybGFwIG9yIGludGVycnVwdCB0aGUgaG9ybiBtZWxvZHkuIiwKICAgICJzb3VyY2UiOiAiR29sZGZvcmQ7IE1lZWhhbiBwLiAxNjMgKGJyb2FkZXIgZHJ1bSBhY3Rpdml0eSkiLAogICAgInN0YXR1cyI6ICJMaXN0ZW5pbmcgb2JzZXJ2YXRpb24iCiAgfSwKICB7CiAgICAidGltZSI6ICI2OjIxIiwKICAgICJwb3NpdGlvbiI6ICJDaG9ydXMgMTEsIG1tLiAxM+KAkzE2IiwKICAgICJldmVudCI6ICJFbnNlbWJsZSBkaW1pbnVlbmRvIHdpdGggc29mdGVyIHBpYW5vIHRyaWxsaW5nLiIsCiAgICAicmVsYXRpb24iOiAiSGFuY29jayBhcyBpbml0aWF0b3IgaXMgYSByZXNwb25zZSBoeXBvdGhlc2lzLiIsCiAgICAic291cmNlIjogIkdvbGRmb3JkIiwKICAgICJzdGF0dXMiOiAiTGlzdGVuaW5nIG9ic2VydmF0aW9uIgogIH0sCiAgewogICAgInRpbWUiOiAiNjozMCIsCiAgICAicG9zaXRpb24iOiAiQ2hvcnVzIDEyLCBzdGFydCIsCiAgICAiZXZlbnQiOiAiQm90aCBob3JucyBhYnNlbnQ7IHNpbXBsZSB3aG9sZS1ub3RlIHBpYW5vIGNob3JkcywgcHJvbWluZW50IGRydW1zIGFuZCBsYXRlciBkcnVtIHJvbGwuIiwKICAgICJyZWxhdGlvbiI6ICJNZWxvZGljIHdpdGhkcmF3YWwgcmVkaXN0cmlidXRlcyBmb3JlZ3JvdW5kIGFjdGl2aXR5LiIsCiAgICAic291cmNlIjogIkdvbGRmb3JkOyBNZWVoYW4gcC4gMTYyIG4uIDUxMjsgUGFzY2VyaSB0aXRsZS10cmFjayBwYXJhZ3JhcGgiLAogICAgInN0YXR1cyI6ICJMaXN0ZW5pbmcgb2JzZXJ2YXRpb24iCiAgfSwKICB7CiAgICAidGltZSI6ICI3OjA1IiwKICAgICJwb3NpdGlvbiI6ICJDaG9ydXMgMTMsIHN0YXJ0IiwKICAgICJldmVudCI6ICJCb3RoIGhvcm5zIHJldHVybiB0b2dldGhlciwgc3RhdGVseSBhbmQgYXV0aG9yaXRhdGl2ZTsgcmh5dGhtcyBoZWFyZCBhcyBhZGhlcmluZyB0byBub3RhdGlvbi4iLAogICAgInJlbGF0aW9uIjogIlJlc3RvcmF0aW9uIG9mIGNvb3JkaW5hdGVkIG1lbG9kaWMgZGVsaXZlcnk7IGNvbXBhcmlzb24gd2l0aCBhIHNwZWNpZmllZCBzY29yZSByZW1haW5zIHBlbmRpbmcuIiwKICAgICJzb3VyY2UiOiAiR29sZGZvcmQ7IE1lZWhhbiBwLiAxNjIgbi4gNTEyIChyZXR1cm4pIiwKICAgICJzdGF0dXMiOiAiTGlzdGVuaW5nIG9ic2VydmF0aW9uIgogIH0sCiAgewogICAgInRpbWUiOiAiNzo0MCIsCiAgICAicG9zaXRpb24iOiAiQWZ0ZXIgY2hvcnVzIDEzOyB2YW1wIG91dCIsCiAgICAiZXZlbnQiOiAiVmFtcCBvdXQ6IG5vIG5ldyBob3JuIHN0YXRlbWVudDsgdGltZSBjb250aW51ZXMgaW4gZHJ1bXMgYW5kIGJhc3MgYnJpZWZseSBpbnRvIGEgZmFkZS4iLAogICAgInJlbGF0aW9uIjogIlJlbGVhc2VkLXJlY29yZGluZyBlbmRpbmcsIHdpdGhvdXQgYW4gaW52ZW50ZWQgY29sbGVjdGl2ZSBzdG9wIGN1ZS4gVGltZSBjb250aW51ZXMsIGJ1dCBub3RoaW5nIGluIGFueSBwYXJ0IHN1Z2dlc3RzIHRoYXQgYSBuZXcgY2hvcnVzIGhhcyBiZWd1bi4iLAogICAgInNvdXJjZSI6ICJHb2xkZm9yZCIsCiAgICAic3RhdHVzIjogIkxpc3RlbmluZyBvYnNlcnZhdGlvbiIKICB9Cl0=" download>Download observation data</a>
         </p>
+      </section>
+      <section id="notes">
+        <h2>Notes</h2>
+        <ol class="footnotes">
+          <li id="fn-1">
+            <a class="fn-back" href="#fnref-1" aria-label="Back to text for note 1">1.</a> Ingrid
+            Monson, <em>Saying Something: Jazz Improvisation and Interaction</em> (Chicago:
+            University of Chicago Press, 1996), 136.
+          </li>
+          <li id="fn-2">
+            <a class="fn-back" href="#fnref-2" aria-label="Back to text for note 2">2.</a> Monson,
+            <em>Saying Something</em>, 27.
+          </li>
+          <li id="fn-3">
+            <a class="fn-back" href="#fnref-3" aria-label="Back to text for note 3">3.</a> Monson,
+            <em>Saying Something</em>, 77–81.
+          </li>
+          <li id="fn-4">
+            <a class="fn-back" href="#fnref-4" aria-label="Back to text for note 4">4.</a> Monson,
+            <em>Saying Something</em>, 137–91.
+          </li>
+          <li id="fn-5">
+            <a class="fn-back" href="#fnref-5" aria-label="Back to text for note 5">5.</a> David
+            Borgo, <em>Sync or Swarm: Improvising Music in a Complex Age</em> (New York:
+            Continuum, 2005), 67.
+          </li>
+          <li id="fn-6">
+            <a class="fn-back" href="#fnref-6" aria-label="Back to text for note 6">6.</a> Borgo,
+            <em>Sync or Swarm</em>, 67–68.
+          </li>
+          <li id="fn-7">
+            <a class="fn-back" href="#fnref-7" aria-label="Back to text for note 7">7.</a> Paul F.
+            Berliner, <em>Thinking in Jazz: The Infinite Art of Improvisation</em> (Chicago:
+            University of Chicago Press, 1994), 285.
+          </li>
+          <li id="fn-8">
+            <a class="fn-back" href="#fnref-8" aria-label="Back to text for note 8">8.</a> George
+            E. Lewis, “Improvised Music after 1950: Afrological and Eurological Perspectives,”
+            <em>Black Music Research Journal</em> 22, suppl. (2002): 241, reprinted from <em>Black
+            Music Research Journal</em> 16, no. 1 (1996).
+          </li>
+          <li id="fn-9">
+            <a class="fn-back" href="#fnref-9" aria-label="Back to text for note 9">9.</a> All
+            timestamps follow Goldford’s timings of the assigned YouTube upload, which may differ
+            from the markers of the 1968 Columbia album release. Meehan places the hornless
+            twelfth chorus and the horns’ return in the thirteenth at 6:32 and 7:08; in this upload
+            the same moments fall at 6:30 and 7:05, an offset of about two to three seconds.
+            Norman Lawrence Meehan, “Creativity in Jazz” (PhD diss., Victoria University of
+            Wellington, 2014), 162n512.
+          </li>
+          <li id="fn-10">
+            <a class="fn-back" href="#fnref-10" aria-label="Back to text for note 10">10.</a>
+            Students can use the Mermaid Live Editor to create their own interaction-analysis
+            graphs like these and then include them in their papers. See <em>Mermaid Live
+            Editor</em>, accessed October 11, 2026,
+            <a href="https://mermaid.live/" target="_blank" rel="noopener">https://mermaid.live/</a>;
+            and “Flowcharts – Basic Syntax,” Mermaid, accessed October 11, 2026,
+            <a href="https://mermaid.js.org/syntax/flowchart.html" target="_blank" rel="noopener">https://mermaid.js.org/syntax/flowchart.html</a>.
+          </li>
+          <li id="fn-11">
+            <a class="fn-back" href="#fnref-11" aria-label="Back to text for note 11">11.</a> Louis
+            Goldford, listening observations on the Miles Davis Quintet’s “Nefertiti,” unpublished
+            notes, October 11, 2026; Meehan, “Creativity in Jazz,” 162–63, especially 162n512.
+          </li>
+          <li id="fn-12">
+            <a class="fn-back" href="#fnref-12" aria-label="Back to text for note 12">12.</a>
+            Goldford, listening observations, at 0:28, 1:03, 1:37, and 2:17.
+          </li>
+          <li id="fn-13">
+            <a class="fn-back" href="#fnref-13" aria-label="Back to text for note 13">13.</a>
+            Goldford, listening observations; Meehan, “Creativity in Jazz,” 162–63; Carlo Pasceri,
+            “Nefertiti, l’ultimo capolavoro del Davis acustico,” <em>Carlo Pasceri</em> (blog),
+            n.d., title-track paragraph.
+          </li>
+          <li id="fn-14">
+            <a class="fn-back" href="#fnref-14" aria-label="Back to text for note 14">14.</a>
+            Goldford, listening observations, at 2:28, 2:33, 2:36, and 2:45.
+          </li>
+          <li id="fn-15">
+            <a class="fn-back" href="#fnref-15" aria-label="Back to text for note 15">15.</a>
+            Goldford, listening observations, at 2:10 and 2:17. Harmony labels are provisional.
+          </li>
+          <li id="fn-16">
+            <a class="fn-back" href="#fnref-16" aria-label="Back to text for note 16">16.</a>
+            Meehan, “Creativity in Jazz,” 162. YouTube timestamps for m. 9 and mid-m. 12 are
+            pending.
+          </li>
+          <li id="fn-17">
+            <a class="fn-back" href="#fnref-17" aria-label="Back to text for note 17">17.</a>
+            Meehan’s “strong fill” midway through m. 12 of chorus 5, followed by renewed ensemble
+            intensity, may be the same event as the loud rimshot heard at 2:45 (chorus 5, m. 11);
+            the two accounts place it a measure apart. Meehan, “Creativity in Jazz,” 162.
+          </li>
+        </ol>
       </section>
       <section id="sources">
         <h2>Bibliography</h2>
@@ -3594,6 +3618,7 @@ globalThis["mermaid"] = globalThis.__esbuild_esm_mermaid_nm["mermaid"].default;
         {
           id: "overview",
           scale: "performance",
+          note: 11,
           title: "Participation and changing melodic delivery",
           code: 'flowchart TD\n A["0:00 Shorter alone"] --> B["0:54 Davis joins; ride bell brightens texture"]\n B --> C{"Horns: preserve or change delivery?"}\n C --> D["2:59 Heavier horn attacks"]\n D --> D2["4:09 Sustained quiet horn delivery"]\n D2 --> E["5:18 Davis leads; Shorter delays the same melody"]\n E --> F{"Next melodic traversal: play or leave space?"}\n F --> G["6:30 Both horns absent; piano and drums foregrounded"]\n G --> H["7:05 Horns return together"]\n H --> I["7:40 No new horn statement; rhythm-section fade"]\n R["Sixteen-bar form: m. 1 through m. 16"] --> S["Return to m. 1 at each complete chorus"]\n S --> R\n R --- C\n P["Piano and drum interventions change the ensemble context"] -. "Proposed influence on subsequent delivery" .-> C\n D -. "Changed horn sound informs accompaniment?" .-> P\n E -. "Displaced melody informs accompaniment?" .-> P\n linkStyle 10 stroke:#b34c38,stroke-width:3px\n',
           prose:
@@ -3653,6 +3678,7 @@ globalThis["mermaid"] = globalThis.__esbuild_esm_mermaid_nm["mermaid"].default;
         {
           id: "boundaries",
           scale: "passage",
+          note: 12,
           title: "Closing passages become places to redirect the ensemble",
           code: 'flowchart TD\n A["0:28 Chorus 1: ride comments on sustained ending"] --> B["1:03 Chorus 2: dotted-quarter piano chords"]\n B --> C["1:37 Chorus 3: long-short cymbal gesture"]\n C --> D["Into chorus 4: similarly paired piano chords"]\n D --> E["2:17 Chorus 4: trumpet growl and piano semitone dyads"]\n C -. "Proposed rhythmic uptake" .-> D\n Q{"In the closing space: sustain, punctuate or introduce a figure?"} --> A\n Q --> B\n Q --> C\n Q --> E\n E -. "Different material available at the next boundary" .-> Q\n',
           prose:
@@ -3688,6 +3714,7 @@ globalThis["mermaid"] = globalThis.__esbuild_esm_mermaid_nm["mermaid"].default;
         {
           id: "late",
           scale: "passage",
+          note: 13,
           title: "From drum interjection to melodic displacement and withdrawal",
           code: 'flowchart TD\n A["4:44 Chorus 9: louder horns and new piano figure"] --> B["5:01 Snare interjects into melody"]\n B --> C["5:13 Repeated snare takes foreground"]\n C --> D["5:18 Drum roll enters chorus 10"]\n D --> E{"Horns: align or offset melodic entrances?"}\n E --> F["Davis leads; Shorter follows about 1–1.5 beats later"]\n F --> G["5:54 Chorus 11: trills, glissandos and cymbal intrusions"]\n G --> H["6:21 Softer trilling and ensemble diminuendo"]\n H --> I{"Chorus 12: restate or withhold melody?"}\n I --> J["6:30 Horns withhold; rhythm section continues"]\n J --> K["7:05 Horns return together"]\n D -. "Influence on horn alignment unverified" .-> F\n H -. "Influence on withdrawal unverified" .-> J\n',
           prose:
@@ -3747,6 +3774,7 @@ globalThis["mermaid"] = globalThis.__esbuild_esm_mermaid_nm["mermaid"].default;
         {
           id: "triplets",
           scale: "local",
+          note: 14,
           title: "2:28–2:45 • A piano rhythm is taken up and transformed",
           code: 'flowchart TD\n A["2:28 Hancock: ascending quarter-note triplets"] --> B{"Williams: retain time pattern or adopt triplets?"}\n B --> C["2:33 Quarter-note triplets on toms"]\n C --> D{"Repeat the adopted figure or transform it?"}\n D --> E["2:36 Five-note figure on eighth-note-triplet grid"]\n E --> F["Toms phrase undergoes diminution"]\n F --> G["2:45 Rimshot in melodic gap; clearer swing returns"]\n G --> H["Horns give B-flat a stronger attack"]\n A -. "Proposed uptake" .-> C\n G -. "Proposed response" .-> H\n H -. "Changed horn energy becomes new input for Williams" .-> B\n',
           prose:
@@ -3782,6 +3810,7 @@ globalThis["mermaid"] = globalThis.__esbuild_esm_mermaid_nm["mermaid"].default;
         {
           id: "blues",
           scale: "local",
+          note: 15,
           title: "2:10–2:17 onward • Vocal inflection and semitone dissonance",
           code: 'flowchart TD\n A["2:10 Hancock: blues-like voicing in melodic rest"] --> B["2:17 Davis: downward growling tail to sustained note"]\n B --> C{"Hancock: retain voicing or answer with sharper dissonance?"}\n C --> D["C–C-sharp dyad, then F–E dyad"]\n B -. "Proposed timbral-to-harmonic response" .-> D\n T["Williams mixes straight and swung eighths"] --- B\n T --- D\n D --> E["Changed ensemble context at the next chorus"]\n E -. "Input to subsequent horn and piano choices" .-> C\n',
           prose:
@@ -3805,6 +3834,7 @@ globalThis["mermaid"] = globalThis.__esbuild_esm_mermaid_nm["mermaid"].default;
         {
           id: "valley",
           scale: "local",
+          note: 16,
           title: "Chorus 5, mm. 9–12 • Extension, withdrawal and renewed intensity",
           code: 'flowchart TD\n A["m. 9 Horns extend A-flat after legato phrasing"] --> B{"Hancock: continue comping or leave space?"}\n B --> C["Piano lays out"]\n A --> D{"Williams: sustain intensity or lower dynamic?"}\n D --> E["Drums become softer"]\n C --> F["Reduced texture: a dynamic valley"]\n E --> F\n F --> G{"Williams: maintain the valley or interrupt it?"}\n G --> H["Mid-m. 12: strong fill into new chord"]\n H --> I["Ensemble attacks with renewed intensity"]\n A -. "Meehan\'s response interpretation" .-> C\n A -. "Meehan\'s response interpretation" .-> E\n I -. "New intensity informs subsequent delivery" .-> B\n',
           prose:
@@ -4105,7 +4135,7 @@ globalThis["mermaid"] = globalThis.__esbuild_esm_mermaid_nm["mermaid"].default;
         const a = document.createElement("article");
         a.dataset.scale = g.scale;
         a.id = g.id;
-        a.innerHTML = `<div class="kicker">${esc(g.scale)} scale</div><h3>${esc(g.title)}</h3><div class="diagram" role="img" aria-label="${esc(g.title)}"></div><p class="prose">${esc(g.prose)}</p><p class="source">Sources: ${esc(g.sources)}</p><details><summary>Mermaid source code</summary><button class="copy" type="button">Copy code</button><pre><code>${esc(g.code)}</code></pre></details>`;
+        a.innerHTML = `<div class="kicker">${esc(g.scale)} scale</div><h3>${esc(g.title)}</h3><div class="diagram" role="img" aria-label="${esc(g.title)}"></div><p class="prose">${esc(g.prose)}<sup class="fnref" id="fnref-${g.note}"><a href="#fn-${g.note}" aria-label="Note ${g.note}">${g.note}</a></sup></p><details><summary>Mermaid source code</summary><button class="copy" type="button">Copy code</button><pre><code>${esc(g.code)}</code></pre></details>`;
         list.append(a);
         a.querySelector(".copy").onclick = async (e) => {
           try {
